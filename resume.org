@@ -1,0 +1,60 @@
+#+BEGIN_CENTER
+Ahnaf Siddiqi | Website: http://remmihsorp.github.io | email: ahnaf_siddiqi@alumni.sutd.edu.sg
+#+END_CENTER
+
+** Education
+
+   (/Class of 2016/) - *Singapore University of Technology and Design*  \\
+   Bachelor of Engineering with major in Information Systems Technology and Design.
+   Focus Tracks: Security and Communications and Artificial Intelligence.
+
+   (/Class of 2011/) - *GCE Cambridge A-Levels, European Standard School*
+
+** Experience
+
+   (/November 2016 - Present/) - *Research Officer @ Singapore University of Technology and Design* \\
+   Championing a thorough understanding of EtherNet/IP to analyze current implementation of the protocol in a test bed to replicate the process in a script for the purpose of generating various methods of cyber attacks. A simple python socket is used for creating the server client process which is going to upgraded as per requirement of the system.
+
+   (/October 2016 - Present/) - *Web Developer @ Souschef* \\
+   Managed a small team to create a platform for the company which speaks between a web application and a remote machine. Part-time adventure to explore fundamentals of javascripts non-blocking environment.
+
+   (/August - September 2016/) - *Teaching Assistant @ General Assembly* \\
+   Aided instructer in teaching basics of CLI, GIT, HTML, Javascript, and Express to fresh students. Performed simple class organizing task for the course which included checking homeworks, tests, and projects.
+
+   (/May - August 2015/) - *Web Developer Intern @ Tinkerbox Studios* \\
+   Prioritized backend development on RoR to serve features of multiple projects with focus on Test Driver Development. Practiced a full agile development routine to roll out changes according to client requirements. Also created some basic front end landing pages.
+
+   (/May - August 2014/) - *Web Developer Intern @ BetterWebPages* \\
+   Handled client projects directly at a fresh startup. Worked as a full-stack developer and customized third-party packages to project requirements to deliver a fully operational website.
+
+** Projects
+   (/September 2016 - Present/) - *Social Project for Developing Robotics Curriculum for Children with Autism* \\
+   With lack of materials to teach specialized children programming and simple robotics concepts, this project is aimed to design a curriculum for relatively higher functioning students. We used multiple introductory test to analyze the abilities of the students to design a simple curriculum which we hope will teach the students to program using a visual interface. The second phase of the project is currenlty ongoing.
+
+   (/January 2016 - August 2016/) - *Interactive Animatronic Dragon @ SUTD Capstone* \\
+   Established a simple DHCP network to allow two different sections of a mechanical dragon to communicate using Raspberry Pi. The different actions of the dragon were based on a simple statemachine which has fixed actions generated using a serial communication by Arduino through the Pi.
+
+   (/March - May 2015/) - *A Simple Game for Android* \\
+   Developed a fully operational game, in a team of 4, for a term project using LibGDX used Google Play Service to search for players and pit them againts each other.
+
+   (/November - December 2014/) - *Android Travel App* \\
+   Implented, in a team of 7, a travel application which maps out the shortest possible distance from a users current location to their destination based on the monetary input.
+
+   (/November - December 2015/) - *Sequence Labelling System* \\
+   Used Viterbi Algorithm to run Hidden Markov Model over a medium sized data sets of tweets to map tweets to user requirements. Our test algorithm managed an accuracy of 56% on experimental data.
+
+** Skills 
+   Python, JavaScript, Java, Ruby, PHP, CSS, HTML, MySQL, PostgreSQL, Django, Laravel, Express, Ruby on Rails, Android, and LibGDX; Photoshop, Premier Pro, and After Effects. 
+
+** External Involvements
+   (/June 2016/) - Participated in first NUS XCTF Competition \\ 
+   (/May 2016/)  - Finalists in APEX Business-IT Global Case Challenge 2016 
+
+   (/July 2015/) - Attempted to develop a VR data visualization application in 1 day at Hackathon@SG50 Smart Nation
+
+** Interest
+   Photography, Running, Non-Profit Social Events, Exploring culture
+
+** Language 
+   English - Full Professional Proficiency | Bengali - Native Proficiency | Hindi and Urdu - Listening Proficiency
+
