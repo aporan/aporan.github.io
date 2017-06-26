@@ -9,7 +9,7 @@
   #+END_CENTER
 
   #+BEGIN_EXAMPLE
-  This is a full resume with focus on content. For a more abridged version for
+  This is a full resume with a focus on content. For a more abridged version for
   application purposes, please contact me.
   #+END_EXAMPLE
 
@@ -45,12 +45,12 @@
 
    (/August - September 2016/) > *Teaching Assistant @ General Assembly*
    - Aided instructor in teaching basics of CLI, GIT, HTML, Javascript, and ExpressJS to students.
-   - Performed simple class organizing task for the course which included homework checking, programming test, and projects.
+   - Managed several tasks for the course which included homework checking, programming test, and projects.
 
    (/May - August 2015/) > *Web Developer Intern @ Tinkerbox Studios*
    - Performed Test Driven Development on all projects focused mainly on backend programming.
    - Converted from Windows to Linux (Ubuntu) for development stack and have been a full time user since then.
-   - Currenlty, learning my way from Ubuntu to Arch.
+   - Currently, learning my way from Ubuntu to Arch.
    - Practiced a full agile development routine to roll out changes according to client requirements.
    - Worked on simple front-end interactive pages.
    - /Tech Knowledge/: Ruby on Rails, vanilla Javascript, SCSS, HTML5, and integration of other packages and Ubuntu.
@@ -62,8 +62,14 @@
 
 ** Projects
 
-   (/September 2016 - May 2017/) > *Social Project for Children with Autism* \\
-   With lack of materials to teach programming and simple robotics to specialized children, this project is aimed to design a curriculum for relatively higher functioning students. We used multiple introductory test to analyze the abilities of the students to understand their initial abilities. Design a simple curriculum around their understanding ability which we hope will teach the students to program using a visual interface. The children were also tasked to build lego blocks which they did succesfully. The final part of the project was to combine the programming interface with the lego blocks to navigate around a simple maze.
+   (/September 2016 - Present/) > *Social Project for Children with Autism* \\
+   With lack of materials to teach programming and simple robotics to specialized children, the projects goal was to design a curriculum for relatively higher functioning students.
+   - We used multiple introductory test to analyze the intiial abilities of the students.
+   - Designed a simple curriculum around their understanding ability which we hope will teach the students to program using a visual interface.
+   - The bridge between robotics and programming was provided by Edison Robot. It can be programmed as well as controlled remotely in several ways.
+   - For simple robotics, we used lego materials to create simple structures and place them with our robot.
+   - Final assessment of the project was to combine the programming interface with the lego blocks to navigate around a simple maze.
+   - Currently, we are ongoing the assesments of the final project.
 
    (/January - August 2016/) > *Interactive Animatronic Dragon @ SUTD Capstone* \\
    Established a simple DHCP network to allow two different sections of a mechanical dragon to communicate using Raspberry Pi. The different actions of the dragon were based on a simple statemachine which has fixed actions generated using a serial communication by Arduino through the Pi.
