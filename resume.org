@@ -9,8 +9,7 @@
   #+END_CENTER
 
   #+BEGIN_EXAMPLE
-  This is a full resume with a focus on content. For a more abridged version for
-  application purposes, please contact me.
+  This is an abridged resume which I use publicly.
   #+END_EXAMPLE
 
 ** Education
@@ -20,56 +19,51 @@
    Bachelor of Engineering with major in Information Systems Technology and Design. \\
    Focus Tracks: Security and Communications, Artificial Intelligence.
 
-   (/Class of 2011/) > *GCE Cambridge A-Levels*
-
 ** Experience
 
    (/November 2016 - Present/) > *Research Assistant @ Singapore University of Technology and Design*
-   - Observed Ethernet/IP packets in wireshark to understand Common Industrial Protocol (CIP).
-   - Reconstruced CIP packets for both TCP and UDP sections for respective layers.
-   - Developed an abstracted simulation package for CIP utilizing TDD.
-   - Used SOLI(D) principles to the best of my ability to create a reasonably good api.
-   - Open sourced CIP libraries like /pycomm/ (client library) can succesfully interact with the simulated environment.
-   - The implemented TCP section of the library was used as part of a challenge in an international inter-university CTF competition (Secure Cyber-Physical Systems at SUTD)
-   - Developed a separate web challenge which included password cracking, very basic reconnaissance, and command injection. This was abstracted from real vulnerablities of a wireless moxa server.
-   - Hosted the challenge in Amazon S3.
-   - /Tech Knowledge/: Python3, Nose, Wireshark, Linux Containers, Flask, C, Busybox compilation.
+   Developed and implemented a network protocol library to reproduce packets of Common Industrial Protocol for Secure Water Treatment (SWaT) testbed to be utilized for various simulations in research.
+
+   • Analyzed and reconstructed CIP packets for both TCP and UDP sections using wireshark.
+   • Designed and implemented an API for the package using TDD and SOLID principles of OOP.
+   • The library was used in a Capture The Flag in an international inter-university competition for Secure Cyber-Physical (Scy-Phy) Systems Week at SUTD.
+   • Developed, deployed and maintained a web challenge in Amazon EC2 for the competition.
+   • Used linux containers, uniquely mapped to each team, to run privileged code in a secure way.
 
    (/October 2016 - January 2017/) > *Web Developer @ Souschef*
-   - Worked in a small team of 3 to develop a web application in nodejs.
-   - Application was configuration panel which took updated database with user input and subsequently distributed them accross multiple remote machines (prototypes) at different outlets.
-   - Remote machines were liquid dispenser prototypes which where automatically synchronized after a new update was dispersed.
-   - Part time job to perform to improve on the fundamentals of js non-blocking environment.
-   - Used TDD for the entire project.
-   - /Tech Knowledge/: Express JS, Node, HTML5, CSS, vanilla Javascript, and other express packages.
+   Developed a configuration panel which takes user input, stores in a DB, and uploads them across multiple remote machines(prototypes).
+   • Worked in a small team of 3 to develop a web application in nodejs.
+   • Improve my knowledge in the fundamentals of JS, Express, and TDD. A part-time adventure.
 
    (/August - September 2016/) > *Teaching Assistant @ General Assembly*
-   - Aided instructor in teaching basics of CLI, GIT, HTML, Javascript, and ExpressJS to students.
-   - Managed several tasks for the course which included homework checking, programming test, and projects.
+   Assisted instructor to help teach the basics of web development from scratch.
+   • Taught CLI, git, HTML, CSS, Javascript, and Express to students.
+   • Managed multiple tasks which included analyzing project codes and programming tests.
 
    (/May - August 2015/) > *Web Developer Intern @ Tinkerbox Studios*
-   - Performed Test Driven Development on all projects focused mainly on backend programming.
-   - Converted from Windows to Linux (Ubuntu) for development stack and have been a full time user since then.
-   - Currently, learning my way from Ubuntu to Arch.
-   - Practiced a full agile development routine to roll out changes according to client requirements.
-   - Worked on simple front-end interactive pages.
-   - /Tech Knowledge/: Ruby on Rails, vanilla Javascript, SCSS, HTML5, and integration of other packages and Ubuntu.
+   • Performed Test Driven Development on all projects focused mainly on backend programming.
+   • Converted from Windows to Linux (Ubuntu) for development stack and have been a full time user since then.
+   • Practiced a full agile development routine to roll out changes according to client requirements.
+   • Worked on simple front-end interactive pages.
+   • Learned Rails and RSpec test suite in two weeks before being assigned to a live project.
 
    (/May - August 2014/) > *Web Developer Intern @ BetterWebPages*
-   - Worked as a beginner full-stack developer and customized third-party packages to project requirements to deliver a fully operational website.
-   - Handled client projects directly at a fresh startup.
-   - /Tech Knowledge/: Python, Django, and vanilla Javascript.
+   • Worked as a beginner full-stack developer and customized third-party packages to project requirements to deliver a fully operational website.
+   • First experience with web development and Django.
+   • Learned the entire framework in two weeks and implemented the feature functionalities.
+   • Rewrote django packages to suit the functionality requirements of projects.
+   • Implemented some user interface elements which included bar chart, and pie charts.
 
 ** Projects
 
    (/September 2016 - Present/) > *Social Project for Children with Autism* \\
-   With lack of materials to teach programming and simple robotics to specialized children, the projects goal was to design a curriculum for relatively higher functioning students.
-   - We used multiple introductory test to analyze the intiial abilities of the students.
-   - Designed a simple curriculum around their understanding ability which we hope will teach the students to program using a visual interface.
-   - The bridge between robotics and programming was provided by Edison Robot. It can be programmed as well as controlled remotely in several ways.
-   - For simple robotics, we used lego materials to create simple structures and place them with our robot.
-   - Final assessment of the project was to combine the programming interface with the lego blocks to navigate around a simple maze.
-   - Currently, we are ongoing the assesments of the final project.
+   With lack of materials to teach programming and simple robotics to specialized children, the projects is about designing and developing a simple but comprehensive curriculum which introduces basics of programming and simple robotics for relatively higher functioning students.
+
+   • We used multiple introductory test to analyze the intiial abilities of the students.
+   • Designed a simple curriculum around their understanding ability which we hope will teach the students to program using a visual interface.
+   • The bridge between robotics and programming was provided by Edison Robot. It can be programmed as well as controlled remotely in several ways.
+   • For simple robotics, we used lego materials to create simple structures and place them with our robot.
+   • Final assessment of the project was to combine the programming interface with the lego blocks to navigate around a simple maze.
 
    (/January - August 2016/) > *Interactive Animatronic Dragon @ SUTD Capstone* \\
    Established a simple DHCP network to allow two different sections of a mechanical dragon to communicate using Raspberry Pi. The different actions of the dragon were based on a simple statemachine which has fixed actions generated using a serial communication by Arduino through the Pi.
