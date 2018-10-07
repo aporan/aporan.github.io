@@ -1,0 +1,112 @@
+* Crypto
+
+  Cryptography is the science of =secret= communication. =Crypto= means =hidden,secret= and =graphy= denotes =a form of drawing, writing, representation=. A crypto process involves =encryption= and =decryption=. /Encrypt/ means to make a hidden message. /Decrypt/ means to unmake a hidden message.
+
+  The process of =encryption= uses a =cipher= which is an algorithm to convert a normal message to a secret one.
+
+** Assymetric Ciphers
+
+   Ciphers were the =encryption= key and the =decryption= key are different. Knowing one key does /not/ give you information about the other key.
+
+*** RSA
+
+    Basics
+
+    > RSA encryption converts your messages to numbers first; it has to cause you can't work mathematically on text. In practice, texts are divided into blocks and also padded.
+
+    > It requires 2 prime numbers: ~P~ and ~Q~ where ~P != Q~.
+
+    > It needs the product of the two prime numbers: ~N~
+
+    > It needs the Modular Arithmetic.
+
+    > It needs the /length/ of the the set of coprimes of ~N~: ~φ(N)~.
+
+    > Which helps to generate the Encryption Number (key) (/E/).
+
+    > The Decryption Number (key) /D/ is generated using a combination of modular arithmetic, /E/, and ~φ(N)~ : ~D * E (mod φ(N)) = 1~
+
+    > Encryption Number (key) is *public*.
+
+    > Decryption Number is kept *private*.
+
+
+    Process
+
+    1. Generate two large (otherwise it is easy to break) prime numbers ~P~, ~Q~ and generate the product ~N~.
+
+       In our example, we use smaller prime number for simplicity.
+
+       #+BEGIN_EXAMPLE
+       P = 2, Q = 7.
+
+       N = 2 * 7 = 14.
+       #+END_EXAMPLE
+
+    2. Calculate ~φ(N)~.
+
+       #+BEGIN_EXAMPLE
+       The hard way,
+
+       List all possible numbers <= N i.e. 14.
+       => set of numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+
+       Next, find the /coprimes/ of N.
+       => [1,3,5,9,11,13] are the coprimes of 14.
+
+       Length, of the set.
+       φ(14) = 6.
+
+       The easy way,
+
+       φ(N) = (P - 1) * (Q -1 )
+            = 2 - 1 * 7 - 1
+            = 6.
+       ;)
+       #+END_EXAMPLE
+
+    3. We generate /E/ which is *public*.
+
+       #+BEGIN_EXAMPLE
+       /E/ is chosen to be a number between
+       1 and 6 (φ(14)) exclusive.
+       => [2,3,4,5] are the possible set of numbers.
+
+       coprime of 6 (φ(14))
+       => [1,5]
+
+       coprime of 14 (N).
+       => is the set mentioned before: [1,3,5,9,11,13]
+
+       We ignore 1 as its common and we are left with 5 as the only common coprime.
+       => /E/ = 5. ;; why does this work, essentially why does the constraints work?
+       #+END_EXAMPLE
+
+    4. We generate /D/ which is *private*.
+
+       #+BEGIN_EXAMPLE
+       D * E (mod φ(N)) = 1 ;; why does this work to generate D?
+       => D * 5 (mod 6) = 1
+
+       There are many possible answers for D
+       => [5, 11, ...]
+
+       We choose,
+       =>D = 11 because 5 would be inappropriate.
+       #+END_EXAMPLE\
+
+    5. Encryption using modular arithmetic for message M to generate X.
+
+       #+BEGIN_EXAMPLE
+       M^E (mod N) = X. ;; why does this work as well?
+       => M^5 (mod 14) = X.
+       #+END_EXAMPLE
+
+    6. Decryption using modular arithmetic of X to generate M.
+
+       #+BEGIN_EXAMPLE
+       X^D (mod N) = M.
+       => X^11 (mod 14) = M.
+       #+END_EXAMPLE
+
+*** ECC
