@@ -1,4 +1,4 @@
-* Emacs Programming Intro 
+* Elisp Programming Intro 
 
 Written below is a 'short' and simple introduction to Emacs Lisp Programming. The entirety of the content as of now is taken from the book 'An Introduction to Programming in Emacs Lisp' by Robert J. Chassel. The contents of the book can easily be found online and I recommend everyone who may read this to go through the book as it provides a much more immersive beginner intro to emacs. This book is great but it is not for programmers. As the author mentions it, programmers generally prefer documentation where they can dive in and dive out. Regardless, I found the book very useful to get me started into Lisp, Emacs Lisp to be exact. 
 

@@ -1,14 +1,45 @@
-GROUPS = climbing ctfs devops emacs frontend graphs
+SHELL=bash
+# index file
+INDEX = index.org
 
-index: code algo code/index algo/index
-	echo "code index place" > index
-	echo "algo index place" >> index
-	echo ".. index generated" > /dev/null
+# gets list of all directories
+DIR = $(wildcard */)
 
-code/index: code
-	echo "code inner index place" > code/index
-	echo "... code/index generated" > /dev/null
+# add $(INDEX) suffix
+TARGETS=$(DIR:%=%$(INDEX))
 
-algo/index: algo
-	echo "algo inner index place" > algo/index
-	echo "... code/index generated" > /dev/null
+all: index
+
+index: $(TARGETS)
+	rm -f $(INDEX) && touch $(INDEX)
+	for dir in $^;                         \
+	do                                     \
+	    echo "[[$$dir][$${dir%$(INDEX)}]]" \
+		    >> $(INDEX);               \
+	done;
+
+# attach index.org in every DIR path
+# for every compilation, add an entry
+# to the every dir's index file
+
+# if any dir has Makefile, the index
+# file only contains the list of dirs
+# else the index file contains entries
+# of articles / notes / blogs
+
+$(TARGETS): %/$(INDEX) : %
+	if [ -e $^/Makefile ]; then                 \
+	    $(MAKE) -C $^ -s index;                 \
+	else                        		    \
+	    rm -f $^/$(INDEX) && touch $^/$(INDEX); \
+	    for file in $(filter-out %$(INDEX),     \
+			    $(filter %.org,         \
+			        $(wildcard $^/*)    \
+			     )                      \
+			 );			    \
+	    do                                      \
+		name=$${file#$^/};                  \
+		echo "[[$${name%.org}][$$name]]"    \
+			>> $^/$(INDEX);             \
+	    done;                                   \
+	fi;                                         \

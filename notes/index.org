@@ -1,0 +1,7 @@
+[[thoughts/index.org][thoughts/]]
+[[algo/index.org][algo/]]
+[[sec/index.org][sec/]]
+[[lang/index.org][lang/]]
+[[prog/index.org][prog/]]
+[[devops/index.org][devops/]]
+[[softw/index.org][softw/]]
