@@ -1,0 +1,30 @@
+
+#+BEGIN_SRC makefile
+index: $(TARGETS)                                # pre-req's which are of the format <dir>/index.org
+	rm -f $(INDEX) && touch $(INDEX)         #
+	for dir in $^;                         \ #
+	do                                     \ #
+	    echo "[[$$dir][$${dir%$(INDEX)}]]" \ #
+		    >> $(INDEX);               \ #
+	done;
+#+END_SRC
+
+
+#+BEGIN_SRC makefile
+$(TARGETS): %/$(INDEX) : %                            # this makes the <dir> the pre-req of targets. So, <dir>/index.org : <dir>
+	if [ -e $^/Makefile ]; then                 \ # if your topic <dir> contains a makefile
+	    $(MAKE) -C $^ -s index;                 \ #   invoke make build
+	else                        		    \ # else
+	    rm -f $^/$(INDEX) && touch $^/$(INDEX); \ #   delete existing index.org and create a new one
+	    for file in $(filter-out %$(INDEX),     \ #   remove index.org from the inner filer
+			    $(filter %.org,         \ #     filter only .org files
+			        $(wildcard $^/*)    \ #       select everything in the topic <dir>
+			     )                      \
+			 );			    \
+	    do                                      \
+		name=$${file#$^/};                  \ # bash string substitution removal of string before "/"
+		echo "[[$${name%.org}][$$name]]"    \ # string substitution : add in ".org"
+			>> $^/$(INDEX);             \ # format string in the form [[filepath.org][filename]
+	    done;                                   \
+	fi;                                         \
+#+END_SRC

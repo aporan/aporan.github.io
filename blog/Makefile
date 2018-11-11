@@ -1,4 +1,4 @@
-GROUPS = climbing ctfs devops emacs frontend graphs
+DIR = $(wildcard */)
 
 index: code algo code/index algo/index
 	echo "code index place" > index
