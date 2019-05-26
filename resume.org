@@ -1,96 +1,116 @@
 #+TITLE: Resume
-#+LATEX_HEADER: \usepackage{parskip}
-#+LATEX_HEADER: \usepackage[margin=0.9in]{geometry}
-#+LATEX_HEADER: \usepackage{titling} \setlength{\droptitle}{-2.5cm}
-#+OPTIONS: author:nil num:1 toc:nil date:nil
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="resume.css" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+#+HTML_DOCTYPE: html5
+#+OPTIONS: title:nil toc:nil num:nil html-postamble:nil html-preamble:nil html-style:nil html-scripts:nil
+#+STARTUP: content
+#+macro: span @@html:<span>@@$1@@html:</span>@@
+#+macro: contact @@html:<span id="contact">@@@@html:<span>@@phone: $1@@html:</span>@@ @@html:<span>@@email: $2@@html:</span>@@@@html:</span>@@
 
-  #+BEGIN_CENTER
-  Ahnaf Siddiqi | http://remmihsorp.github.io | ahnafsidd@gmail.com
-  #+END_CENTER
+* AHNAF SIDDIQI | {{{contact(+65 97342978, ahnafsidd@gmail.com)}}}
+  :PROPERTIES:
+  :CUSTOM_ID: resume-head
+  :END:
 
-  #+BEGIN_EXAMPLE
-  This is an abridged resume which I use publicly.
-  #+END_EXAMPLE
+** {{{span(EDUCATION)}}}
+*** Singapore University of Technology and Design {{{span(Class of 2016)}}}
 
-** Education
-
-   (/Class of 2016/) > *Singapore University of Technology and Design*
-
-   Bachelor of Engineering with major in Information Systems Technology and Design. \\
+   Bachelor of Engineering with major in Information Systems
+   Technology and Design. \\
    Focus Tracks: Security and Communications, Artificial Intelligence.
 
-** Experience
+** {{{span(WORK EXPERIENCE)}}}
 
-   (/November 2016 - Present/) > *Research Assistant @ Singapore University of Technology and Design*
-   Developed and implemented a network protocol library to reproduce packets of Common Industrial Protocol for Secure Water Treatment (SWaT) testbed to be utilized for various simulations in research.
+*** Research Assistant at iTrust Research Center for CyberSecurity {{{span(Nov’16 - Oct’17)}}}
 
-   • Analyzed and reconstructed CIP packets for both TCP and UDP sections using wireshark.
-   • Designed and implemented an API for the package using TDD and SOLID principles of OOP.
-   • The library was used in a Capture The Flag in an international inter-university competition for Secure Cyber-Physical (Scy-Phy) Systems Week at SUTD.
-   • Developed, deployed and maintained a web challenge in Amazon EC2 for the competition.
-   • Used linux containers, uniquely mapped to each team, to run privileged code in a secure way.
+    Developed and implemented a network protocol library to reproduce
+    packets of Common Industrial Protocol for Secure Water Treatment
+    (SWaT) testbed to be utilized for various simulations in research.
 
-   (/October 2016 - January 2017/) > *Web Developer @ Souschef*
-   Developed a configuration panel which takes user input, stores in a DB, and uploads them across multiple remote machines(prototypes).
-   • Worked in a small team of 3 to develop a web application in nodejs.
-   • Improve my knowledge in the fundamentals of JS, Express, and TDD. A part-time adventure.
+    - Analyzed and reconstructed CIP packets for both TCP and UDP
+      section using wireshark.
+    - Designed and implemented an API for the package using TDD and
+      SOLID principles of OOP.
+    - The library was used in a CaptureTheFlag competion in
+      aninternational inter-university competition for
+      SecureCyber-Physical(Scy-Phy) Systems Week.
+    - Developed, deployed, and maintained a webchallenge in AmazonEC2
+      for the competition.
+    - Used linux containers,uniquely mapped to each team,to run
+      privileged code in a secure way.
 
-   (/August - September 2016/) > *Teaching Assistant @ General Assembly*
-   Assisted instructor to help teach the basics of web development from scratch.
-   • Taught CLI, git, HTML, CSS, Javascript, and Express to students.
-   • Managed multiple tasks which included analyzing project codes and programming tests.
+*** Web Developer at Souschef {{{span(Oct’16 - Jan’17)}}}
 
-   (/May - August 2015/) > *Web Developer Intern @ Tinkerbox Studios*
-   • Performed Test Driven Development on all projects focused mainly on backend programming.
-   • Converted from Windows to Linux (Ubuntu) for development stack and have been a full time user since then.
-   • Practiced a full agile development routine to roll out changes according to client requirements.
-   • Worked on simple front-end interactive pages.
-   • Learned Rails and RSpec test suite in two weeks before being assigned to a live project.
+    Developed a configuration panel which takes user input,stores in a
+    DB, and uploads them across multiple remote machines(prototypes).
 
-   (/May - August 2014/) > *Web Developer Intern @ BetterWebPages*
-   • Worked as a beginner full-stack developer and customized third-party packages to project requirements to deliver a fully operational website.
-   • First experience with web development and Django.
-   • Learned the entire framework in two weeks and implemented the feature functionalities.
-   • Rewrote django packages to suit the functionality requirements of projects.
-   • Implemented some user interface elements which included bar chart, and pie charts.
+    - Improve my knowledge in the fundamentals of JS, Express, and
+      TDD. A part-time adventure.
 
-** Projects
+*** Teaching Assistant at General Assembly {{{span(Aug - Sep’16)}}}
 
-   (/September 2016 - Present/) > *Social Project for Children with Autism* \\
-   With lack of materials to teach programming and simple robotics to specialized children, the projects is about designing and developing a simple but comprehensive curriculum which introduces basics of programming and simple robotics for relatively higher functioning students.
+    Assisted instructor to help teach the basics of web development
+    from scratch.
 
-   • We used multiple introductory test to analyze the intiial abilities of the students.
-   • Designed a simple curriculum around their understanding ability which we hope will teach the students to program using a visual interface.
-   • The bridge between robotics and programming was provided by Edison Robot. It can be programmed as well as controlled remotely in several ways.
-   • For simple robotics, we used lego materials to create simple structures and place them with our robot.
-   • Final assessment of the project was to combine the programming interface with the lego blocks to navigate around a simple maze.
+    - Taught CLI, git, HTML, CSS, Javascript, and Express to students.
+    - Managed multiple tasks which included analyzing project codes
+      and programming tests.
 
-   (/January - August 2016/) > *Interactive Animatronic Dragon @ SUTD Capstone* \\
-   Established a simple DHCP network to allow two different sections of a mechanical dragon to communicate using Raspberry Pi. The different actions of the dragon were based on a simple statemachine which has fixed actions generated using a serial communication by Arduino through the Pi.
+*** Web Developer Intern at Tinkerbox Studios {{{span(May - Aug’15)}}}
 
-   (/March - May 2015/) > *A Simple Game for Android* \\
-   Developed a fully operational game, in a team of 4, for a term project, which used LibGDX and Google Play Service.
+    Programmed backend functionality and wrote test cases for projects
+    following agile methodology.
 
-   (/November - December 2014/) > *Android Travel App* \\
-   Implented, in a team of 7, a travel application which maps out the shortest possible distance from a users current location to their destination based on the monetary input.
+    - Practiced TestDrivenDevelopment using Ruby-on-Rails.
+    - Worked on models, views, and controllers and wrote/refactored
+      their new/old tests.
+    - Implemented simple front-end interactive pages.
 
-   (/November - December 2015/) > *Sequence Labelling System* \\
-   Used Viterbi Algorithm to run Hidden Markov Model over a medium sized data sets of tweets to map tweets to user requirements. Our test algorithm managed an accuracy of 56% on experimental data.
+** {{{span(PROJECTS)}}}
 
-** Skills
+*** Social Project for Children with Autism {{{span(Sep’16 - Nov’17)}}}
 
-   Python, JavaScript, Express, Ruby, PHP, CSS, HTML, MySQL, PostgreSQL, Java, C, Django, Laravel, Ruby on Rails, Android, and LibGDX; Photoshop, Premier Pro, and After Effects.
+    Designed a new curriculum to teach programming and simple robotics
+    to special needs children.
 
-** External Involvements
+    - Analyzed the students initial performance by taking several
+      tests which measured their memory and sequential task handling
+      abilities.
+    - The curriculum used Edison robot to provide the visual interface
+      for programming and Lego bricks as a simple building block for
+      robotics and integrates them.
 
-   (/June 2016/) - Participated in first NUS XCTF Competition. \\
-   (/May 2016/)  - Finalists in APEX Business-IT Global Case Challenge 2016. \\
-   (/July 2015/) - Attempted to develop a VR data visualization application in 1 day at Hackathon@SG50 Smart Nation.
+*** Capstone Project - Interactive Animatronic Dragon {{{span(Jan - Aug’16)}}}
 
-** Interest
+    Established a network to transfer data between multiple sections
+    of a prototype of an animatronic dragon which detects users in its
+    peripherals and performs action
 
-   Photography, Running, Non-Profit Social Events, Exploring Culture, Capture The Flag, Network Security, Physical Systems Security, and /Emacs/.
+    - Implemented an ad-hoc network with static IP for P2P connections
+      between two RaspberryPi.
+    - Developed a state machine to categorize different out puts
+      according to user inputs.
+    - Used Open CV to detect user movement to be used as inputs for
+      the statemachine.
 
-** Language
+*** Web Development - Non-academic University Project {{{span(Dec’15 - July’16)}}}
 
-   English - Full Professional Proficiency | Bengali - Native Proficiency | Hindi and Urdu - Listening Proficiency.
+    Create a platform for a booking system of graduate students seating.
+
+    - Developed the platform using Laravel and hosted in university server.
+
+** {{{span(SKILLS)}}}
+
+   Python, Javascript, Ruby, Java, C, CSS, HTML, MySQL, PostgreSQL,
+   Rails, Flask, Laravel, OpenCV, Linux
+
+** {{{span(ACTIVITIES)}}}
+
+   *External Involvements* - NUS XCTF 2016, Finalists for APEX
+   Business-IT Global Case Challenge 2016, SG50 Hackathon 2015 Smart
+   Nation, Secretary for University Photography Club.
+
+   *Interests* - Photography, Running, Non-Profit Social Events,
+   Exploring Culture, CaptureTheFlag, Network Security, Physical
+   Systems Security, Linux, Arch and Emacs.
+
