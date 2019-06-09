@@ -12,28 +12,44 @@
   :CUSTOM_ID: resume-head
   :END:
 
+# ** {{{span(PROFILE)}}}
+
+#    I hold a keen interest in the field of network system architecture,
+#    embedded systems, and security. I strive for learning and continous
+#    improvement. I bring my experience in design thinking to provide a
+   
 ** {{{span(EDUCATION)}}}
 *** Singapore University of Technology and Design {{{span(Class of 2016)}}}
 
    Bachelor of Engineering with Honours majoring in Information Systems
    Technology and Design. \\
-   Specialization: Security and Communications, Artificial Intelligence.
+   Specialization: Security and Communications and Artificial Intelligence.
 
 ** {{{span(SKILLS)}}}
 
-   *Core Competency* - Python, C++, Linux, Docker, Bash, HTML,
-   PostgreSQL, Git, SQLite, Makefile.
-   
-   *Familiar with* - Javascript, Java, AWS, CSS, MySQL, OpenCV
-   Ruby-on-Rails, Laravel, Vue, Flutter.
+   *Core* - Python, C++, Docker, Git, Linux, GNU Make.
+
+   *Additional* - Javascript, Java, HTML, CSS, PostgreSQL, OpenCV
+   Ruby-on-Rails, SQLite, Laravel, Vue, Flutter.
 
 ** {{{span(WORK EXPERIENCE)}}}
 *** Backend Developer in MicroSec Pte. Ltd. {{{span(Dec’17 - Present)}}}
 
-    Developed and implemented a network protocol library to reproduce
-    packets of Common Industrial Protocol for Secure Water Treatment
-    (SWaT) testbed to be utilized for various simulations in research.
+    Lead Developer in designing, developing, and maintaining a
+    concurrent network server providing end to end TLS 1.3 equivalent
+    security for low powered embedded devices.
 
+    - Intern Management and Training
+    - Client Discussion and Support
+    - Architecture Design
+    - CI / CD and Deployments
+    - Nginx, Cert Generation and Hosting
+    - Use Case driven feature development
+
+    /Tech Stack/: C++, Python, Flask, SQLAlchemy, Hypothesis, Docker,
+    Nginx, Gitlab CI, Puppet, PostgreSQL, Vue, Angular, Valgrind,
+    Wireshark, AWS EC2, Droplets.
+    
 *** Research Assistant in iTrust Research Center for CyberSecurity {{{span(Nov’16 - Oct’17)}}}
 
     Developed and implemented a network protocol library to reproduce
@@ -45,12 +61,19 @@
     - Designed and implemented an API for the package using TDD and
       SOLID principles of OOP.
     - The library was used in a CaptureTheFlag competion in
-      aninternational inter-university competition for
-      SecureCyber-Physical(Scy-Phy) Systems Week.
-    - Developed, deployed, and maintained a webchallenge in AmazonEC2
-      for the competition.
-    - Used linux containers,uniquely mapped to each team,to run
+      aninternational inter-university competition for Secure
+      Cyber-Physical (Scy-Phy) Systems Week.
+    - Developed, deployed, and maintained a web challenge in Amazon
+      EC2 for the competition.
+    - Used linux containers, uniquely mapped to each team, to run
       privileged code in a secure way.
+
+    /Tech Stack/: Python, Flask, Wireshark, LxC, EtherNet/IP.
+
+    /Publication/: A. Siddiqi, N. O. Tippenhauer, D. Mashima, and
+    B. Chen, “On practical threat scenario testing in an electric
+    power ics testbed,” in Proceedings of the cyber-physical system
+    security workshop (cpss), co-located with asiaccs, 2018.
 
 *** Web Developer in Souschef {{{span(Oct’16 - Jan’17)}}}
 
@@ -59,6 +82,8 @@
 
     - Improve my knowledge in the fundamentals of JS, Express, and
       TDD. A part-time adventure.
+
+    /Tech Stack/: Node, Python, Express.
 
 *** Teaching Assistant in General Assembly {{{span(Aug - Sep’16)}}}
 
@@ -79,6 +104,8 @@
       their new/old tests.
     - Implemented simple front-end interactive pages.
 
+   /Tech Stack/: Rails, HTML, CSS, Heroku.
+
 ** {{{span(PROJECTS)}}}
 
 *** Social Project for Children with Autism {{{span(Sep’16 - Nov’17)}}}
@@ -89,9 +116,12 @@
     - Analyzed the students initial performance by taking several
       tests which measured their memory and sequential task handling
       abilities.
+
     - The curriculum used Edison robot to provide the visual interface
       for programming and Lego bricks as a simple building block for
       robotics and integrates them.
+
+    /Stack/: Edison Robot, Academic Research.
 
 *** Capstone Project - Interactive Animatronic Dragon {{{span(Jan - Aug’16)}}}
 
@@ -106,11 +136,15 @@
     - Used Open CV to detect user movement to be used as inputs for
       the statemachine.
 
+    /Tech Stack/: Python, OpenCV.
+
 *** Web Development - Non-academic University Project {{{span(Dec’15 - July’16)}}}
 
     Create a platform for a booking system of graduate students seating.
 
     - Developed the platform using Laravel and hosted in university server.
+
+    /Tech Stack/: Laravel, Artisan, Php.
 
 ** {{{span(ACTIVITIES)}}}
 
@@ -121,4 +155,7 @@
    *Interests* - Photography, Running, Non-Profit Social Events,
    Exploring Culture, CaptureTheFlag, Network Security, Physical
    Systems Security, Linux, Arch and Emacs.
+
+   *Languages* - English (Full Professional Proficiency), Bengali
+   (Native).
 
