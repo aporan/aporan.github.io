@@ -1,5 +1,5 @@
 #+TITLE: Resume
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/resume.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../static/css/resume.css" />
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 #+HTML_DOCTYPE: html5
 #+OPTIONS: title:nil toc:nil num:nil html-postamble:nil html-preamble:nil html-style:nil html-scripts:nil
