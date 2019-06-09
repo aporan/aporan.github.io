@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Cambria';
-  src: url('Cambria.ttf');
+  src: url('../fonts/Cambria.ttf');
   font-weight: bold;
 }
 
@@ -9,7 +9,7 @@ body {
     padding-top: 0em;
     margin-top: 0em;
     font-family: Open Sans, sans-serif;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 div {

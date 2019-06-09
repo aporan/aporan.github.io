@@ -1,5 +1,5 @@
 #+TITLE: Resume
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="resume.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../static/css/resume.css" />
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 #+HTML_DOCTYPE: html5
 #+OPTIONS: title:nil toc:nil num:nil html-postamble:nil html-preamble:nil html-style:nil html-scripts:nil
@@ -15,13 +15,26 @@
 ** {{{span(EDUCATION)}}}
 *** Singapore University of Technology and Design {{{span(Class of 2016)}}}
 
-   Bachelor of Engineering with major in Information Systems
+   Bachelor of Engineering with Honours majoring in Information Systems
    Technology and Design. \\
-   Focus Tracks: Security and Communications, Artificial Intelligence.
+   Specialization: Security and Communications, Artificial Intelligence.
+
+** {{{span(SKILLS)}}}
+
+   *Core Competency* - Python, C++, Linux, Docker, Bash, HTML,
+   PostgreSQL, Git, SQLite, Makefile.
+   
+   *Familiar with* - Javascript, Java, AWS, CSS, MySQL, OpenCV
+   Ruby-on-Rails, Laravel, Vue, Flutter.
 
 ** {{{span(WORK EXPERIENCE)}}}
+*** Backend Developer in MicroSec Pte. Ltd. {{{span(Dec’17 - Present)}}}
 
-*** Research Assistant at iTrust Research Center for CyberSecurity {{{span(Nov’16 - Oct’17)}}}
+    Developed and implemented a network protocol library to reproduce
+    packets of Common Industrial Protocol for Secure Water Treatment
+    (SWaT) testbed to be utilized for various simulations in research.
+
+*** Research Assistant in iTrust Research Center for CyberSecurity {{{span(Nov’16 - Oct’17)}}}
 
     Developed and implemented a network protocol library to reproduce
     packets of Common Industrial Protocol for Secure Water Treatment
@@ -39,7 +52,7 @@
     - Used linux containers,uniquely mapped to each team,to run
       privileged code in a secure way.
 
-*** Web Developer at Souschef {{{span(Oct’16 - Jan’17)}}}
+*** Web Developer in Souschef {{{span(Oct’16 - Jan’17)}}}
 
     Developed a configuration panel which takes user input,stores in a
     DB, and uploads them across multiple remote machines(prototypes).
@@ -47,7 +60,7 @@
     - Improve my knowledge in the fundamentals of JS, Express, and
       TDD. A part-time adventure.
 
-*** Teaching Assistant at General Assembly {{{span(Aug - Sep’16)}}}
+*** Teaching Assistant in General Assembly {{{span(Aug - Sep’16)}}}
 
     Assisted instructor to help teach the basics of web development
     from scratch.
@@ -56,7 +69,7 @@
     - Managed multiple tasks which included analyzing project codes
       and programming tests.
 
-*** Web Developer Intern at Tinkerbox Studios {{{span(May - Aug’15)}}}
+*** Web Developer Intern in Tinkerbox Studios {{{span(May - Aug’15)}}}
 
     Programmed backend functionality and wrote test cases for projects
     following agile methodology.
@@ -98,11 +111,6 @@
     Create a platform for a booking system of graduate students seating.
 
     - Developed the platform using Laravel and hosted in university server.
-
-** {{{span(SKILLS)}}}
-
-   Python, Javascript, Ruby, Java, C, CSS, HTML, MySQL, PostgreSQL,
-   Rails, Flask, Laravel, OpenCV, Linux
 
 ** {{{span(ACTIVITIES)}}}
 

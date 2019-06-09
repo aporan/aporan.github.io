@@ -1,0 +1,7 @@
+[[python/index.org][python/]]
+[[zig/index.org][zig/]]
+[[gdb/index.org][gdb/]]
+[[latex/index.org][latex/]]
+[[gnumake/index.org][gnumake/]]
+[[elisp/index.org][elisp/]]
+[[c++/index.org][c++/]]
