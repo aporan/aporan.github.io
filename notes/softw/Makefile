@@ -26,14 +26,13 @@ index: $(TARGETS)
 
 $(TARGETS): %/$(INDEX) : %
 	rm -f $^/$(INDEX) && touch $^/$(INDEX)
-	for file in $(filter-out %$(INDEX),    \
-			$(filter %.org,        \
-			    $(wildcard $^/*)   \
-			 )                     \
-		     );			       \
-	do                                     \
-	    name=$${file#$^/};                 \
-	    echo "[[$${name%.org}][$$name]]"   \
-		    >> $^/$(INDEX);            \
-	done;                                  \
-
+	for file in $(filter-out %$(INDEX),         \
+			$(filter %.org,                     \
+			    $(wildcard $^/*)                \
+			 )                                  \
+	     );                                     \
+	do                                          \
+	    name=$${file#$^/};                      \
+	    echo -e "[[./$$name][$${name%.org}]]\n" \
+		    >> $^/$(INDEX);                     \
+	done;                                       \

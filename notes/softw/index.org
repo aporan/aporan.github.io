@@ -1,3 +1,3 @@
 [[arch/index.org][arch/]]
 [[cmd-line/index.org][cmd-line/]]
-[[mobile/index.org][mobile/]]
+[[flutter/index.org][flutter/]]

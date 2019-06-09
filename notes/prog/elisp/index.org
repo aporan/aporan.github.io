@@ -1,2 +1,4 @@
-[[overview][overview.org]]
-[[emacs-prog-intro][emacs-prog-intro.org]]
+[[./overview.org][overview]]
+
+[[./emacs-prog-intro.org][emacs-prog-intro]]
+
