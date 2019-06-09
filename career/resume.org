@@ -15,9 +15,17 @@
 ** {{{span(EDUCATION)}}}
 *** Singapore University of Technology and Design {{{span(Class of 2016)}}}
 
-   Bachelor of Engineering with major in Information Systems
+   Bachelor of Engineering with Honours majoring in Information Systems
    Technology and Design. \\
-   Focus Tracks: Security and Communications, Artificial Intelligence.
+   Specialization: Security and Communications, Artificial Intelligence.
+
+** {{{span(SKILLS)}}}
+
+   *Core Competency* - Python, C++, Linux, Docker, Bash, HTML,
+   PostgreSQL, Git, SQLite, Makefile.
+   
+   *Familiar with* - Javascript, Java, AWS, CSS, MySQL, OpenCV
+   Ruby-on-Rails, Laravel, Vue, Flutter.
 
 ** {{{span(WORK EXPERIENCE)}}}
 *** Backend Developer in MicroSec Pte. Ltd. {{{span(Dec’17 - Present)}}}
@@ -103,11 +111,6 @@
     Create a platform for a booking system of graduate students seating.
 
     - Developed the platform using Laravel and hosted in university server.
-
-** {{{span(SKILLS)}}}
-
-   Python, Javascript, Ruby, Java, C, CSS, HTML, MySQL, PostgreSQL,
-   Rails, Flask, Laravel, OpenCV, Linux
 
 ** {{{span(ACTIVITIES)}}}
 
