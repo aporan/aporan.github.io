@@ -7,7 +7,7 @@
 #+macro: span @@html:<span>@@$1@@html:</span>@@
 #+macro: contact @@html:<span id="contact">@@@@html:<span>@@phone: $1@@html:</span>@@ @@html:<span>@@email: $2@@html:</span>@@@@html:</span>@@
 
-* AHNAF SIDDIQI | {{{contact(+65 97342978, ahnafsidd@gmail.com)}}}
+* AHNAF SIDDIQI | {{{contact(+65 97342978, ahnafsidd[at]gmail.com)}}}
   :PROPERTIES:
   :CUSTOM_ID: resume-head
   :END:
@@ -39,7 +39,7 @@
     concurrent network server providing end to end TLS 1.3 equivalent
     security for low powered embedded devices.
 
-    - Intern Management and Training
+    - Technical Intern Supervisor and Manager
     - Client Discussion and Support
     - Architecture Design
     - CI / CD and Deployments
