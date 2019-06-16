@@ -1,0 +1,6 @@
+#+TITLE: <title>
+#+DATE: <date authored>
+#+TAG: <related single word anchors>
+#+MODIFIED: <last modified>
+#+STARTUP: showall
+

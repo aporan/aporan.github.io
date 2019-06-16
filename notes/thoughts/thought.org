@@ -1,12 +1,17 @@
-* A Thought
+#+TITLE: The Process of Perception
+#+DATE: <2018-11-20 Tue>
+#+ESSENCE: Thinking Process and How it Dictates our Actions
+#+TAG: Thinking System-Thinking Structure-Thinking Flow Memory
+#+MODIFIED: <2019-01-27 Sun>
+#+STARTUP: showall
 
-  A thought can be described as the idea or concept that comes to mind
-  when one is thinking. What is thinking then? I define thinking to be
-  the process in which an idea / concept is understood or the act of
-  reflection on an observation. But how does one do exactly that
-  i.e. Think? How does a persons brain try to process any information
-  to form an idea or a concept; how does one reflect upon an
-  observation?
+A thought can be described as the idea or concept that comes to mind
+when one is thinking. What is thinking then? I define thinking to be
+the process in which an idea / concept is understood or the act of
+reflection on an observation. But how does one do exactly that
+i.e. Think? How does a persons brain try to process any information
+to form an idea or a concept; how does one reflect upon an
+observation?
 
 ** Why does it matter?
 

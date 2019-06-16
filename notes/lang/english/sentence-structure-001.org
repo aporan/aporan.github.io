@@ -1,7 +1,8 @@
-#+TITLE: Sentence Structure
-#+PART: Nil
+#+TITLE: The Structure of a Sentence
 #+DATE: <2018-11-20 Tue>
-#+UPDATE: <2019-01-27 Sun>
+#+ESSENCE: Insights into Sentence Writing
+#+TAG: Sentence Clause
+#+MODIFIED: <2019-01-27 Sun>
 #+STARTUP: showall
 
 A sentence is a group of words that makes sense on its own. A clear
@@ -10,76 +11,77 @@ verb and a *complete idea*.
 
 ** Clause
 
-A *clause* is a group of words that forms a statement and which /may/
-make up a sentence; a sentence with a /complete idea/ and with a
-gramaticallly correct thought is called an *independent clause*.
+   A *clause* is a group of words that forms a statement and which
+   /may/ make up a sentence; a sentence with a /complete idea/ and
+   with a gramaticallly correct thought is called an *independent
+   clause*.
 
-Examples:
+   Examples:
 
-#+BEGIN_EXAMPLE
-We went to the store.
+   #+BEGIN_EXAMPLE
+   We went to the store.
 
-Subject: We
-Verb: went
+   Subject: We
+   Verb: went
 
-Complete idea: says where the verb performed its action.
-#+END_EXAMPLE
+   Complete idea: says where the verb performed its action.
+   #+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
-We bought the ingredients on our list.
+   #+BEGIN_EXAMPLE
+   We bought the ingredients on our list.
 
-Subject: we
-Verb: bought
+   Subject: we
+   Verb: bought
 
-Complete idea: says how the verb performed its action.
-#+END_EXAMPLE
+   Complete idea: says how the verb performed its action.
+   #+END_EXAMPLE
 
 ** Subject
 
-A subject is what a sentence is about. It is either a noun or a
-pronoun identifying /a person, place, thing, or an idea/.
+   A subject is what a sentence is about. It is either a noun or a
+   pronoun identifying /a person, place, thing, or an idea/.
 
-#+BEGIN_EXAMPLE
-The computer lab is where we will work. It will be open for
-twenty-four hours a day.
+   #+BEGIN_EXAMPLE
+   The computer lab is where we will work. It will be open for
+   twenty-four hours a day.
 
-Subject: computer lab (place)
-#+END_EXAMPLE
+   Subject: computer lab (place)
+   #+END_EXAMPLE
 
-When subjects refer to a group of people, they are called /compound
-subjects/.
+   When subjects refer to a group of people, they are called /compound
+   subjects/.
 
-#+BEGIN_EXAMPLE
-Books, magazines, and online articles are all good resources.
+   #+BEGIN_EXAMPLE
+   Books, magazines, and online articles are all good resources.
 
-Compund Subjects: Books, magazines, and online articles
-#+END_EXAMPLE
+   Compund Subjects: Books, magazines, and online articles
+   #+END_EXAMPLE
 
 ** Preposition
 
-If a sentence generally has more than one noun or pronoun chances are
-it contains a preposition. *Preposition* is a word which connects a
-_noun, pronoun, or verb_ to another word that /describes or modifies/
-them. Common prepositions are: in, on, under, near, by, with, until, and
-about.
+   If a sentence generally has more than one noun or pronoun chances
+   are it contains a preposition. *Preposition* is a word which
+   connects a _noun, pronoun, or verb_ to another word that /describes
+   or modifies/ them. Common prepositions are: in, on, under, near,
+   by, with, until, and about.
 
 *** /Prepositional Phrases/
 
-A group of words that begins with a /preposition/ is called a
-*prepositional phrase*. It begins with a preposition to describe or
-modify the noun, pronoun, or verb; it cannot act as the subject of a
-sentence.
+    A group of words that begins with a /preposition/ is called a
+    *prepositional phrase*. It begins with a preposition to describe
+    or modify the noun, pronoun, or verb; it cannot act as the subject
+    of a sentence.
 
-#+BEGIN_EXAMPLE
-Maya and Tia found an abandoned cat by the side of the road.
+    #+BEGIN_EXAMPLE
+    Maya and Tia found an abandoned cat by the side of the road.
 
-Prepositional Phrase: by the side of the road.
-#+END_EXAMPLE
+    Prepositional Phrase: by the side of the road.
+    #+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
-The soundtrack has over sixty songs in languages from around the
-world.
+    #+BEGIN_EXAMPLE
+    The soundtrack has over sixty songs in languages from around the
+    world.
 
-Prepositional Phrase: in languages from around the world.
-#+END_EXAMPLE
+    Prepositional Phrase: in languages from around the world.
+    #+END_EXAMPLE
 

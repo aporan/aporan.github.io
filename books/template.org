@@ -1,0 +1,14 @@
+* Book Name
+  :PROPERTIES:
+  :GENRE:
+  :PAGES:
+  :YEAR:
+  :AUTHOR:
+  :START:
+  :FINISH:
+  :RATING: (out of 5)
+  :END:
+
+  #summary
+
+  #some quotes to remember
