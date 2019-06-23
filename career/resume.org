@@ -12,39 +12,51 @@
   :CUSTOM_ID: resume-head
   :END:
 
-# ** {{{span(PROFILE)}}}
-
-#    I hold a keen interest in the field of network system architecture,
-#    embedded systems, and security. I strive for learning and continous
-#    improvement. I bring my experience in design thinking to provide a
+   I am a curious individual holding a keen interest in the field of
+   network system architecture, embedded systems, and security. I
+   strive for learning and continous improvement and bring my
+   experience in design thinking to provide quick feedback cycle.
    
 ** {{{span(EDUCATION)}}}
 *** Singapore University of Technology and Design {{{span(Class of 2016)}}}
 
    Bachelor of Engineering with Honours majoring in Information Systems
    Technology and Design. \\
-   Specialization: Security and Communications and Artificial Intelligence.
+   Specialization: Security and Communications, Artificial Intelligence.
 
 ** {{{span(SKILLS)}}}
 
    *Core* - Python, C++, Docker, Git, Linux, GNU Make.
 
-   *Additional* - Javascript, Java, HTML, CSS, PostgreSQL, OpenCV
-   Ruby-on-Rails, SQLite, Laravel, Vue, Flutter.
+   *Additional* - Javascript, Java, HTML, CSS, GDB, PostgreSQL,
+   OpenCV, Ruby-on-Rails, SQLite, Laravel, Vue, Flutter.
 
 ** {{{span(WORK EXPERIENCE)}}}
-*** Backend Developer in MicroSec Pte. Ltd. {{{span(Dec’17 - Present)}}}
+*** Software Engineer in MicroSec Pte. Ltd. {{{span(Dec’17 - Present)}}}
 
-    Lead Developer in designing, developing, and maintaining a
-    concurrent network server providing end to end TLS 1.3 equivalent
-    security for low powered embedded devices.
+    A Deep Tech IoT company where I am leading the technical design,
+    development, and maintenance of a web server, System
+    Administration, and Intern management and
+    supervision. Additionally, I am assisting in Backend Web
+    Development, and Customer Support.
 
-    - Technical Intern Supervisor and Manager
-    - Client Discussion and Support
-    - Architecture Design
-    - CI / CD and Deployments
-    - Nginx, Cert Generation and Hosting
-    - Use Case driven feature development
+    - Engineering a multithreaded concurrent network server which
+      provides an end to end TLS 1.3 equivalent security for ultra-low
+      powered embedded devices which supports various protocols: LoRaWAN,
+      Bluetooth, NBIoT, etc.
+    - Database schema design to ensure non-duplicate data accross
+      multiple instances of the network server.
+    - Supervision and training to develop interns to full time
+      employees following companies work culture.
+    - Intern Management on an average of 5 candidates per batch.
+    - Development of continuous integration pipelines, managing cloud
+      deployments for pilot projects, ensuring high system
+      availability and basic system administration.
+    - Development of new features and business logic in our Web Stack.
+    - Use Case driven feature planning and sprint planning
+      following Agile Principles.
+    - Multiple customer support duties on-site and off-site to
+      install, update, and maintain our products.
 
     /Tech Stack/: C++, Python, Flask, SQLAlchemy, Hypothesis, Docker,
     Nginx, Gitlab CI, Puppet, PostgreSQL, Vue, Angular, Valgrind,
@@ -53,20 +65,20 @@
 *** Research Assistant in iTrust Research Center for CyberSecurity {{{span(Nov’16 - Oct’17)}}}
 
     Developed and implemented a network protocol library to reproduce
-    packets of Common Industrial Protocol for Secure Water Treatment
-    (SWaT) testbed to be utilized for various simulations in research.
+    packets of Common Industrial Protocol (CIP) for Secure Water
+    Treatment (SWaT) testbed.
 
-    - Analyzed and reconstructed CIP packets for both TCP and UDP
-      section using wireshark.
+    - Analyzed and reconstructed high volume CIP packets for both TCP
+      and UDP section using wireshark.
     - Designed and implemented an API for the package using TDD and
       SOLID principles of OOP.
     - The library was used in a CaptureTheFlag competion in
-      aninternational inter-university competition for Secure
+      an international inter-university competition for Secure
       Cyber-Physical (Scy-Phy) Systems Week.
-    - Developed, deployed, and maintained a web challenge in Amazon
-      EC2 for the competition.
-    - Used linux containers, uniquely mapped to each team, to run
-      privileged code in a secure way.
+    - Deployed and maintained a web challenge in Amazon EC2 for the
+      competition.
+    - Research and Network Analysis for vulnerabilites in testbeds:
+      SWat and EPIC.
 
     /Tech Stack/: Python, Flask, Wireshark, LxC, EtherNet/IP.
 
@@ -77,8 +89,9 @@
 
 *** Web Developer in Souschef {{{span(Oct’16 - Jan’17)}}}
 
-    Developed a configuration panel which takes user input,stores in a
-    DB, and uploads them across multiple remote machines(prototypes).
+    Prototyping and development of a configuration panel which takes
+    user input, stores in a DB, and uploads them across multiple remote
+    machines
 
     - Improve my knowledge in the fundamentals of JS, Express, and
       TDD. A part-time adventure.
@@ -87,10 +100,10 @@
 
 *** Teaching Assistant in General Assembly {{{span(Aug - Sep’16)}}}
 
-    Assisted instructor to help teach the basics of web development
-    from scratch.
+    Assisted instructor to help teach students the basics of web
+    development.
 
-    - Taught CLI, git, HTML, CSS, Javascript, and Express to students.
+    - Taught CLI, git, HTML, CSS, Javascript, and Express.
     - Managed multiple tasks which included analyzing project codes
       and programming tests.
 
@@ -99,7 +112,7 @@
     Programmed backend functionality and wrote test cases for projects
     following agile methodology.
 
-    - Practiced TestDrivenDevelopment using Ruby-on-Rails.
+    - Practiced Test Driven Development using Ruby-on-Rails.
     - Worked on models, views, and controllers and wrote/refactored
       their new/old tests.
     - Implemented simple front-end interactive pages.
@@ -110,8 +123,8 @@
 
 *** Social Project for Children with Autism {{{span(Sep’16 - Nov’17)}}}
 
-    Designed a new curriculum to teach programming and simple robotics
-    to special needs children.
+    Researched and designed a new curriculum to teach programming
+    concepts and simple robotics to special needs children.
 
     - Analyzed the students initial performance by taking several
       tests which measured their memory and sequential task handling
@@ -126,8 +139,10 @@
 *** Capstone Project - Interactive Animatronic Dragon {{{span(Jan - Aug’16)}}}
 
     Established a network to transfer data between multiple sections
-    of a prototype of an animatronic dragon which detects users in its
-    peripherals and performs action
+    of a prototype of an animatronic dragon which detects user
+    movements in its peripherals to provide interactive feedback. The
+    full project includes design and construction of mechanical,
+    aesthetic, and user experience.
 
     - Implemented an ad-hoc network with static IP for P2P connections
       between two RaspberryPi.
@@ -135,6 +150,8 @@
       according to user inputs.
     - Used Open CV to detect user movement to be used as inputs for
       the statemachine.
+    - Worked in a student team of 6 people from different technical
+      tracks.
 
     /Tech Stack/: Python, OpenCV.
 

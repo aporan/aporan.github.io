@@ -116,10 +116,6 @@
 
    (Elaborate on the examples).
 
-** Verbal ability in Native and Second Language: An important Observation
-
-   - TODO.
-
 ** Goal Dependency
 
    From the above examples, their innate ability to extrapolate points
@@ -135,4 +131,20 @@
 
 ** Process Dependency
 
+
+** To Textures
+
+
+** From Textures
+
+
+** Memory
+
+   Factual.
+
+   vs
+
+   Event Basis.
+
+** The Genius
 
