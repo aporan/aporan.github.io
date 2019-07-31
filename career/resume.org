@@ -12,10 +12,9 @@
   :CUSTOM_ID: resume-head
   :END:
 
-   I am a curious individual holding a keen interest in the field of
-   network system architecture, embedded systems, and security. I
-   strive for learning and continous improvement and bring my
-   experience in design thinking to provide quick feedback cycle.
+   A learner, with 2 years of experience, carrying an interest in the
+   field of network security, system architecture, database, and
+   embedded systems.
    
 ** {{{span(EDUCATION)}}}
 *** Singapore University of Technology and Design {{{span(Class of 2016)}}}
@@ -26,59 +25,59 @@
 
 ** {{{span(SKILLS)}}}
 
-   *Core* - Python, C++, Docker, Git, Linux, GNU Make.
+   *Core* - Python, C++, Docker, Docker Swarm, Docker-Compose, Git,
+   Linux, GNU Make, Nginx.
 
    *Additional* - Javascript, Java, HTML, CSS, GDB, PostgreSQL,
    OpenCV, Ruby-on-Rails, SQLite, Laravel, Vue, Flutter.
 
 ** {{{span(WORK EXPERIENCE)}}}
-*** Software Engineer in MicroSec Pte. Ltd. {{{span(Dec’17 - Present)}}}
+*** Software Engineer in MicroSec Pte. Ltd. {{{span(Dec’17 - Now)}}}
 
-    A Deep Tech IoT company where I am leading the technical design,
-    development, and maintenance of a web server, System
-    Administration, and Intern management and
-    supervision. Additionally, I am assisting in Backend Web
-    Development, and Customer Support.
+    Lead engineer in the design, architecture, and development of a
+    highly concurrent web service which is used in almost all customer
+    projects. I have Sys. Admin and Intern management duties. I am
+    also assisting in web development and customer support.
 
-    - Engineering a multithreaded concurrent network server which
-      provides an end to end TLS 1.3 equivalent security for ultra-low
-      powered embedded devices which supports various protocols: LoRaWAN,
-      Bluetooth, NBIoT, etc.
+    - Architecting and developing a multithreaded concurrent network
+      server which implements an end to end TLS 1.3 equivalent
+      security stack for ultra-low powered embedded devices. It
+      supports various protocols: LoRaWAN, Bluetooth, NBIoT, etc.
+    - The web service implements Ellyptic Curve Crypto as the choice
+      for Assymetric Key Exchange. AES CBC, AES GCM, and other crypto
+      libraries are used for session keys.
     - Database schema design to ensure non-duplicate data accross
       multiple instances of the network server.
-    - Supervision and training to develop interns to full time
-      employees following companies work culture.
-    - Intern Management on an average of 5 candidates per batch.
     - Development of continuous integration pipelines, managing cloud
-      deployments for pilot projects, ensuring high system
-      availability and basic system administration.
-    - Development of new features and business logic in our Web Stack.
-    - Use Case driven feature planning and sprint planning
-      following Agile Principles.
-    - Multiple customer support duties on-site and off-site to
-      install, update, and maintain our products.
+      deployments of projects, ensuring high system availability and
+      basic system administration.
+    - Design and implementation of customer requested features and
+      business logic in our Web Stack.
+    - Supervision and management of interns to full time employees
+      following companies operating procedure.
+    - Use Case driven feature and sprint planning following Agile
+      Principles.
 
     /Tech Stack/: C++, Python, Flask, SQLAlchemy, Hypothesis, Docker,
-    Nginx, Gitlab CI, Puppet, PostgreSQL, Vue, Angular, Valgrind,
-    Wireshark, AWS EC2, Droplets.
+    Nginx, CI, Puppet, PostgreSQL, Vue, Angular, Valgrind, Wireshark,
+    AWS EC2, Droplets.
     
 *** Research Assistant in iTrust Research Center for CyberSecurity {{{span(Nov’16 - Oct’17)}}}
 
-    Developed and implemented a network protocol library to reproduce
-    packets of Common Industrial Protocol (CIP) for Secure Water
-    Treatment (SWaT) testbed.
+    Common Industrial Protocol (CIP) is a realtime network protocol
+    being used in Secure Water Treatment (SWaT) testbed at SUTD. I
+    followed specifications to implement a concurrent server to be
+    used in simulation and various research purposes.
 
-    - Analyzed and reconstructed high volume CIP packets for both TCP
-      and UDP section using wireshark.
-    - Designed and implemented an API for the package using TDD and
-      SOLID principles of OOP.
+    - Analyzed and reconstructed high volume CIP packets of both TCP
+      and UDP variants using wireshark.
+    - Designed application using TDD and SOLID principles of OOP.
     - The library was used in a CaptureTheFlag competion in
       an international inter-university competition for Secure
       Cyber-Physical (Scy-Phy) Systems Week.
     - Deployed and maintained a web challenge in Amazon EC2 for the
       competition.
-    - Research and Network Analysis for vulnerabilites in testbeds:
-      SWat and EPIC.
+    - Analysed Networks for vulnerabilites in testbeds: SWat and EPIC.
 
     /Tech Stack/: Python, Flask, Wireshark, LxC, EtherNet/IP.
 
@@ -89,28 +88,27 @@
 
 *** Web Developer in Souschef {{{span(Oct’16 - Jan’17)}}}
 
-    Prototyping and development of a configuration panel which takes
-    user input, stores in a DB, and uploads them across multiple remote
-    machines
+    Prototype, developed, and participated in the initial deployment
+    of a configuration panel across mutliple remote machines.
 
-    - Improve my knowledge in the fundamentals of JS, Express, and
-      TDD. A part-time adventure.
+    - Learnt and developed JS based web service following TDD
+      principles.
 
     /Tech Stack/: Node, Python, Express.
 
 *** Teaching Assistant in General Assembly {{{span(Aug - Sep’16)}}}
 
-    Assisted instructor to help teach students the basics of web
-    development.
+    Assisted instructors to teach students the basics of programming,
+    web development, and CLI magic.
 
-    - Taught CLI, git, HTML, CSS, Javascript, and Express.
-    - Managed multiple tasks which included analyzing project codes
-      and programming tests.
+    - Taught Git, HTML, CSS, Javascript, and Express.
+    - Managed multiple tasks including grading programming
+      tests and evaluating student projects.
 
 *** Web Developer Intern in Tinkerbox Studios {{{span(May - Aug’15)}}}
 
-    Programmed backend functionality and wrote test cases for projects
-    following agile methodology.
+    Summer Internship where I developed business logic and implemented
+    test cases of projects.
 
     - Practiced Test Driven Development using Ruby-on-Rails.
     - Worked on models, views, and controllers and wrote/refactored
@@ -123,18 +121,22 @@
 
 *** Social Project for Children with Autism {{{span(Sep’16 - Nov’17)}}}
 
-    Researched and designed a new curriculum to teach programming
-    concepts and simple robotics to special needs children.
+    Special needs children may be able to excel in programming. The
+    project involved research, user data collection, designing, and
+    testing a new curriculum to teach children basic coding concepts.
 
-    - Analyzed the students initial performance by taking several
-      tests which measured their memory and sequential task handling
-      abilities.
+    - Analysing base performance by conducting several tests, surveys
+      and measuring their memory and sequential task handling
+      capability.
+    - Data classification and curriculum design in a fun and analogous
+      manner which teaches core concepts of programming.
+    - Students who were able to partially communicate where able to
+      perform all programming related tasks which involved recreating
+      lego blocks from memory, reading and correctly recreating steps
+      of visual code blocks, and finally solve difficult challenges
+      with little to no assistance.
 
-    - The curriculum used Edison robot to provide the visual interface
-      for programming and Lego bricks as a simple building block for
-      robotics and integrates them.
-
-    /Stack/: Edison Robot, Academic Research.
+    /Stack/: Edison Robot, Research.
 
 *** Capstone Project - Interactive Animatronic Dragon {{{span(Jan - Aug’16)}}}
 
@@ -155,13 +157,16 @@
 
     /Tech Stack/: Python, OpenCV.
 
-*** Web Development - Non-academic University Project {{{span(Dec’15 - July’16)}}}
+# Silence: This is kept just for collection purposes. This project was
+# never completed or even crossed the halfway point.
+# *** Web Development - Non-academic University Project {{{span(Dec’15 - July’16)}}}
 
-    Create a platform for a booking system of graduate students seating.
+#     Create an in-house seat reservation platform for students to use
+#     several office spaces.
 
-    - Developed the platform using Laravel and hosted in university server.
+#     - Developed the platform using Laravel and hosted in university server.
 
-    /Tech Stack/: Laravel, Artisan, Php.
+#     /Tech Stack/: Laravel, Artisan, PHP.
 
 ** {{{span(ACTIVITIES)}}}
 
