@@ -7,9 +7,13 @@
 body {
     padding: 1em;
     padding-top: 0em;
-    margin-top: 0em;
     font-family: Open Sans, sans-serif;
     font-size: 14px;
+    /* comment the following two lines
+       to print to pdf via browser */
+    margin: 1em auto;
+    margin-top: 10px;
+    max-width: 70em;
 }
 
 div {
@@ -48,8 +52,8 @@ h3 {
 }
 
 h3::after {
-    background: black;
-    height: 0.05em;
+    background: grey;
+    height: 0.06em;
     flex: 1;
     content: '';
     margin: 3px;

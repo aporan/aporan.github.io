@@ -72,11 +72,10 @@
     - Analyzed and reconstructed high volume CIP packets of both TCP
       and UDP variants using wireshark.
     - Designed application using TDD and SOLID principles of OOP.
-    - The library was used in a CaptureTheFlag competion in
-      an international inter-university competition for Secure
+    - The library was used in a CaptureTheFlag event in an
+      international inter-university competition for Secure
       Cyber-Physical (Scy-Phy) Systems Week.
-    - Deployed and maintained a web challenge in Amazon EC2 for the
-      competition.
+    - Deployed and maintained the web challenge in Amazon EC2.
     - Analysed Networks for vulnerabilites in testbeds: SWat and EPIC.
 
     /Tech Stack/: Python, Flask, Wireshark, LxC, EtherNet/IP.
@@ -133,32 +132,31 @@
     - Students who were able to partially communicate where able to
       perform all programming related tasks which involved recreating
       lego blocks from memory, reading and correctly recreating steps
-      of visual code blocks, and finally solve difficult challenges
+      of visual code blocks, and finally solving difficult challenges
       with little to no assistance.
 
     /Stack/: Edison Robot, Research.
 
 *** Capstone Project - Interactive Animatronic Dragon {{{span(Jan - Aug’16)}}}
 
-    Established a network to transfer data between multiple sections
-    of a prototype of an animatronic dragon which detects user
-    movements in its peripherals to provide interactive feedback. The
-    full project includes design and construction of mechanical,
-    aesthetic, and user experience.
+    An animatronic dragon which scans its vicinity using OpenCV
+    toolkit triggering movement to its multiple sections in the
+    body. I setup the network for the communication between different
+    paths and helped programmed some motors. 
 
-    - Implemented an ad-hoc network with static IP for P2P connections
-      between two RaspberryPi.
-    - Developed a state machine to categorize different out puts
-      according to user inputs.
-    - Used Open CV to detect user movement to be used as inputs for
-      the statemachine.
     - Worked in a student team of 6 people from different technical
       tracks.
+    - Implemented an ad-hoc network with static IP for P2P connections
+      between two RaspberryPi.
+    - Developed a state machine to map and categorize different
+      outputs to user inputs.
+    - Assisted in programming the movement of mechanical sections by
+      interfacing physical mechanical relays.
 
     /Tech Stack/: Python, OpenCV.
 
-# Silence: This is kept just for collection purposes. This project was
-# never completed or even crossed the halfway point.
+# Deprecated: This is kept just for collection purposes. This project
+# was never completed or even crossed the halfway point.
 # *** Web Development - Non-academic University Project {{{span(Dec’15 - July’16)}}}
 
 #     Create an in-house seat reservation platform for students to use
