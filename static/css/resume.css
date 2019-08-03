@@ -7,9 +7,13 @@
 body {
     padding: 1em;
     padding-top: 0em;
-    margin-top: 0em;
     font-family: Open Sans, sans-serif;
     font-size: 14px;
+    /* comment the following two lines
+       to print to pdf via browser */
+    margin: 1em auto;
+    margin-top: 10px;
+    max-width: 70em;
 }
 
 div {
@@ -17,14 +21,16 @@ div {
 }
 
 p {
-    margin-top: 0.7em;
-    margin-bottom: 0;
+    margin-top: 0.55em;
+    margin-bottom: 0.3em;
     text-align: justify;
     text-justify: distribute;
+    font-size: 13px;
 }
 
 #resume-head {
     font-family: Cambria, serif;
+    margin-bottom: 0.35em;
 }
 
 #contact {
@@ -46,8 +52,8 @@ h3 {
 }
 
 h3::after {
-    background: black;
-    height: 0.05em;
+    background: grey;
+    height: 0.06em;
     flex: 1;
     content: '';
     margin: 3px;
@@ -66,6 +72,7 @@ h4 {
     flex: 1; 
     margin-top: 0.7em;
     margin-bottom: 0em;
+    font-size: 0.94em;
 }
 
 h4 span {
@@ -77,6 +84,11 @@ h4 span {
 ul {
     margin: 0;
     padding-left: 30px;
+    font-size: 13px;
+}
+
+ul li {
+    padding: 1px;
 }
 
 

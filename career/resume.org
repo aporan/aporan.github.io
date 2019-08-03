@@ -7,11 +7,15 @@
 #+macro: span @@html:<span>@@$1@@html:</span>@@
 #+macro: contact @@html:<span id="contact">@@@@html:<span>@@phone: $1@@html:</span>@@ @@html:<span>@@email: $2@@html:</span>@@@@html:</span>@@
 
-* AHNAF SIDDIQI | {{{contact(+65 97342978, ahnafsidd@gmail.com)}}}
+* AHNAF SIDDIQI | {{{contact(+65 97342978, ahnafsidd[at]gmail.com)}}}
   :PROPERTIES:
   :CUSTOM_ID: resume-head
   :END:
 
+   A learner, with 2 years of experience, carrying an interest in the
+   field of network security, system architecture, database, and
+   embedded systems.
+   
 ** {{{span(EDUCATION)}}}
 *** Singapore University of Technology and Design {{{span(Class of 2016)}}}
 
@@ -21,96 +25,146 @@
 
 ** {{{span(SKILLS)}}}
 
-   *Core Competency* - Python, C++, Linux, Docker, Bash, HTML,
-   PostgreSQL, Git, SQLite, Makefile.
-   
-   *Familiar with* - Javascript, Java, AWS, CSS, MySQL, OpenCV
-   Ruby-on-Rails, Laravel, Vue, Flutter.
+   *Core* - Python, C++, Docker, Docker Swarm, Docker-Compose, Git,
+   Linux, GNU Make, Nginx.
+
+   *Additional* - Javascript, Java, HTML, CSS, GDB, PostgreSQL,
+   OpenCV, Ruby-on-Rails, SQLite, Laravel, Vue, Flutter.
 
 ** {{{span(WORK EXPERIENCE)}}}
-*** Backend Developer in MicroSec Pte. Ltd. {{{span(Dec’17 - Present)}}}
+*** Software Engineer in MicroSec Pte. Ltd. {{{span(Dec’17 - Now)}}}
 
-    Developed and implemented a network protocol library to reproduce
-    packets of Common Industrial Protocol for Secure Water Treatment
-    (SWaT) testbed to be utilized for various simulations in research.
+    Lead engineer in the design, architecture, and development of a
+    highly concurrent web service which is used in almost all customer
+    projects. I have Sys. Admin and Intern management duties. I am
+    also assisting in web development and customer support.
 
+    - Architecting and developing a multithreaded concurrent network
+      server which implements an end to end TLS 1.3 equivalent
+      security stack for ultra-low powered embedded devices. It
+      supports various protocols: LoRaWAN, Bluetooth, NBIoT, etc.
+    - The web service implements Ellyptic Curve Crypto as the choice
+      for Assymetric Key Exchange. AES CBC, AES GCM, and other crypto
+      libraries are used for session keys.
+    - Database schema design to ensure non-duplicate data accross
+      multiple instances of the network server.
+    - Development of continuous integration pipelines, managing cloud
+      deployments of projects, ensuring high system availability and
+      basic system administration.
+    - Design and implementation of customer requested features and
+      business logic in our Web Stack.
+    - Supervision and management of interns to full time employees
+      following companies operating procedure.
+    - Use Case driven feature and sprint planning following Agile
+      Principles.
+
+    /Tech Stack/: C++, Python, Flask, SQLAlchemy, Hypothesis, Docker,
+    Nginx, CI, Puppet, PostgreSQL, Vue, Angular, Valgrind, Wireshark,
+    AWS EC2, Droplets.
+    
 *** Research Assistant in iTrust Research Center for CyberSecurity {{{span(Nov’16 - Oct’17)}}}
 
-    Developed and implemented a network protocol library to reproduce
-    packets of Common Industrial Protocol for Secure Water Treatment
-    (SWaT) testbed to be utilized for various simulations in research.
+    Common Industrial Protocol (CIP) is a realtime network protocol
+    being used in Secure Water Treatment (SWaT) testbed at SUTD. I
+    followed specifications to implement a concurrent server to be
+    used in simulation and various research purposes.
 
-    - Analyzed and reconstructed CIP packets for both TCP and UDP
-      section using wireshark.
-    - Designed and implemented an API for the package using TDD and
-      SOLID principles of OOP.
-    - The library was used in a CaptureTheFlag competion in
-      aninternational inter-university competition for
-      SecureCyber-Physical(Scy-Phy) Systems Week.
-    - Developed, deployed, and maintained a webchallenge in AmazonEC2
-      for the competition.
-    - Used linux containers,uniquely mapped to each team,to run
-      privileged code in a secure way.
+    - Analyzed and reconstructed high volume CIP packets of both TCP
+      and UDP variants using wireshark.
+    - Designed application using TDD and SOLID principles of OOP.
+    - The library was used in a CaptureTheFlag event in an
+      international inter-university competition for Secure
+      Cyber-Physical (Scy-Phy) Systems Week.
+    - Deployed and maintained the web challenge in Amazon EC2.
+    - Analysed Networks for vulnerabilites in testbeds: SWat and EPIC.
+
+    /Tech Stack/: Python, Flask, Wireshark, LxC, EtherNet/IP.
+
+    /Publication/: A. Siddiqi, N. O. Tippenhauer, D. Mashima, and
+    B. Chen, “On practical threat scenario testing in an electric
+    power ics testbed,” in Proceedings of the cyber-physical system
+    security workshop (cpss), co-located with asiaccs, 2018.
 
 *** Web Developer in Souschef {{{span(Oct’16 - Jan’17)}}}
 
-    Developed a configuration panel which takes user input,stores in a
-    DB, and uploads them across multiple remote machines(prototypes).
+    Prototype, developed, and participated in the initial deployment
+    of a configuration panel across mutliple remote machines.
 
-    - Improve my knowledge in the fundamentals of JS, Express, and
-      TDD. A part-time adventure.
+    - Learnt and developed JS based web service following TDD
+      principles.
+
+    /Tech Stack/: Node, Python, Express.
 
 *** Teaching Assistant in General Assembly {{{span(Aug - Sep’16)}}}
 
-    Assisted instructor to help teach the basics of web development
-    from scratch.
+    Assisted instructors to teach students the basics of programming,
+    web development, and CLI magic.
 
-    - Taught CLI, git, HTML, CSS, Javascript, and Express to students.
-    - Managed multiple tasks which included analyzing project codes
-      and programming tests.
+    - Taught Git, HTML, CSS, Javascript, and Express.
+    - Managed multiple tasks including grading programming
+      tests and evaluating student projects.
 
 *** Web Developer Intern in Tinkerbox Studios {{{span(May - Aug’15)}}}
 
-    Programmed backend functionality and wrote test cases for projects
-    following agile methodology.
+    Summer Internship where I developed business logic and implemented
+    test cases of projects.
 
-    - Practiced TestDrivenDevelopment using Ruby-on-Rails.
+    - Practiced Test Driven Development using Ruby-on-Rails.
     - Worked on models, views, and controllers and wrote/refactored
       their new/old tests.
     - Implemented simple front-end interactive pages.
+
+   /Tech Stack/: Rails, HTML, CSS, Heroku.
 
 ** {{{span(PROJECTS)}}}
 
 *** Social Project for Children with Autism {{{span(Sep’16 - Nov’17)}}}
 
-    Designed a new curriculum to teach programming and simple robotics
-    to special needs children.
+    Special needs children may be able to excel in programming. The
+    project involved research, user data collection, designing, and
+    testing a new curriculum to teach children basic coding concepts.
 
-    - Analyzed the students initial performance by taking several
-      tests which measured their memory and sequential task handling
-      abilities.
-    - The curriculum used Edison robot to provide the visual interface
-      for programming and Lego bricks as a simple building block for
-      robotics and integrates them.
+    - Analysing base performance by conducting several tests, surveys
+      and measuring their memory and sequential task handling
+      capability.
+    - Data classification and curriculum design in a fun and analogous
+      manner which teaches core concepts of programming.
+    - Students who were able to partially communicate where able to
+      perform all programming related tasks which involved recreating
+      lego blocks from memory, reading and correctly recreating steps
+      of visual code blocks, and finally solving difficult challenges
+      with little to no assistance.
+
+    /Stack/: Edison Robot, Research.
 
 *** Capstone Project - Interactive Animatronic Dragon {{{span(Jan - Aug’16)}}}
 
-    Established a network to transfer data between multiple sections
-    of a prototype of an animatronic dragon which detects users in its
-    peripherals and performs action
+    An animatronic dragon which scans its vicinity using OpenCV
+    toolkit triggering movement to its multiple sections in the
+    body. I setup the network for the communication between different
+    paths and helped programmed some motors. 
 
+    - Worked in a student team of 6 people from different technical
+      tracks.
     - Implemented an ad-hoc network with static IP for P2P connections
       between two RaspberryPi.
-    - Developed a state machine to categorize different out puts
-      according to user inputs.
-    - Used Open CV to detect user movement to be used as inputs for
-      the statemachine.
+    - Developed a state machine to map and categorize different
+      outputs to user inputs.
+    - Assisted in programming the movement of mechanical sections by
+      interfacing physical mechanical relays.
 
-*** Web Development - Non-academic University Project {{{span(Dec’15 - July’16)}}}
+    /Tech Stack/: Python, OpenCV.
 
-    Create a platform for a booking system of graduate students seating.
+# Deprecated: This is kept just for collection purposes. This project
+# was never completed or even crossed the halfway point.
+# *** Web Development - Non-academic University Project {{{span(Dec’15 - July’16)}}}
 
-    - Developed the platform using Laravel and hosted in university server.
+#     Create an in-house seat reservation platform for students to use
+#     several office spaces.
+
+#     - Developed the platform using Laravel and hosted in university server.
+
+#     /Tech Stack/: Laravel, Artisan, PHP.
 
 ** {{{span(ACTIVITIES)}}}
 
@@ -121,4 +175,7 @@
    *Interests* - Photography, Running, Non-Profit Social Events,
    Exploring Culture, CaptureTheFlag, Network Security, Physical
    Systems Security, Linux, Arch and Emacs.
+
+   *Languages* - English (Full Professional Proficiency), Bengali
+   (Native).
 
