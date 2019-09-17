@@ -166,13 +166,13 @@
    #+BEGIN_SRC 
    "If you talk to a man in a language he understands, that goes to his head. If you talk to him in his 
    language, that goes to his heart." Nelson Mandela was right. When you make the effort to speak 
-   someones else's language, even if it's just basic phrases here and there, you are saying to them, 
-   "I understand that you have a culture and identity that exists beyond me. I see you as a human being."
+   someones else's language, even if it's just basic phrases here and there, you are saying to them, "I
+   understand that you have a culture and identity that exists beyond me. I see you as a human being."
    #+END_SRC
 
    #+BEGIN_SRC 
    The hood made me realize that crime succeeds because crime does the one thing the government doesn't 
    do: crime cares. Crime is grassroots. Crime looks for the young kids who need support and a lifting
-   hand. Crime offers internships programs and summer jobs and opportunities for advancement. Crime gets
-   involved in the community. Crime doesn't discriminate. 
+   hand. Crime offers internships programs and summer jobs and opportunities for advancement. Crime 
+   gets involved in the community. Crime doesn't discriminate. 
    #+END_SRC

@@ -1,0 +1,107 @@
+#+TITLE: The Noun
+#+DATE: <2019-09-17 Tue>
+#+ESSENCE: Parts of Speech: How Nouns work
+#+TAG: Sentence Nouns
+#+MODIFIED: 
+#+STARTUP: showall
+
+A *Noun* is /basically/ an identifiable thing. It could be either
+tangible or in-tangible. Generally, it falls into these four "types":
+
+*** People
+
+   This usually refers to names of human being. Could be animals or
+   any living things for all purposes. There are differences between
+   'generic' groups, however, but I will get into that later.
+
+   #+BEGIN_EXAMPLE org
+   This is _Astri_.
+   #+END_EXAMPLE
+
+   "Astri" is the name of a person.
+
+*** Places
+
+   This refers to a location. Doesn't have to be with-in Earth or even
+   this galaxy. The place could be outside of this Universe if are the
+   chosen one who has a special pass to travel between universes.
+
+   #+BEGIN_EXAMPLE org
+   Astri is originally from _Malang_.
+   #+END_EXAMPLE
+
+   "Malang" is the name of a place, a city in Indonesia.
+
+*** Things
+
+   This refers to in-animate items. They refer to something which is
+   not a living thing, but can be found tangibly in nature. 
+
+   #+BEGIN_EXAMPLE org
+   She likes _cats_.
+   #+END_EXAMPLE
+
+   "Cats" refer to the generic breed of ferocious little tigers who have
+   domesticated us humans. Its considered a Noun, actually a specific
+   category with-in it: a _Common_ Noun.
+
+*** Ideas
+
+   Last, these are things which are generally in-tangible but the
+   refer to some meaning.
+
+   #+BEGIN_EXAMPLE org
+   Astri has big _dreams_.
+   #+END_EXAMPLE
+
+   "Dreams" is a word which exists. People 'have' them, long for it,
+    unable to touch it, but some people manifest it. However, most
+    people can't remember it. Some also continously chase it.
+
+** One or More
+
+A Noun can refer to a single item from the above or a group of items,
+which is also stated before. They are realistically differentiated as
+being either /Singular/ or /Plural/.
+
+*Singular* nouns are simple: It's one of a thing. For example, 
+
+#+BEGIN_EXAMPLE
+_Astri_ is a singular being. 
+#+END_EXAMPLE
+
+"Astri" is a single person.
+
+*Plurals* is also simple /most of the time/. At least as long as they
+are regular. For example, 
+
+#+BEGIN_EXAMPLE
+Astri is among many _girls_ i have met.
+#+END_EXAMPLE
+
+"girls" refer to many of the single entity: a girl.
+
+For regular nouns, pluralization is easy: *append* '/s/' at the end of the
+word.
+
+However, and there is going to be a lot of 'howevers', English likes
+to explore new ways of doing things. And they are defined as
+irregularities cause, you know, they are not the norm.
+
+Here are some irregular nouns, 
+
+| Singular | Plural   |
+|----------+----------|
+| Leaf     | Leaves   |
+| Child    | Children |
+| Fungus   | Fungi    |
+| Mouse    | Mice     |
+| Sheep    | Sheep    |
+|----------+----------|
+
+Yes, all of them irregular, but English is like, "I'm going to
+categorise the irregularities and have regularities among
+irregularities." We will discuss this a bit later. First, let's
+categorize the regulars, shall we?
+
+
