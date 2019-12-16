@@ -114,7 +114,23 @@
       their new/old tests.
     - Implemented simple front-end interactive pages.
 
-   /Tech Stack/: Rails, HTML, CSS, Heroku.
+    /Tech Stack/: Rails, HTML, CSS, Heroku.
+
+*** Web Developer Intern in BetterWebPages {{{span(May - Aug’14)}}}
+
+    First work experience as a summer intern in a startup in infancy.
+
+    - Worked as a beginner full-stack developer and customized
+      third-party packages to project requirements to deliver a fully
+      operational website.
+    - Learned the major sections of the framework in two weeks and
+      implemented started doing customer projects.
+    - Rewrote django packages to suit the functionality requirements
+      of projects.
+    - Implemented some user interface elements which included bar
+      chart, and pie charts.
+
+    /Tech Stack/: Python, Django.
 
 ** {{{span(PROJECTS)}}}
 

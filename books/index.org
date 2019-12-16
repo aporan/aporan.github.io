@@ -176,3 +176,24 @@
    hand. Crime offers internships programs and summer jobs and opportunities for advancement. Crime 
    gets involved in the community. Crime doesn't discriminate. 
    #+END_SRC
+
+** A Golden Age
+  :PROPERTIES:
+  :GENRE: Novel, Fiction
+  :PAGES: 276
+  :YEAR: 2009
+  :AUTHOR: Tahmima Anam
+  :START: July 2019
+  :FINISH: December 2019
+  :RATING: 2.5
+  :END:
+
+  Its a hard read. From my understanding, the book *attempted* to
+  describe the war torn environment of Bangladesh from the very start
+  of the war leading to the victory but misses its point. However, the
+  author /does/ capture the environment and the social standing of a
+  normal family who find themselves caught up in the war with a
+  typical ingredient of food and sitcom in South East countries.
+
+  
+
