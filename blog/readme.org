@@ -1,3 +1,6 @@
-Blogs are meant to be only used to provide underlying reasoning of topics or why and how certain things work the way it works.
+Blogs are meant to be only used to provide underlying reasoning of topics or
+why and how certain things work the way it works.
 
-/This/ is to differentiate from notes where i would just populate data on how to do things. There's a lot of that anyways, so i figure blog something which might be useful for others in the long run
+/This/ is to differentiate from notes where i would just populate data on how
+to do things. There's a lot of that anyways, so i figure blog something which
+might be useful for others in the long run

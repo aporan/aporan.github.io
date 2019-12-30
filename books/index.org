@@ -10,13 +10,13 @@
    :RATING:   4
    :END:
 
-   The book brings forth the idea of two different processes of
-   perception, spatial and /surface recognition/. Instigating the
-   observation further, they propose a different model of thought by
-   which human being process their surroundings and make decisions
-   based on what they observe. Backed by their scientific hypothesis,
-   thought takes two different path through the top and bottom areas of
-   brain which leads to different means of engaging an experience.
+   The book brings forth the idea of two different processes of perception,
+   spatial and /surface recognition/. Instigating the observation further,
+   they propose a different model of thought by which human being process
+   their surroundings and make decisions based on what they observe. Backed by
+   their scientific hypothesis, thought takes two different path through the
+   top and bottom areas of brain which leads to different means of engaging an
+   experience.
 
 ** David and Goliath
    :PROPERTIES:
@@ -29,13 +29,12 @@
    :RATING:   4.5
    :END:
 
-   An advantage is not always an advantage; a disadvantage is not
-   always a disadvantage. The book provides numerous insights into the
-   lives of people, who has made best use of their disadvantages or
-   could not reap their advantages. The idea is to look at the reality
-   of the situation, process and understand the situation and then make
-   a decision, just like David beat the Goliath my hurling a stone and
-   winning.
+   An advantage is not always an advantage; a disadvantage is not always a
+   disadvantage. The book provides numerous insights into the lives of people,
+   who has made best use of their disadvantages or could not reap their
+   advantages. The idea is to look at the reality of the situation, process
+   and understand the situation and then make a decision, just like David beat
+   the Goliath my hurling a stone and winning.
 
 * =2018=
 ** The Checklist Manifesto
@@ -93,12 +92,12 @@
   :RATING: 4.5
   :END:
 
-  It is very hard to adequately capture a teams performance for
-  operations and delivery; it's especially harder to illustrate the
-  mistakes as so many parameters are involved and so many decision
-  that need to be made. But somehow, this book provide explains, from
-  an operations perspective, how work should be tackled and managed to
-  provide an optimum output for your company.
+  It is very hard to adequately capture a teams performance for operations and
+  delivery; it's especially harder to illustrate the mistakes as so many
+  parameters are involved and so many decision that need to be made. But
+  somehow, this book provide explains, from an operations perspective, how
+  work should be tackled and managed to provide an optimum output for your
+  company.
 
   There are 3 types of work: 
 
@@ -117,11 +116,11 @@
    :RATING:   4
    :END:
 
-   There is a lot of communication books in the market. Most of them
-   provide common guidelines and/or "conversation starters". However,
-   this book is the few ones which presents conversation as it should
-   be - a method for understanding people - and provides the major
-   points on how to be effective.
+   There is a lot of communication books in the market. Most of them provide
+   common guidelines and/or "conversation starters". However, this book is the
+   few ones which presents conversation as it should be - a method for
+   understanding people - and provides the major points on how to be
+   effective.
 
 ** The Idiot Brain
    :PROPERTIES:
@@ -134,13 +133,13 @@
    :RATING:   3.5
    :END:
 
-   This is a good book for information on the working of the brains in
-   a scientific way in as much as the brain is known to act in
-   /particular/ events or actions undertaken by people. For people who
-   don't know or is interested to know why they suddenly forget things
-   while walking to the kitchen or get an overview of how mental
-   diseases occur, it is a good start. The writer does really well to
-   go through dense information but in a humorus and fun way.
+   This is a good book for information on the working of the brains in a
+   scientific way in as much as the brain is known to act in /particular/
+   events or actions undertaken by people. For people who don't know or is
+   interested to know why they suddenly forget things while walking to the
+   kitchen or get an overview of how mental diseases occur, it is a good
+   start. The writer does really well to go through dense information but in a
+   humorus and fun way.
 
 ** Born a Crime
    :PROPERTIES:
@@ -188,12 +187,12 @@
   :RATING: 2.5
   :END:
 
-  Its a hard read. From my understanding, the book *attempted* to
-  describe the war torn environment of Bangladesh from the very start
-  of the war leading to the victory but misses its point. However, the
-  author /does/ capture the environment and the social standing of a
-  normal family who find themselves caught up in the war with a
-  typical ingredient of food and sitcom in South East countries.
+  Its a hard read. From my understanding, the book *attempted* to describe the
+  war torn environment of Bangladesh from the very start of the war leading to
+  the victory but misses its point. However, the author /does/ capture the
+  environment and the social standing of a normal family who find themselves
+  caught up in the war with a typical ingredient of food and sitcom in South
+  East countries.
 
   
 

@@ -5,74 +5,68 @@
 #+MODIFIED: <2019-01-27 Sun>
 #+STARTUP: showall
 
-A thought can be described as the idea or concept that comes to mind
-when one is thinking. What is thinking then? I define thinking to be
-the process in which an idea / concept is understood or the act of
-reflection on an observation. But how does one do exactly that
-i.e. Think? How does a persons brain try to process any information
-to form an idea or a concept; how does one reflect upon an
-observation?
+A thought can be described as the idea or concept that comes to mind when one
+is thinking. What is thinking then? I define thinking to be the process in
+which an idea / concept is understood or the act of reflection on an
+observation. But how does one do exactly that i.e. Think? How does a persons
+brain try to process any information to form an idea or a concept; how does
+one reflect upon an observation?
 
 ** Why does it matter?
 
-   It matters, at least to me, because of a general observation which
-   I am too curious to ignore. This started because of this
-   observation which I found repetitive in nature: Given a certain set
-   of statements, a few of the individuals that I know are able to
-   understand a given statement / scenario and explain the major
-   points which lead to the end goal of the said problem. Whereas I
-   needed to project the said problem and I am unable to isolate any
-   particular /important/ points. All parts of the statement is
+   It matters, at least to me, because of a general observation which I am too
+   curious to ignore. This started because of this observation which I found
+   repetitive in nature: Given a certain set of statements, a few of the
+   individuals that I know are able to understand a given statement / scenario
+   and explain the major points which lead to the end goal of the said
+   problem. Whereas I needed to project the said problem and I am unable to
+   isolate any particular /important/ points. All parts of the statement is
    important and without them the statements particular goal cannot be
-   reached. Hence, it takes me a quite a chunk of time to understand
-   the problem as a whole and reach to a given conclusion. A few
-   scenarios to exemplify:
+   reached. Hence, it takes me a quite a chunk of time to understand the
+   problem as a whole and reach to a given conclusion. A few scenarios to
+   exemplify:
 
-   - A descriptive problem set in mathematics or physics. I need to
-     read, project, navigate to see the process that the problem
-     describes. If I fail to see the process, I fail to answer the
-     problem. My friend on the other hand, starts of at a particular
-     important point, links that point with the next important point,
-     and repeats this process to reach the solution, unaware of the
-     overall process or other unnecessary parts
+   - A descriptive problem set in mathematics or physics. I need to read,
+     project, navigate to see the process that the problem describes. If I
+     fail to see the process, I fail to answer the problem. My friend on the
+     other hand, starts of at a particular important point, links that point
+     with the next important point, and repeats this process to reach the
+     solution, unaware of the overall process or other unnecessary parts
 
    - A new and unfamiliar scenario which only provides limited
-     information. When asked to reach conclusions which are not
-     necessarily only a sum of the given points, I fail to reach any
-     conclusion or goal. Whereas my friends use the given set of
-     points and further identify or add extra points to reach a
-     conclusions which are acceptable or at least reasonable.
+     information. When asked to reach conclusions which are not necessarily
+     only a sum of the given points, I fail to reach any conclusion or
+     goal. Whereas my friends use the given set of points and further identify
+     or add extra points to reach a conclusions which are acceptable or at
+     least reasonable.
 
-   I was aware of my inability to the set of things which other
-   persons were able to do but I failed. I wanted to improve myself
-   and to do that I needed to understand and figure out the /missing/
-   part.
+   I was aware of my inability to the set of things which other persons were
+   able to do but I failed. I wanted to improve myself and to do that I needed
+   to understand and figure out the /missing/ part.
 
 ** The Hypothesis
 
-   Given two individuals are the same, as much in common as one can
-   think of, why is it a set of individuals are able to solve a set of
-   problems whereas another group of people, like me, failed. This
-   phenomena was repetitive in nature. I questioned, why is it that a
-   single isolated incident can be understood in two different
-   ways. Why does people perceive an event differently. Now, one could
-   argue it is the ability of an individual and that person, me, just
-   lacks the understanding or quality to solve it. If this were to be
-   true, I should be able to observe that majority of the people
-   should be able to solve the problem, and I should lack behind
-   significantly in the context. Yet, I observe this 'failure' to an
-   equal number of people to those who can solve the problem. There
-   /needs/ to be something to explain such a big difference in
-   abilities for such scenarios given that we are almost identical in
-   terms of all other abilities - grades, exams, fun, games, and etc.
+   Given two individuals are the same, as much in common as one can think of,
+   why is it a set of individuals are able to solve a set of problems whereas
+   another group of people, like me, failed. This phenomena was repetitive in
+   nature. I questioned, why is it that a single isolated incident can be
+   understood in two different ways. Why does people perceive an event
+   differently. Now, one could argue it is the ability of an individual and
+   that person, me, just lacks the understanding or quality to solve it. If
+   this were to be true, I should be able to observe that majority of the
+   people should be able to solve the problem, and I should lack behind
+   significantly in the context. Yet, I observe this 'failure' to an equal
+   number of people to those who can solve the problem. There /needs/ to be
+   something to explain such a big difference in abilities for such scenarios
+   given that we are almost identical in terms of all other abilities -
+   grades, exams, fun, games, and etc.
 
-   I hypothesize that there is a binary to which this difference can
-   be categorized and explained. However, before stating what they
-   are, I need to provide an example of the binaries themselves. But
-   before I do that I would want to point out that like the left-brain
-   and right-brain myth, nobody is constrained to one binary. Everyone
-   needs and uses both states, but there is a matter of natural
-   preference.
+   I hypothesize that there is a binary to which this difference can be
+   categorized and explained. However, before stating what they are, I need to
+   provide an example of the binaries themselves. But before I do that I would
+   want to point out that like the left-brain and right-brain myth, nobody is
+   constrained to one binary. Everyone needs and uses both states, but there
+   is a matter of natural preference.
 
 *** Example
    Now the example, summarized. (You can choose to watch the video [[http://www.google.com][here]]).
@@ -86,53 +80,46 @@ observation?
    situation as a whole.
    #+END_QUOTE
 
-   You would need to take it as a fact (referencing from the video or
-   from your own personal experience) that one would encounter people
-   who speak in these two different ways. To elaborate on the example,
-   there is a group of people who see the significant / meaningful
-   points in the thing they are trying to understand and form a
-   statement. The other group, see every details (or as much as
-   possible) in any thing they are trying to understand or any event
-   they experience, but find it hard to extract the significant
-   points. For the discussion below, I would coin the term 'goal
-   dependent' (GD) for the first group and 'process dependent' (PD)
-   for the second group.
+   You would need to take it as a fact (referencing from the video or from
+   your own personal experience) that one would encounter people who speak in
+   these two different ways. To elaborate on the example, there is a group of
+   people who see the significant / meaningful points in the thing they are
+   trying to understand and form a statement. The other group, see every
+   details (or as much as possible) in any thing they are trying to understand
+   or any event they experience, but find it hard to extract the significant
+   points. For the discussion below, I would coin the term 'goal dependent'
+   (GD) for the first group and 'process dependent' (PD) for the second group.
 
-   Again, as a reminder, a person is neither solely a GD nor a PD. One
-   is not constrained to one or the other; everybody uses both in
-   various degree. To provide a few examples illustrating four
-   candidates.
+   Again, as a reminder, a person is neither solely a GD nor a PD. One is not
+   constrained to one or the other; everybody uses both in various degree. To
+   provide a few examples illustrating four candidates.
 
-   - Kat's design preference but average logical problem solving
-     ability.
-   - Luccan's ability to code or succinctly figure out the main points
-     in an argument yet prove to be essential in matters of art and
-     design.
-   - Glen's ability to understand everything very quickly (summary 80%
-     and almost descriptive 70%)
+   - Kat's design preference but average logical problem solving ability.
+   - Luccan's ability to code or succinctly figure out the main points in an
+     argument yet prove to be essential in matters of art and design.
+   - Glen's ability to understand everything very quickly (summary 80% and
+     almost descriptive 70%)
 
    That seems to be a familiar overview for the vast majority of
-   people. However, there are the extremes where one is overly GD and
-   where one is overly PD.
+   people. However, there are the extremes where one is overly GD and where
+   one is overly PD.
 
-   - Dhrubo's logical summarization but complete lack of design
-     preference.
+   - Dhrubo's logical summarization but complete lack of design preference.
    - My spatial ability and eye for small (possibly insignificant) details.
 
    (Elaborate on the examples).
 
 ** Goal Dependency
 
-   From the above examples, their innate ability to extrapolate points
-   from a scenario, and the difference in speech during conversations,
-   a conclusion can be reached. People who are preferably Goal
-   Dependent perceive events / scenarios, *in terms of the /essence/
-   of it*. They tend to look for the 'black box' of the idea /
-   concept,a goal, and then they place the points which gives the best
-   possible reasoning. The placing of points is a natural ability
-   because they understand the goal quite well and they have the
-   essential information provided to them in the scenario from which
-   they only place points which are reasonable.
+   From the above examples, their innate ability to extrapolate points from a
+   scenario, and the difference in speech during conversations, a conclusion
+   can be reached. People who are preferably Goal Dependent perceive events /
+   scenarios, *in terms of the /essence/ of it*. They tend to look for the
+   'black box' of the idea / concept,a goal, and then they place the points
+   which gives the best possible reasoning. The placing of points is a natural
+   ability because they understand the goal quite well and they have the
+   essential information provided to them in the scenario from which they only
+   place points which are reasonable.
 
 ** Process Dependency
 

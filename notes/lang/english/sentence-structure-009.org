@@ -5,16 +5,15 @@
 #+MODIFIED: <2019-01-27 Sun>
 #+STARTUP: showall
 
-A sentence is a group of words that makes sense on its own. A clear
-and complete sentence requires these key information: a subject, a
-verb and a *complete idea*.
+A sentence is a group of words that makes sense on its own. A clear and
+complete sentence requires these key information: a subject, a verb and a
+*complete idea*.
 
 ** Clause
 
-   A *clause* is a group of words that forms a statement and which
-   /may/ make up a sentence; a sentence with a /complete idea/ and
-   with a gramaticallly correct thought is called an *independent
-   clause*.
+   A clause is a group of words that forms a statement and which /may/ make up
+   a sentence; a sentence with a /complete idea/ and with a gramatically
+   correct thought is callend an *independent clause*.
 
    Examples:
 
@@ -38,8 +37,8 @@ verb and a *complete idea*.
 
 ** Subject
 
-   A subject is what a sentence is about. It is either a noun or a
-   pronoun identifying /a person, place, thing, or an idea/.
+   A subject is what a sentence is about. It is either a noun or a pronoun
+   identifying /a person, place, thing, or an idea/.
 
    #+BEGIN_EXAMPLE
    The computer lab is where we will work. It will be open for
@@ -59,18 +58,16 @@ verb and a *complete idea*.
 
 ** Preposition
 
-   If a sentence generally has more than one noun or pronoun chances
-   are it contains a preposition. *Preposition* is a word which
-   connects a _noun, pronoun, or verb_ to another word that /describes
-   or modifies/ them. Common prepositions are: in, on, under, near,
-   by, with, until, and about.
+   If a sentence generally has more than one noun or pronoun chances are it
+   contains a preposition. *Preposition* is a word which connects a _noun,
+   pronoun, or verb_ to another word that /describes or modifies/ them. Common
+   prepositions are: in, on, under, near, by, with, until, and about.
 
 *** /Prepositional Phrases/
 
     A group of words that begins with a /preposition/ is called a
-    *prepositional phrase*. It begins with a preposition to describe
-    or modify the noun, pronoun, or verb; it cannot act as the subject
-    of a sentence.
+    *prepositional phrase*. It begins with a preposition to describe or modify
+    the noun, pronoun, or verb; it cannot act as the subject of a sentence.
 
     #+BEGIN_EXAMPLE
     Maya and Tia found an abandoned cat by the side of the road.

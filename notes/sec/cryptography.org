@@ -5,28 +5,28 @@
 #+MODIFIED: <2019-01-27 Sun>
 #+STARTUP: showall
 
-Cryptography is the science of =secret= communication. =Crypto=
-means =hidden,secret= and =graphy= denotes =a form of drawing,
-writing, representation=. A crypto process involves =encryption= and
-=decryption=. /Encrypt/ means to make a hidden message. /Decrypt/
-means to unmake a hidden message.
+Cryptography is the science of =secret= communication. =Crypto= means
+=hidden,secret= and =graphy= denotes =a form of drawing, writing,
+representation=. A crypto process involves =encryption= and
+=decryption=. /Encrypt/ means to make a hidden message. /Decrypt/ means to
+unmake a hidden message.
 
-The process of =encryption= uses a =cipher= which is an algorithm to
-convert a normal message to a secret one.
+The process of =encryption= uses a =cipher= which is an algorithm to convert a
+normal message to a secret one.
 
 ** Assymetric Ciphers
 
    Ciphers were the =encryption= key and the =decryption= key are
-   different. Knowing one key does /not/ give you information about
-   the other key.
+   different. Knowing one key does /not/ give you information about the other
+   key.
 
 *** RSA
 
     Basics
 
-    - RSA encryption converts your messages to numbers first; it has
-      to cause you can't work mathematically on text. In practice,
-      texts are divided into blocks and also padded.
+    - RSA encryption converts your messages to numbers first; it has to cause
+      you can't work mathematically on text. In practice, texts are divided
+      into blocks and also padded.
 
     - It requires 2 prime numbers: ~P~ and ~Q~ where ~P != Q~.
 
@@ -38,8 +38,8 @@ convert a normal message to a secret one.
 
     - Which helps to generate the Encryption Number (key) (/E/). 
 
-    - The Decryption Number (key) /D/ is generated using a combination
-      of modular arithmetic, /E/, and ~φ(N)~ : ~D * E (mod φ(N)) = 1~
+    - The Decryption Number (key) /D/ is generated using a combination of
+      modular arithmetic, /E/, and ~φ(N)~ : ~D * E (mod φ(N)) = 1~
 
     - Encryption Number (key) is *public*.
 
@@ -48,8 +48,8 @@ convert a normal message to a secret one.
 
     Process
 
-    1. Generate two large (otherwise it is easy to break) prime
-       numbers ~P~, ~Q~ and generate the product ~N~.
+    1. Generate two large (otherwise it is easy to break) prime numbers ~P~,
+       ~Q~ and generate the product ~N~.
 
        In our example, we use smaller prime number for simplicity.
 
