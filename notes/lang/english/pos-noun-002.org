@@ -1,0 +1,304 @@
+#+TITLE: The Noun
+#+DATE: <2019-09-17 Tue>
+#+GENRE: Grammar
+#+ESSENCE: How Nouns work
+#+TAG: Sentence Nouns
+#+MODIFIED: 
+#+STARTUP: showall
+
+Let's start with the simplest or the part that always appears in a subject or
+object (you'll know what those are much later): The Noun. 
+
+When you're discussing about any topic, you need to label components of it
+inorder to identify them uniquely. It allows you to differentiate between each
+part and allows you to relate a part to another part. This label is a
+/Noun/. It identifies things.
+
+N.B. All information presented cannot be completely presented through the
+perspective of analogy. Well _it_ could be, but it would be less useful than
+presenting them as raw. For example, how it would not be much useful to
+explain addition itself but show its application and understand it through its
+use cases.
+
+We begin by casting a net of the broadest category and then dig deeper into
+each section.
+
+** Broad Nouns
+   There are 4 types of nouns:
+
+   - People
+   - Places
+   - Things
+   - Ideas
+
+*** People
+
+   This kind of nouns usually refers to names of human being. It could be
+   animals or any living things.
+
+   #+BEGIN_EXAMPLE org
+   This is _Astri_.
+   #+END_EXAMPLE
+
+   "Astri" is the name of a person.
+
+*** Places
+
+   These nouns refers to a location. It doesn't have to be with-in Earth or
+   even this galaxy. The place could even be outside of this Universe (if you
+   are the chosen one who has a special pass to travel between universes)
+
+   #+BEGIN_EXAMPLE org
+   Astri is originally from _Malang_.
+   #+END_EXAMPLE
+
+   "Malang" is the name of a place, a city in Indonesia.
+
+*** Things
+
+   This refers to in-animate items. They refer to something which is not a
+   living thing, but can be found tangibly in nature.
+
+   #+BEGIN_EXAMPLE org
+   She likes the _cat_.
+   #+END_EXAMPLE
+
+   "Cat" refers to the generic breed of ferocious little tigers who have
+   domesticated us humans. It's considered a Noun, actually a specific
+   category with-in it: a _Common_ Noun.
+
+*** Ideas
+
+   Last, these are nouns which refer to the intangible items which has a
+   hidden meaning in it.
+
+   #+BEGIN_EXAMPLE org
+   Luccan has big _dreams_.
+   #+END_EXAMPLE
+
+   "Dreams" is a word which exists. People 'have' them, long for it, are
+    unable to touch it, but some people manifest it. However, most people
+    can't remember it. Some also continously chase it.
+
+** Narrow Nouns
+   
+   Another way to categorize the nouns is by tangibility / physicality and
+   generality / specificity. The first category is between a /Concrete Noun/ vs
+   /Abstract Noun/. The latter is between /Common Noun/ vs /Proper Noun/.
+
+*** Concrete
+
+    These are nouns which you interact with physically. 
+
+    #+BEGIN_EXAMPLE org
+    A dog chases a cat.    
+    #+END_EXAMPLE
+
+    A "dog" and "cat" are both concrete nouns. From the broader category of
+    nouns, these nouns generally fall into: People, Places or Things.
+
+*** Abstract
+
+    Nouns which are not-physical; they exist as an Idea.
+
+    #+BEGIN_EXAMPLE org
+    Humans experience sadness.
+    #+END_EXAMPLE
+
+    "sadness" is not something you can touch. It implies a certain meaning but
+    it only exists as an idea with in our human mind. It can't be measured
+    (it's not quantitate yet).
+    
+*** Common
+
+    A category of nouns which categorizes a group of things and gives them a
+    common label to denote them.
+
+    #+BEGIN_EXAMPLE org
+    A dog climbs a mountain.
+    #+END_EXAMPLE
+
+    Both "dog" and "mountain" are generic terms to denote a specific group.
+
+*** Proper
+
+    Proper nouns are particular about naming. They focus within the
+    group for identification.
+
+    #+BEGIN_EXAMPLE org
+    The dog, Harry, climbs mount Kilimanjaro.
+    #+END_EXAMPLE
+
+    "Harry" and "Kilimanjaro" are specific types of dog and mountain
+    respectively. One thing about proper nouns is that they *must* be
+    capitalized in a sentence.
+   
+** More than One
+
+   As with many other things, there are more than one item of a
+   thing. Naturally, nouns adapt to name them as well. The /name/ of this
+   category is trivial: Singular and Plural Nouns.
+
+   But be slightly warned though. The Plural form of Nouns are anything but
+   trivial. It has its own several different subcategories. Anways, let's
+   start with the Singular form:
+
+*** Singular
+
+    Singular nouns are simple: It's one of a thing. For example,
+
+    #+BEGIN_EXAMPLE
+    _Astri_ is a singular being. 
+    #+END_EXAMPLE
+
+   "Astri" is a single person.
+
+*** Plural
+
+    When nouns refer to multiple things, they take this form.
+
+    #+BEGIN_EXAMPLE
+    Astri is among many _girls_ i have met.
+    #+END_EXAMPLE
+
+    "girls" refer to many of the single entity: a girl.
+
+    However, and there is going to be a lot of 'howevers', English grammar
+    likes to explore new ways of doing things. Yes, there *is* a category
+    with-in plural nouns itself: Regular and Irregular.
+
+**** Regular 
+
+     For regular nouns, pluralization is easy: *append* '/s/' at the end of the
+     word. To rehash the previous example,
+
+     #+BEGIN_EXAMPLE
+     Astri is among many _girls_ i have met.
+     #+END_EXAMPLE
+
+     "girls" is the /regular plural/ of the singular form: girl.
+    
+**** Irregular
+
+     Irregular nouns are so named because there are many of them with their
+     unique origin and forms
+
+***** ending in /en/
+
+      These are from old english and there aren't a lot of them.
+
+      #+BEGIN_EXAMPLE
+      |------------------+--------------------|
+      | Singular         | Plural             |
+      |------------------+--------------------|
+      | Ox               | Oxen               |
+      | Child            | Children           |
+      | Brother / Sister | Brethren / Sistren |
+      |------------------+--------------------|
+      #+END_EXAMPLE
+
+***** base plurals
+
+      Nouns which has the same form as its Singular. 
+
+      #+BEGIN_EXAMPLE
+      |----------+----------|
+      | Singular | Plural   |
+      |----------+----------|
+      | fish     | fish     |
+      | deer     | deer     |
+      | aircraft | aircraft |
+      | sheep    | sheep    |
+      | rice     | rice     |
+      |----------+----------|
+      #+END_EXAMPLE
+
+      That's the general rule. And the /possible/ reason they are this way
+      because they are seen as a collective group which are "uncountable" in
+      nature. Why this interpretaion?
+
+      For example, you can definitely count grains of rice, however, its
+      tedious; it is far easier to think of it as a collective item
+      instead. Same analogy goes for the other examples listed above. In a
+      sentence, examples would be
+
+      #+BEGIN_EXAMPLE
+      bison migrate west # singular
+      bison migrates west # plural
+      #+END_EXAMPLE
+
+      However, there are exceptions. Let's use the word 'fish' as an
+      example. One uses the regular plural form when they denoting something
+      /countable/ instead of the "collective". For example,
+
+      #+BEGIN_EXAMPLE
+      martha studies 30 fishes
+      #+END_EXAMPLE
+
+      "fishes" denotes different /species/ of fishes. And different species
+      are countable where as,
+
+      #+BEGIN_EXAMPLE
+      marty caught 30 fish.
+      #+END_EXAMPLE
+
+      "fish" denotes plural. Although it's counted, it can be taken as a
+      collective in comparison to "fishes".
+
+***** the mutants
+
+      Yes, if the above were not confusing enough for you, here comes the
+      mutants which were grouped together becuase of linguistic history. There
+      are only 7 of them, however, which is good.
+
+      #+BEGIN_EXAMPLE
+      |----------+--------|
+      | Singular | Plural |
+      |----------+--------|
+      | foot     | feet   |
+      | woman    | women  |
+      | man      | men    |
+      | tooth    | teeth  |
+      | goose    | geese  |
+      | mouse    | mice   |
+      | louse    | lice   |
+      |----------+--------|
+      #+END_EXAMPLE
+
+      In linguistics, there is a term called /vowel harmony/. It means that
+      the firrst vowel in a word prefers to sound like next ones. For example,
+      the plural origin of the word 'foot' was =footi=.
+
+      Because it hand a second vowel, it was pronounced as =feeti=, more
+      commonly denoted using an umlaut: =föti=. The transformation of the word
+      through time was something like follows:
+
+      #+BEGIN_EXAMPLE
+      foot: footi -> föti -> föt -> feet
+      #+END_EXAMPLE
+
+***** foreign plural
+
+      Finally, the plurals forms of words which are borrowed from other
+      languages.
+
+      #+BEGIN_EXAMPLE
+      |-------+------------+-----------+-------------+--------------------------|
+      | Lang  | Change     | Singular  | Irr. Plural | Reg. Plural (colloquial) |
+      |-------+------------+-----------+-------------+--------------------------|
+      | Latin | a -> ae    | larva     | larvae      | larvas                   |
+      | Latin | us -> i    | fungus    | fungi       | funguses                 |
+      | Latin | um -> a    | datum     | data        | --                       |
+      | Latin | ex -> ices | index     | indices     | indexes                  |
+      | Greek | is -> es   | thesis    | theses      | thesises                 |
+      | Greek | on -> a    | criterion | criteria    | --                       |
+      |-------+------------+-----------+-------------+--------------------------|
+      #+END_EXAMPLE
+
+      The Reg. Plural form is slowly being accepted into modern English. In
+      written prose, the Irr. form is still preferred.
+
+
+
+    
+

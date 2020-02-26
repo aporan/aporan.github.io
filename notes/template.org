@@ -1,6 +1,7 @@
 #+TITLE: <title>
 #+DATE: <date authored>
-#+ESSENCE: <the direction / flow of the article>
+#+GENRE: <the domain of the topic>
+#+ESSENCE: <the impression / flow of the article>
 #+TAG: <related single word anchors>
 #+MODIFIED: <last modified>
 #+STARTUP: showall
