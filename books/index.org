@@ -187,7 +187,7 @@
   :RATING: 2.5
   :END:
 
-  Its a hard read. From my understanding, the book *attempted* to describe the
+  It's a hard read. From my understanding, the book *attempted* to describe the
   war torn environment of Bangladesh from the very start of the war leading to
   the victory but misses its point. However, the author /does/ capture the
   environment and the social standing of a normal family who find themselves
@@ -196,3 +196,23 @@
 
   
 
+* =2020=
+** 21 Lessons in the 21st Century
+  :PROPERTIES:
+  :GENRE: SelfHelp
+  :PAGES: 384
+  :YEAR: 2018
+  :AUTHOR: Yuval Noah Harari
+  :START:  January 2020
+  :FINISH: March 2020
+  :RATING: 3.5
+  :END:
+
+
+  A thought provoking read about the twenty-one important things that people
+  in the 21st century need to re-think or at least concern themselves to
+  decide the future of our own race. As important as the old traditions were,
+  the stories are becoming less and less applicable for our current times. And
+  without the presence of a new story to define our new era, the best thing to
+  do is only meditate. At least that will reveal our own story of our own mind
+  which is probably the most useful idea that cometh from the ancient times.
