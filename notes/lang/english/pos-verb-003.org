@@ -1,0 +1,434 @@
+#+TITLE: The Verb
+#+DATE: <2020-03-03 Tue>
+#+GENRE: Grammar
+#+ESSENCE: How Verbs work
+#+TAG: Sentence Verbs
+#+MODIFIED: 
+#+STARTUP: showall
+
+So far, we have learnt how to identify items by their names, places, ideas or
+things and we call it a =Noun=. Now, we should be able to describe how they
+are involved in a discussion or what they are doing or how they are doing - an
+action that they are performing. The words which describes this and in doing
+so starts the basic formation of a sentence is =The Verb=.
+
+An analogy: A car consists of many parts: windows, tyres, seats. However, a
+car is not a car if it doesn't move or run. The engine makes it do something -
+move - and that's what a verb /does/. It takes all the items which has names,
+connects them together, and makes it move.
+
+And that example brings us to the fundamental law in verbs: The Subject Verb
+Agreement.
+
+** The Subject Verb Agreement
+
+   A simple sentence which has a verb and a noun.
+
+   #+BEGIN_EXAMPLE org
+   I eat.
+   #+END_EXAMPLE
+
+   "I" is the noun, and "eat" describes what I am doing. And importantly, the
+   singular verb agrees with the singular noun.
+
+   The idea behind the agreement is like above - The verb should always
+   express the what the noun is doing in the correct way. 
+
+   Well what's the correct way? Well, it's English. Here are some examples:
+
+   #+BEGIN_EXAMPLE
+   Jake bakes a cake.
+   We bake cakes.
+   The dog barks.
+   The dogs bark.
+   #+END_EXAMPLE
+
+   In all of the above, the subject is in agreement with the verb. There
+   /might/ be a general rule, but every sentence is different.
+
+** Types of Verbs
+
+   With the fundamental rules out of the way, let's dive into categories of
+   verbs. And just like Nouns, there are several.
+
+*** Action
+    
+    The is the simple one. Most verbs are action verbs that is to say, they
+    describe something that a noun is doing.
+
+    #+BEGIN_EXAMPLE
+    Astri said no.
+    #+END_EXAMPLE
+
+    "said" is describing what "Astri" is doing.
+
+*** Linking
+
+    The verbs those help in connecting ideas (think Noun) together are,
+    unsprisingly, called linking verbs.
+
+    #+BEGIN_EXAMPLE org
+    The bear is hungry.
+    #+END_EXAMPLE
+
+    Here "is" links hungry to the bear.
+
+    #+BEGIN_EXAMPLE org
+    The bear looked lonely.
+    #+END_EXAMPLE
+
+    "looked" connects the idea of loneliness to the bear.
+
+    That's it really. This is what a linking verb, also called, State of Being
+    verbs are. There is the common list of them which are all derived from the
+    master linking verb - "to be". They are: am, is, are, be, been, being, was
+    and were.
+
+    There are others as well, for example, "looked" in the example above. This
+    is also an example of a verb which is /both/ an action and a linking
+    verb. For example, in its action form:
+
+    #+BEGIN_EXAMPLE org
+    The bear looked at me.
+    #+END_EXAMPLE
+
+    "looked" is an action the bear is performing.
+
+*** Helping
+
+    This class of verb helps to connect /other verbs/ thereby helping
+    them. Hence, helping verbs. There is another name for this classification
+    of verbs; it's also called "auxiliary" verbs.
+
+    #+BEGIN_EXAMPLE org
+    Brian is eating a pizza.
+    Brian had been eating a pizza.
+    I was bathing.
+    #+END_EXAMPLE
+
+    "is", "had been", "was" aids the verb "eating" here. 
+
+    Most of the helping verbs are forms of the verb "to be". And most of the
+    time, they place the verb being helped in a particular timeline.
+
+    #+BEGIN_EXAMPLE org
+    She doesn’t agree with me.
+    #+END_EXAMPLE
+
+    "doesn't" helps the verb "agree" and it occurs in the present time.
+
+**** Modals
+
+     The auxiliary verbs themselves has a classification. These are helping
+     verbs but they are grouped together because they have certain
+     properties. They:
+
+     * Agree with all subjects
+     * They /don't/ have a to form.
+     * And they express Modality.
+
+     What's a Modality?
+
+     Its "a particular mode in which something exists or is experienced or
+     expressed". Basically, these verbs expresses different modes or
+     conditions of the verb which is being helped.
+
+     #+BEGIN_EXAMPLE org
+     I can eat ten pounds of brocolli.
+     #+END_EXAMPLE
+
+     Here "can" express an ability of the verb "eat".
+
+     #+BEGIN_EXAMPLE
+     It may rain.
+     #+END_EXAMPLE
+
+     "may" implies a condition of the action "rain".
+
+     There is only a handful of these verbs. The are: /may/, /might/, /must/,
+     /can/, /could/, /should/, /would/, /shall/, and /will/.
+
+*** Irregular
+
+    Nouns aren't the only thing which are irregular. It's English, there's
+    irregularity in verbs too. But, before we can proceed with explaining the
+    irregularities, we need to defer this topic. 
+
+    If you have not noticed yet, verbs has a second property. And before we
+    can explain the irregularities, we need to understand this second
+    property.
+
+** Place in Time
+
+   Re-visiting the definition of verbs which describes an action that a noun
+   performs, another structural question is posed: when does the action occur?
+
+   And that leads to the property: Verbs place a particular action in a
+   certain time - the past, the present, and the future. These are called
+   Verb Tense.
+
+*** Present Tense
+
+    These are the words which describes the action happening /right now/.
+
+    #+BEGIN_EXAMPLE org
+    Bertie is singing in the shower.
+    #+END_EXAMPLE
+
+    "is singing", where "is" is a helping verb and "singing" is the main verb,
+    denotes what Bertie is doing currently.
+
+    #+BEGIN_EXAMPLE org
+    The water is super cold.
+    #+END_EXAMPLE
+
+    "is", a linking verb, describes the current temperature of the water.
+
+    #+BEGIN_EXAMPLE org
+    I eat donut.
+    #+END_EXAMPLE
+
+    "eat" describes my action that I undertake in the current period.
+
+    Unlike the tenses to follow, the basic present tense sentence has many
+    different formation as the examples above illustrated:
+
+    * adding -ing to the base verb after using a helping verb.
+    * using "is" as a linking verb.
+    * using the base verb directly.
+
+*** Past Tense
+
+    Verbs which describes action that a noun has /already done/. The general
+    rule to convert a verb to its past form is: add in '-ed' to the base verb.
+
+    #+BEGIN_EXAMPLE org
+    I talked.
+    #+END_EXAMPLE
+
+    "talked" is something i did before.
+
+    #+BEGIN_EXAMPLE org
+    I walked to the store.
+    #+END_EXAMPLE
+
+    "walked" is something i did to reach the store.
+
+*** Future Tense
+
+    The third tense describes any action that is going to happen at some point
+    of time in the future. Now there are two ways to form a future tense:
+
+    1) add a 'will / shall'
+    2) use 'is going'
+
+    Although, the first one is more common and used more frequently, the
+    second one has its use cases.
+
+    #+BEGIN_EXAMPLE org
+    I will eat donut.
+    #+END_EXAMPLE
+
+    The addition of "will" just changes the sentence from the present form to
+    the future.
+
+    #+BEGIN_EXAMPLE org
+    Lorraine is going to visit Canada.    
+    #+END_EXAMPLE
+
+    "is going" is used here, however, the implication of the sentence would be
+    the same if it were "Lorraine will visit Canada". There is no change in
+    its meaning.
+
+** Verbs Third Law
+
+   So far we know that verbs describes action and places the action at a
+   particular frame of time. However, there /is/ a third aspect - the verb
+   aspect.
+
+   Verb aspect defines the /state of the action/ being performed. Its either
+   state in which the action is waiting to be performed or was already
+   performed i.e. it's stationary. Or it is being performed i.e. it's
+   moving. And yes, I just created the verbs third Law: A verb which is moving
+   will always be moving unless otherwise altered by a stationary aspect.
+
+   There are 4 kinds of verb aspect:
+
+   * Simple Aspect
+   * Progressive Aspect
+   * Perfect Aspect
+   * Perfect Progresssive Aspect
+
+   Each of the aspects places the state of the verb in a specific moment with
+   in the each tense (think time).
+
+*** Simple Aspect
+
+    The base tense is the simple aspect. It describes some action which is
+    done or can be done in any tense. (If it helps, think of it as the
+    noun-ish form of the verb)
+
+    #+BEGIN_EXAMPLE org
+    | Past     | Present | Future      |
+    |----------+---------+-------------|
+    | I walked | I walk  | I will walk |
+    #+END_EXAMPLE
+
+    Here "walk" / "walked" is the /stationary/ state of the verb placed in
+    three different times: Past, Present, and Future. The verb form changes
+    depending on which tense (time) it is in, but the state doesn't change. 
+
+*** Progressive Aspect
+    
+    The aspect which places verbs in the continous or ongoing state. 
+
+    #+BEGIN_EXAMPLE org
+    | Past          | Present      | Future            |
+    |---------------+--------------+-------------------|
+    | I was walking | I am walking | I will be walking |
+    #+END_EXAMPLE
+
+    "walking" is an action which is happening or actively being
+    done. Depending upon the tense, the conjugation will change to place the
+    verb in the different times.
+
+*** Perfect Aspect
+
+    This aspect which defines the action of the verb being finished or
+    completed. The Perfect aspect has a nuanced focus on the verb tense.
+
+    #+BEGIN_EXAMPLE
+    I had washed the dishes.
+    #+END_EXAMPLE
+
+    This is the Past tense of the perfect form. The Past Perfect places the
+    verb state - the completed action - **before** a time in the current
+    past. In the example above, "had washed" implies that "dishes" were
+    already cleaned at before a time in the past. 
+
+    Let's say it's 1700 hrs. Then a past time would be 1500 hrs. Continuing
+    with the example above, "the dishes were washed" at 1300 hrs right after
+    lunch time.
+
+    In other words, the past perfect talks about a verb which took place
+    (completed in this case) before the normal past tense as described from
+    the present time.
+
+    #+BEGIN_EXAMPLE
+    I have washed the dishes.
+    #+END_EXAMPLE
+
+    This is the Present tense of the perfect form. The Present Perfect places
+    the verb state before a time in the current present i.e. the past.
+
+    "the dishes were washed" a few hours earlier.
+
+    #+BEGIN_EXAMPLE org
+    I will have washed the dishes.
+    #+END_EXAMPLE
+
+    This is the Future tense of the perfect form. The Future Perfect plcaes
+    the verab state before a time in the future i.e. the past of the current
+    time in the future.
+
+    If you shift the frame of the Present Perfect to the Future, that's what
+    the Future Perfect describes.
+
+    "the dishes will be washed" at a particular time before 2300 hrs. Because
+    that's sleeping time.
+
+*** Perfect Progressive
+    
+    This is an interesting one. Perfect Progressive aspect describes an
+    ongoing task that has been completed. It is exactly similar to the Past
+    Perfect except that it describes the continous state of the verb.
+
+    #+BEGIN_EXAMPLE org
+    | Past Perfect P.    | Present Perfect P.  | Future Perfect P.        |
+    |--------------------+---------------------+--------------------------|
+    | I had been walking | I have been walking | I will have been walking |
+    #+END_EXAMPLE
+
+** Irregular Verbs
+
+   After the mastery of time, we can finally re-visit the Irregularity of the
+   Verbs. And there are many different ones. 
+
+   The most common ones are the helping verbs: be, have. They are used in
+   almost all sentences and as you might have already seen from the previous
+   examples, they are used in all the tenses and all the aspects.
+
+   #+BEGIN_EXAMPLE org
+   | Verb | 1st Person | 3rd Person | Plural Present | 1st Past | Plural Past |
+   |------+------------+------------+----------------+----------+-------------|
+   | be   | I am       | She is     | We are         | I was    | We were     |
+   | have | I have     | She has    | We have        | I had    | We had      |
+   #+END_EXAMPLE
+
+*** Funk-ed
+
+    The verb which is =ed='d  for its past form in both spelling and sound.
+
+    #+BEGIN_EXAMPLE org
+    | Past   | Present |
+    |--------+---------|
+    | Walked | Walk    |
+    | Slept  | Sleep   |
+    | Kept   | Keep    |
+    | Built  | Build   |
+    | Spent  | Spend   |
+    | Left   | Leave   |
+    | Lept   | Leap    |
+    | Lost   | Lose    |
+    #+END_EXAMPLE
+
+*** Vowel Shift
+
+    Verbs whose vowel changes as it moves between the tenses and aspects. The
+    enunciation moves from the front of the mount to the back.
+
+    #+BEGIN_EXAMPLE org
+    | Present | Past  | Past Perfect |
+    |---------+-------+--------------|
+    | Sing    | Sang  | Sung         |
+    | Drink   | Drank | Drunk        |
+    | Win     | Won   | Won          |
+    | Find    | Found | Found        |
+    | Sit     | Sat   | Sat          |
+    | Sneak   | Snuck | Snuck        |
+    | Run     | Ran   | Run          |
+    #+END_EXAMPLE
+
+    And as always, there will be exceptions. For example, "run" above.
+
+*** Vowel Shift's which are Taken
+
+    These are the bunch of vowel shift Verbs whose Past Perfect form has the
+    'en' ending.
+
+    #+BEGIN_EXAMPLE org
+    | Present | Past       | Past Perfect |
+    |---------+------------+--------------|
+    | Tear    | Tore       | Torn         |
+    | Show    | Showed     | Shown        |
+    | Prove   | Proved     | Proven       |
+    | Bite    | Bit        | Bitten       |
+    | Ride    | Rode       | Ridden       |
+    | Eat     | Ate        | Eaten        |
+    | Speak   | Spoke      | Spoken       |
+    | Be      | Was / Were | Been         |
+    | Go      | Went       | Gone         |
+    #+END_EXAMPLE
+
+*** The Proud Irregulars
+
+    The Verbs which has a unique set of rules in their past tenses.
+    
+    #+BEGIN_EXAMPLE org
+    | Change         | Present               | Past                        |
+    |----------------+-----------------------+-----------------------------|
+    | -ught          | Teach, Bring, Catch   | Taught, Brought, Caught     |
+    | -d + shift     | Flee, Say             | Fled, Said                  |
+    | past = present | Bet, Set, Hurt        | Bet, Set, Hurt              |
+    | modal helpers  | Can, May, Shall, Will | Could, Might, Should, Would |
+    #+END_EXAMPLE

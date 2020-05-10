@@ -1,0 +1,376 @@
+#+TITLE: Sentences
+#+DATE: <2020-05-10 Wed>
+#+GENRE: Grammar
+#+ESSENCE: Writing Unit
+#+TAG: Clauses Sentence Phrase
+#+MODIFIED: 
+#+STARTUP: showall
+
+So far we have learned about the essential components that are present in
+English grammar. These components when sown together in a particular order
+helps us convey a spectrum of ideas. Some of the ideas are complete while
+others are partial. There are several forms of these ideas in which there is
+the definition of a =sentence=.
+
+This topic doesn't really require an analogy, nevertheless I will keep the
+ongoing pattern.
+
+Legos. Aren't they beautiful? When you buy a lego set, it's purpose is not
+just to built the item in the box, but to take the pieces and construct items
+from your imagination. Sure, the the pieces individually may not constuct
+something meaningful, but a bunch of them together can surely create a
+car and many other items.
+
+In this article we'll first present the different types of joined-words,
+compartmentalize them, and then build upon them to reach the unit of english
+grammar. 
+
+** Phrase
+
+   A small set of words which behave like a part of speech, and it does not
+   contain a verb.
+
+   #+BEGIN_EXAMPLE org
+   my best friend
+   #+END_EXAMPLE
+
+   This group of words does not have a /verb/ while simulatenously it is as if
+   it is trying to explain something in its context. In this case, we can
+   infer that it is possibly going to be a noun.
+
+   This is a noun phrase.
+
+   #+BEGIN_EXAMPLE org
+   for twenty days
+   #+END_EXAMPLE
+
+   Likewise, this group also does not have a /verb/. In this case it is also
+   trying to explain something, and it is likely that is not a noun. Perhaps,
+   it is an adjective or some verb. 
+
+   This is an adverb phrase.
+
+   #+BEGIN_EXAMPLE org
+   with the blue shirt
+   #+END_EXAMPLE
+
+   Again, this set of words is trying to explain something. In this particular
+   case, the thing being explained is the shirt. Notice that the group does
+   not have a verb, however.
+
+   This allows us to elucidate the POS property of Phrases; they can be
+   classified as being nouns, adjectives, prepositions, and etc.
+
+   The last example is both a prepositional and an adjective phrase. 
+
+** Clause
+
+   Clauses are sets of words which has both a subject and a verb.
+
+   #+BEGIN_EXAMPLE org
+   While my guitar gently weeps.
+   #+END_EXAMPLE
+
+   There is the subject word, the "guitar", and the verb, "weeps".
+
+*** Dependent Clause
+
+    Clauses which convey partial information. They are fragmented in style and
+    yearns for complete information on its context. Formally, these clauses
+    being with a subordinating conjuctions (explained in a later chapter).
+
+    #+BEGIN_EXAMPLE org
+    Unless I am mistaken.
+    #+END_EXAMPLE
+
+    The example begins with "unless", a subordinating conjunction.
+
+    #+BEGIN_EXAMPLE org
+    Because it was delicious.
+    #+END_EXAMPLE
+
+    Similary, the clause begins with "because", another subordinating
+    conjunction.
+
+    In both of these cases, the clauses need more information to convey a
+    particular context.
+
+**** Relative Clause
+
+     Dependent clauses which begins with a /relative/ pronoun. 
+
+     We have not formally detailed pronouns yet. Without explicating, words
+     such as these are considered as relative pronouns:
+
+     #+BEGIN_EXAMPLE orgn
+     who, that, which, whose, and where.     
+     #+END_EXAMPLE
+
+     Let's use one in an example.
+
+     #+BEGIN_EXAMPLE org
+     The boy who lived.
+     #+END_EXAMPLE
+
+     "who lived" here is the relative clause.
+
+     #+BEGIN_EXAMPLE org
+     The woman who always wore a red hat came into the cafe.
+     #+END_EXAMPLE
+
+     The fragment "who always wore a red hat" is the relative clause. Just
+     this phrase conveys a partial information about the entire sentence's
+     context.
+
+** Independent Clause / Sentence
+
+   Notice that i used the word "sentence" in my last paragraph. That is
+   because we can finally describe the /unit/ of formal english grammar.
+
+   Clauses which always convey complete ideas and is not a fragment are called
+   Independent Clauses. They are more commonly known as a
+   **Sentence**. Sentences contains a subject, verb, and sometimes an object.
+
+   #+BEGIN_EXAMPLE org
+   I ate the biscuits.
+   #+END_EXAMPLE
+
+   "I" is the subject, "ate" is the verb, and "the biscuits" is the object.
+
+   #+BEGIN_EXAMPLE org
+   I ate.
+   #+END_EXAMPLE
+
+   Likewise, this is also a sentence. Both of them convey a complete meaning.
+
+   One of the interesting things about Independent Clause besides conveying a
+   complete information is that it supports Dependent Clauses.
+
+   Initial examples in the section "dependent clause" contained partial
+   information. In the last example, the dependent clause which provided
+   partial information only made sense surrounding the rest of words. It did
+   two things:
+
+   1) It improved / particularized the meaning for the rest of the sentence.
+   2) It worked only with the rest of the sentence.
+
+   If we look at the rest of the sentence from that example,
+
+   #+BEGIN_EXAMPLE org
+   The woman (who always wore a red hat) came into the cafe.
+   #+END_EXAMPLE
+
+   "The woman came into the cafe" is an Independent Clause which is an example
+   of an Independent Clause supporting a Dependent Clause. And only
+   Independent clause can support a Dependent clause. By themselves, Dependent
+   Clauses are not particularly helpful, and uses of it are considered as
+   sentence fragments.
+
+** Parts of Sentence
+
+   As we learned, a sentence also known as an independent clause contains a
+   subject and a verb. But what is a subject?
+
+   Formally, a /Subject/ is the word, a noun or pronoun, that performs the
+   action of the verb.
+
+   #+BEGIN_EXAMPLE org
+   I ate.
+   #+END_EXAMPLE
+
+   "I" is the subject that does the verb "ate".
+
+   We also learned that a sentence will contain an object which is the case
+   most of the time. Well, what is an object?
+
+   The word onto which the verb does its action.
+
+   #+BEGIN_EXAMPLE org
+   Chris ate cereal.
+   #+END_EXAMPLE
+
+   "cereal" is the object. In particular, it is a /Direct Object/. And yes,
+   there is an /Indirect Object/.
+
+   Indirect objects are the recipient of the direct object after the verb acts
+   upon the direct object.
+
+   #+BEGIN_EXAMPLE org
+   Chris ate my cereal.
+   #+END_EXAMPLE
+
+   Here "my" is the Indirect Object which describes the recipient (the owner)
+   of the cereal in this case.
+
+   #+BEGIN_EXAMPLE org
+   Wanda gave Louie a gift card.
+   #+END_EXAMPLE
+
+   In this case, "Louie" is the Indirect Object as he recieves the gift card.
+
+   Now, there are many ways to write a sentence and you'll see various types
+   of sentences in writing. For example, the above sentence could also be
+   written as 
+
+   #+BEGIN_EXAMPLE org
+   Wanda gave a gift card to Louie.
+   #+END_EXAMPLE
+
+   In this case, the sentence does not have an Indirect Object, but a
+   adverbial preopositional phrase. And that brings us to a simpler
+   deconstruction of a sentence. A sentence is always composed of a Subject
+   and a Predicate. 
+
+   A predicate is the part of a sentence apart from the Subject. In the
+   example above, "gave a gift card to Louie" is a predicate.
+
+** Construction by Sentence
+
+   In formal English, there is many ways we can construct together Sentences
+   to give an explicated information about one's context. And it all starts
+   with /the unit/ in English grammar.
+
+*** Simple Sentence
+    
+    The one's we have used so far as examples are what is defined as a Simple
+    Sentence.
+
+    #+BEGIN_EXAMPLE org
+    We have to make sure it's lemon.
+    #+END_EXAMPLE
+
+    The sentence has 1 subject "we" and 1 predicate "have to make sure it's a
+    lemon".
+
+*** Compound Sentence
+
+    When there is multiple Simple Sentences, we have a /Compound
+    Sentence/. There must be have /at least/ 2 subject and /at least/ 2
+    predicate.
+
+    #+BEGIN_EXAMPLE org
+    I visited the beach, and I got a really bad sunburn.
+    #+END_EXAMPLE
+
+    There's two subjects both of which is "I" and two predicates, "visited"
+    the beach and "got a really bad sunburn".
+
+    Note that the definition states that there has to be at least 2 of
+    each. Let's say we have the following sentence
+
+    #+BEGIN_EXAMPLE org
+    I visited the beach and got a really bad sunburn
+    #+END_EXAMPLE
+
+    It is not a compound sentence. It has a compound predicate but it doesn't
+    follow the definition of the Compound Sentence. It is lacking 1 more
+    subject.
+
+    Similary, there could be a compound subject but one predicate like the
+    following sentence:
+
+    #+BEGIN_EXAMPLE org
+    Paige and I visited the beach.
+    #+END_EXAMPLE
+
+    It is still a Simple Sentence. An alternative way of thinking about
+    Compound Sentences is that at least two Simple sentences must be joined
+    together. They can't be shortened.
+
+*** Complex Sentence
+
+    We have learned about Dependent Clause. When there is a 1 Independent
+    Clause and at least 1 Dependent Clause, we have a Complex Sentence.
+
+    #+BEGIN_EXAMPLE org
+    When we buy his birthday cake, we have to make sure it's lemon
+    because that's his favorite
+    #+END_EXAMPLE
+
+    In the example above, we have 2 Dependent Clauses, "When we buy his
+    birthday cake" and "because that's his favorite". There's only 1
+    Independent Clause, "we have to make sure it's lemon"
+
+*** Compound-Complex Sentence
+
+    It is simply the combination of the above. A Compound-Complex Sentence has
+    at least 2 Independent Clause and at least 1 Dependent Clause.
+
+    #+BEGIN_EXAMPLE org
+    After the storm passed, I went outside, and I picked flowers.
+    #+END_EXAMPLE
+    
+    There is 2 Independent Clauses, "I went outside" and "I picked
+    flowers". There is only 1 Dependent Clause, "After the storm passed".
+
+    Let's have a longer sentence.
+
+    #+BEGIN_EXAMPLE org
+    After the storm passed, I went outside, and I picked flowers because
+    they are beautiful.
+    #+END_EXAMPLE
+
+    "because they are beautiful" is the second Dependent Clause.
+
+** Classification of Sentences
+   
+   The type of sentences that we have been using so far is known as a
+   Declarative Sentence. In English, there are 4 types of Sentences:
+
+   1) Declarative Sentence
+   2) Interrogative Sentence
+   3) Imperative Sentence
+   4) Exclamatory Sentence
+
+*** Declarative Sentence
+
+    The sentences which makes a statement, a fact, or an opinion.
+
+    #+BEGIN_EXAMPLE org
+    It is a beautiful day to play basketball, and I am going to arrange 
+    a session with my friends.
+    #+END_EXAMPLE
+
+*** Interrogative Sentence
+
+    A more format term for sentences which are Questions.
+
+    #+BEGIN_EXAMPLE org
+    Where did you go last night?
+    #+END_EXAMPLE
+
+*** Imperative Sentence
+
+    Sentences which are instructional or which asserts a command.
+
+    #+BEGIN_EXAMPLE org
+    Follow that bunny!
+    #+END_EXAMPLE
+
+*** Exclamatory Sentence
+
+    This is strictly not a classification per se. A lot of the times it
+    overlaps. But in all the cases, Exclamatory Sentence's express a strong
+    conviction of emotion.
+
+    #+BEGIN_EXAMPLE org
+    Ow!
+    #+END_EXAMPLE
+
+    #+BEGIN_EXAMPLE org
+    Look out!
+    #+END_EXAMPLE
+
+    This is an overlap with Imperative Sentences.
+
+    #+BEGIN_EXAMPLE org
+    That ogre is about to attack the village!
+    #+END_EXAMPLE
+
+    This is an overlap with a Declarative Sentence.
+
+    #+BEGIN_EXAMPLE
+    How did you do that?!
+    #+END_EXAMPLE
+
+    This is an overlap with an Interrogative Sentence.

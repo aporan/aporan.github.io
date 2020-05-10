@@ -1,0 +1,274 @@
+#+TITLE: The Modifiers
+#+DATE: <2020-04-04 Tue>
+#+GENRE: Grammar
+#+ESSENCE: How Modifiers work
+#+TAG: Sentence Modifiers
+#+MODIFIED: 
+#+STARTUP: showall
+
+We are almost on our way to the formation / structure of a sentence. The two
+most important components have been covered: Noun and Verb. And the
+fundamental rule of grammar is also covered - the subject and verb
+agreement. The next thing that we need to focus on is called modifiers.
+
+Time for an analogy.
+
+If the art of cooking was used as an example, so far what we have covered are
+the raw ingredients which are combined together to form a dish (together with
+salt and pepper). However, such a dish would generally be considered
+bland. For example, a basic ingredient such as rice or chicken could be cooked
+in many different ways. It will taste vastly different depending upon what
+additional seasonings are used. Modifiers are inherently seasonings; they are
+added in a sentence to enhance it in different ways. The modifers are
+classified into different sections. And they each have their own purpose.
+
+** Articles
+
+   These are the modifiers which distinguishes between generic nouns and
+   specific nouns. Primarily it focuses on Common Nouns. They are categorised
+   as:
+
+   * Indefinite
+   * Definite
+
+*** Indefinite
+
+    The words which tackles the generic form of a Common noun. It captures the
+    possession of one item in the domain of Common nouns. And it is only used
+    in the singular form. There are two words which forms the indefinite: "a"
+    and "an".
+
+    #+BEGIN_EXAMPLE org
+    A box.
+    #+END_EXAMPLE
+
+    =box= above is a Common Noun. The letter "A" focuses on one box which is
+    used to, let's say, build a small paper house.
+ 
+    #+BEGIN_EXAMPLE org
+    An orange.
+    #+END_EXAMPLE
+
+    Similar to the previous example, here "An" is used to refer to one
+    orange. However, unlike "a", "an" is used for vowel /sounds/ only. Note,
+    that the word "sound" is emphasized, not the word "vowel".
+
+    #+BEGIN_EXAMPLE org
+    An underwater boat.
+
+    vs.
+
+    A union.
+    #+END_EXAMPLE
+
+    "underwater" above has an /uhh/ sound which is how the vowel "u" is
+    used. Whereas, "union" doesn't have an /uhh/ sound; it has an "ooo" sound
+    which is *not* how the vowel "u" is used.
+
+*** Definite
+
+    The word which tackes a specific item of a Common noun. The word "the" is
+    used for the definite sense. When the word is used, the targeted noun is
+    usually identifiable because it is unique in the context of the
+    environment.
+
+    #+BEGIN_EXAMPLE org
+    The orange.
+    #+END_EXAMPLE
+
+    Although the common noun "orange" is used, "the" changes its focus to a
+    particular "orange", let's say, within a stack of oranges. Perhaps, it has
+    a particular mark or a person is holding that particular orange.
+
+    "The" is used both in the singular and plural form. As an example, one
+    could also use the term =the oranges= to refer to a unique box of oranges.
+
+** Adjectives
+
+   A proper introduction of Adjectives can be done by looking at the origin of
+   the word. It comes to english from the combination of the latin words: Ad +
+   jacere.
+
+   "Ad" implies /to/. And "jacere" implies /to throw/. Hence, Adjectives are
+   words which are thrown towards other words, namely nouns, to modify the
+   effect of the nouns.
+
+   #+BEGIN_EXAMPLE org
+   Steven is Connie's best friend.
+   #+END_EXAMPLE
+
+   "best" is a word which explores the kind of friend Connie is with
+   Steven. She's is her favorite or "best" friend.
+
+   #+BEGIN_EXAMPLE org
+   The fat bear.
+   #+END_EXAMPLE
+
+   "fat" is used here to define how the bear looks like. He is more round and
+   unhealthy.
+
+*** Order of Adjectives and its realtion with Commas
+
+    If you're learning english for the first time this is one more rule that
+    you are going to learn. However, if you are a native english speaker then
+    you will probably be able to tell that there is something /sounds/ wrong
+    with the following sentence:
+
+    #+BEGIN_EXAMPLE org
+    The French Old White House.
+    #+END_EXAMPLE
+
+    It's grammatically corret (sort of) but something is definitely off. And
+    that's because in standard english, there is an order in which adjectives
+    are used. It's summarized or an acronym to reflect that is the word
+    *DOSACOMP*.
+
+    [D]eterminer, [O]pinion, [S]ize, [A]ge, [S]hape, [C]olor, [O]rigin,
+    [M]aterial, and [P]urpose.
+
+    When multiple adjectives are used, they have to be used in the above
+    particular order. So, the above example in the correct order would be:
+
+    #+BEGIN_EXAMPLE org
+    The Old White French Wooden house.
+    #+END_EXAMPLE
+
+    Another example where all of the adjectives are used
+
+    #+BEGIN_EXAMPLE org
+    The cool big old square black Texan leather riding mower.
+    #+END_EXAMPLE
+
+    And that's how adjectives are ordered. But so far we only used one
+    adjective of each kind. When multiple adjectives of a particular kind are
+    used, "commas" come into the picture.
+
+    The rule then is straightforward. Use a "comma" when multiple adjectives of
+    the same kind are used. 
+
+    #+BEGIN_EXAMPLE org
+    The mushy, sticky apple.
+    #+END_EXAMPLE
+
+    Both "mushy" and "sticky" are opinions. You could also reverse their order
+    too and it will still be correct.
+
+    #+BEGIN_EXAMPLE org
+    The sticky, mushy apple.
+    #+END_EXAMPLE
+
+    Well, when adjectives are used this way they are called /coordinate/
+    adjectives.
+
+** Adverbs
+
+   The cousins of Adjectives. These modifiers have a similar word
+   origin. However, unlike adjective which only modifies a noun, adverbs
+   modifies everything else - verbs and adjectives - except a noun.
+
+   #+BEGIN_EXAMPLE org
+   Vanessa was slightly hungry.
+   #+END_EXAMPLE
+
+   "slightly" modifies the adjectives hungry (which originally modifies the
+   linking verb "was".
+
+   Other categories of Parts of Speech (POS) has distinct categories and
+   subcategories. For example, the POS modifier has three different
+   categories. The category "article" has two clearly defined
+   subcategories. Adverbs do have a variation but they cannot strictly be
+   called a subcategory. Other subcategories narrows the definition to provide
+   a succinct case which can exhibit multiple properties; adverbs classifies
+   those properties.
+   
+*** Relative Adverbs
+
+    The 3 common adverbs: where, when, and why. They perform exactly the same
+    operation as the original definition of adverbs; it's just that these
+    words which are generally used in questions can also be used in sentences.
+
+    #+BEGIN_EXAMPLE org
+    That is the cave where I grew up.
+    #+END_EXAMPLE
+
+    "where" modifies the verb "grew". 
+
+    #+BEGIN_EXAMPLE org
+    I learned to breathe fire when I was ten years old
+    #+END_EXAMPLE
+
+    "when" modifies the verb "was".
+
+    #+BEGIN_EXAMPLE org
+    I don't know why that is happening.
+    #+END_EXAMPLE
+
+    "why" modifies the verb "is".
+
+    This classification has a common pattern. It generally ends up linking two
+    clauses together as demonstrated in the above example.
+    
+*** Adverbs of Degree
+
+    The focus here is on the word itself as these words also perform the same
+    operation as the original definition. They have varied impact on the rest
+    of the sentence.
+
+    #+BEGIN_EXAMPLE org
+    A really interesting topic.
+    #+END_EXAMPLE
+
+    "really" is from a set of generic adverbs which doubles down or amplifies
+    the impact of the adjective "interesting" on the sentence.
+
+
+    #+BEGIN_EXAMPLE org
+    The incredibly deadly viper.
+
+    vs.
+
+    The somewhat deadly viper.
+
+    vs.
+
+    The barely deadly viper.
+    #+END_EXAMPLE
+
+    "incredibly", "somewhat", and "barely" all modify the adjective "deadly",
+    but the impact it has decreases as we move down the sentences. These
+    adverbs generally imply that word it is modifying has a comparative
+    property.
+
+** Comparatives and Superlatives
+
+   Similar to adverbs of degree there are words which amplifies the remainder
+   of a sentence where the impact either increases or decreases with the last
+   one having the most or the least impact. These words strictly establishes a
+   comparison. And generally they are adjectives.
+
+   #+BEGIN_EXAMPLE
+   She is cute.
+
+   vs
+
+   She is cuter.
+
+   vs.
+
+   She is cutest.
+   #+END_EXAMPLE
+
+   In the above example, the degree of "cuteness" increases as one moves down
+   the sentences. The first two kinds are called **comparatives**. The word in
+   the final sentence which decidedly remarks that "she" is the /numero uno/
+   (the best) in the cuteness category is called a **superlative**.
+
+   To form a superlative or a comparative, english has a few different rules:
+
+   | Word        | Description                          | Comparative            | Superlative            |
+   |-------------+--------------------------------------+------------------------+------------------------|
+   | cute        | 1 syllable, ends in -e               | +r; cuter              | +st; cutest            |
+   | big         | 1 syllable, 1 vowel, ends in 1 cons. | cons x 2, + er; bigger | cons x 2 + est; cutest |
+   | short       | 1 syllable, 2 vowel, ends in 2 cons. | +er; shorter           | +est; shortest         |
+   | shiny       | 2 syllable, ends in -y               | y -> i, +er; shinier   | y -> i, +est; shiniest |
+   | magnificent | 2+ syllable, does not end in -y      | more magnificient      | most magnificent       |
