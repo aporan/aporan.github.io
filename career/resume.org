@@ -5,16 +5,14 @@
 #+OPTIONS: title:nil toc:nil num:nil html-postamble:nil html-preamble:nil html-style:nil html-scripts:nil
 #+STARTUP: content
 #+macro: span @@html:<span>@@$1@@html:</span>@@
-#+macro: contact @@html:<span id="contact">@@@@html:<span>@@phone: $1@@html:</span>@@ @@html:<span>@@email: $2@@html:</span>@@@@html:</span>@@
+#+macro: contact @@html:<span id="contact">@@@@html:<span>@@email: $1@@html:</span>@@ @@html:<span>@@phone: $2@@html:</span>@@@@html:</span>@@
 
-* AHNAF SIDDIQI | {{{contact(+65 97342978, ahnafsidd[at]gmail.com)}}}
+* AHNAF SIDDIQI | {{{contact(ahnafsidd[at]gmail.com, +65 Nine-Seven-Three-Four-Two-Nine-Seven-Eight)}}}
   :PROPERTIES:
   :CUSTOM_ID: resume-head
   :END:
-
-   A learner, with 2 years of experience, carrying an interest in the
-   field of network security, system architecture, database, and
-   embedded systems.
+   A learner with 3.5 years of experience, with an interest in network
+   security, cloud architecture, and system design.
    
 ** {{{span(EDUCATION)}}}
 *** Singapore University of Technology and Design {{{span(Class of 2016)}}}
@@ -25,42 +23,71 @@
 
 ** {{{span(SKILLS)}}}
 
-   *Core* - Python, C++, Docker, Docker Swarm, Docker-Compose, Git,
-   Linux, GNU Make, Nginx.
-
-   *Additional* - Javascript, Java, HTML, CSS, GDB, PostgreSQL,
-   OpenCV, Ruby-on-Rails, SQLite, Laravel, Vue, Flutter.
+   I am experienced in: Python, C++, Docker, Git, Linux, Make, Nginx, Sys
+   Admin, PostgreSQL, InfluxDB, Bash, X509 Certs. I am familiar with:
+   Javascript, HTML, CSS, GDB, SQLite, Puppet, Haskell, Valgrind, Redis,
+   Kubernetes.
 
 ** {{{span(WORK EXPERIENCE)}}}
 *** Software Engineer in MicroSec Pte. Ltd. {{{span(Dec’17 - Now)}}}
 
-    Lead engineer in the design, architecture, and development of a
-    highly concurrent web service which is used in almost all customer
-    projects. I have Sys. Admin and Intern management duties. I am
-    also assisting in web development and customer support.
+    I engage in designing the technical system solution from requirements to
+    application implementation, delivery, maintenance, and customer support
+    for Certificate Management and Load Monitoring Products.
 
-    - Architecting and developing a multithreaded concurrent network
-      server which implements an end to end TLS 1.3 equivalent
-      security stack for ultra-low powered embedded devices. It
-      supports various protocols: LoRaWAN, Bluetooth, NBIoT, etc.
-    - The web service implements Ellyptic Curve Crypto as the choice
-      for Assymetric Key Exchange. AES CBC, AES GCM, and other crypto
-      libraries are used for session keys.
-    - Database schema design to ensure non-duplicate data accross
-      multiple instances of the network server.
-    - Development of continuous integration pipelines, managing cloud
-      deployments of projects, ensuring high system availability and
-      basic system administration.
-    - Design and implementation of customer requested features and
-      business logic in our Web Stack.
-    - Supervision and management of interns to full time employees
-      following companies operating procedure.
-    - Use Case driven feature and sprint planning following Agile
-      Principles.
+    - Working with CTO, PM and CSM manager to identify product requirements
+      and provide technical solutions.
+    - Designing different solutions to achieve the project requirements.
+    - Collaborating with multiple teams of 5+ individuals in implementing
+      pipeline following Scrum methodology.
+    - Solutions primarly includes implementing REST APIs, near real-time data
+      using MQTT, WebSockets, and developing modified in-house implementations
+      of ACMEv2, EST, SCEP. 
+    - Developing MicroPKI: a proprietary protocol providing end-to-end
+      encryption for embedded devices in IoT, which supports TLS 1.3 using
+      P256, Ed25519, AES.
+    - Relational and TimeSeries Database administration and role management
+      with appropriate security levels.
+    - Performing DevOps with Gitlab and Docker and providing CI/CD to
+      on-premise and cloud servers using docker-swarm, kubernetes.
+    - System Administration of on-premise servers running on Hyper-V and cloud
+      servers on AWS EC2.
+    - Limited experience on frontend development using Angular.
+    - Limited experience on embedded development for arm-cortex-m series.
+    - Supervision and management of interns to full time employees following
+      companies operating procedure. 
 
-    /Tech Stack/: C++, Python, Flask, SQLAlchemy, Hypothesis, Docker,
-    Nginx, CI, Puppet, PostgreSQL, Vue, Angular, Valgrind, Wireshark,
-    AWS EC2, Droplets.
+    /Tech Stack/: Python, C++, Flask, SQLAlchemy, Hypothesis, Docker, Nginx,
+    CI, Puppet, PostgreSQL, Angular, Valgrind, Wireshark, AWS EC2, Droplets,
+    X509 Certificates, Certificate Authority, Kubernetes, Redis, Influx
+    
+# *** Software Engineer in MicroSec Pte. Ltd. {{{span(Dec’17 - Now)}}}
+#     A Full Stack Engineer involved in design, architecture, and implementation
+#     of multiple products which handles TLS Certificate Lifecycle Management. 
+
+#     - Designing and architecting products using various Crypto technologies
+#       including Elliptic Curve Crypto, RSA Crypto which manages multiple
+#       Certificate Systems.
+#     - System Administration of our technologies in different domains including
+#       bare metal deployments in Data Centers, containers in AWS Cloud, and
+#       Embedded Systems.
+#     - Incorporating multifaceted requirements required for a complete product
+#       suite: Database Systems, Frontend Frameworks, and Business Logic.
+#     - Microsec products are network agnostic: Configuration of various network
+#       protocols including LoRaWAN, Bluetooth, NBIoT, MQTT.
+#     - A multithreaded concurrent network server which implements an end to end
+#       TLS 1.3 equivalent security stack for ultra-low powered embedded
+#       devices.
+#     - Continous Integration and Deployment of products across Data Centers
+#       and Cloud Systems.
+#     - Supervision and management of interns to full time employees
+#       following companies operating procedure.
+#     - Use Case driven feature and sprint planning following Agile and Scrum
+#       Principles.
+
+#     /Tech Stack/: C++, Python, Flask, SQLAlchemy, Hypothesis, Docker,
+#     Nginx, CI, Puppet, PostgreSQL, Vue, Angular, Valgrind, Wireshark,
+#     AWS EC2, Droplets, X509 Certificates, Certificate Authority.
     
 *** Research Assistant in iTrust Research Center for CyberSecurity {{{span(Nov’16 - Oct’17)}}}
 
@@ -72,115 +99,110 @@
     - Analyzed and reconstructed high volume CIP packets of both TCP
       and UDP variants using wireshark.
     - Designed application using TDD and SOLID principles of OOP.
-    - The library was used in a CaptureTheFlag event in an
-      international inter-university competition for Secure
-      Cyber-Physical (Scy-Phy) Systems Week.
-    - Deployed and maintained the web challenge in Amazon EC2.
     - Analysed Networks for vulnerabilites in testbeds: SWat and EPIC.
-
-    /Tech Stack/: Python, Flask, Wireshark, LxC, EtherNet/IP.
 
     /Publication/: A. Siddiqi, N. O. Tippenhauer, D. Mashima, and
     B. Chen, “On practical threat scenario testing in an electric
     power ics testbed,” in Proceedings of the cyber-physical system
     security workshop (cpss), co-located with asiaccs, 2018.
 
-*** Web Developer in Souschef {{{span(Oct’16 - Jan’17)}}}
+    /Tech Stack/: Python, Flask, Wireshark, LxC, EtherNet/IP.
 
-    Prototype, developed, and participated in the initial deployment
-    of a configuration panel across mutliple remote machines.
+# *** Web Developer in Souschef {{{span(Oct’16 - Jan’17)}}}
 
-    - Learnt and developed JS based web service following TDD
-      principles.
+#     Prototype, developed, and participated in the initial deployment
+#     of a configuration panel across mutliple remote machines.
 
-    /Tech Stack/: Node, Python, Express.
+#     - Learnt and developed JS based web service following TDD
+#       principles.
 
-*** Teaching Assistant in General Assembly {{{span(Aug - Sep’16)}}}
+#     /Tech Stack/: Node, Python, Express.
 
-    Assisted instructors to teach students the basics of programming,
-    web development, and CLI magic.
+# *** Teaching Assistant in General Assembly {{{span(Aug - Sep’16)}}}
 
-    - Taught Git, HTML, CSS, Javascript, and Express.
-    - Managed multiple tasks including grading programming
-      tests and evaluating student projects.
+#     Assisted instructors to teach students the basics of programming,
+#     web development, and CLI magic.
 
-*** Web Developer Intern in Tinkerbox Studios {{{span(May - Aug’15)}}}
+#     - Taught Git, HTML, CSS, Javascript, and Express.
+#     - Managed multiple tasks including grading programming
+#       tests and evaluating student projects.
 
-    Summer Internship where I developed business logic and implemented
-    test cases of projects.
+# *** Web Developer Intern in Tinkerbox Studios {{{span(May - Aug’15)}}}
 
-    - Practiced Test Driven Development using Ruby-on-Rails.
-    - Worked on models, views, and controllers and wrote/refactored
-      their new/old tests.
-    - Implemented simple front-end interactive pages.
+# #     Summer Internship where I developed business logic and implemented
+# #     test cases of projects.
 
-    /Tech Stack/: Rails, HTML, CSS, Heroku.
+# #     - Practiced Test Driven Development using Ruby-on-Rails.
+# #     - Worked on models, views, and controllers and wrote/refactored
+# #       their new/old tests.
+# #     - Implemented simple front-end interactive pages.
 
-*** Web Developer Intern in BetterWebPages {{{span(May - Aug’14)}}}
+# #     /Tech Stack/: Rails, HTML, CSS, Heroku.
 
-    First work experience as a summer intern in a startup in infancy.
+# *** Web Developer Intern in BetterWebPages {{{span(May - Aug’14)}}}
 
-    - Worked as a beginner full-stack developer and customized
-      third-party packages to project requirements to deliver a fully
-      operational website.
-    - Learned the major sections of the framework in two weeks and
-      implemented started doing customer projects.
-    - Rewrote django packages to suit the functionality requirements
-      of projects.
-    - Implemented some user interface elements which included bar
-      chart, and pie charts.
+# #     First work experience as a summer intern in a startup in infancy.
 
-    /Tech Stack/: Python, Django.
+# #     - Worked as a beginner full-stack developer and customized
+# #       third-party packages to project requirements to deliver a fully
+# #       operational website.
+# #     - Learned the major sections of the framework in two weeks and
+# #       implemented started doing customer projects.
+# #     - Rewrote django packages to suit the functionality requirements
+# #       of projects.
+# #     - Implemented some user interface elements which included bar
+# #       chart, and pie charts.
 
-** {{{span(PROJECTS)}}}
+# #     /Tech Stack/: Python, Django.
 
-*** Social Project for Children with Autism {{{span(Sep’16 - Nov’17)}}}
+# ** {{{span(PROJECTS)}}}
+# *** Social Project for Children with Autism {{{span(Sep’16 - Nov’17)}}}
 
-    Special needs children may be able to excel in programming. The
-    project involved research, user data collection, designing, and
-    testing a new curriculum to teach children basic coding concepts.
+#     Special needs children may be able to excel in programming. The
+#     project involved research, user data collection, designing, and
+#     testing a new curriculum to teach children basic coding concepts.
 
-    - Analysing base performance by conducting several tests, surveys
-      and measuring their memory and sequential task handling
-      capability.
-    - Data classification and curriculum design in a fun and analogous
-      manner which teaches core concepts of programming.
-    - Students who were able to partially communicate where able to
-      perform all programming related tasks which involved recreating
-      lego blocks from memory, reading and correctly recreating steps
-      of visual code blocks, and finally solving difficult challenges
-      with little to no assistance.
+#     - Analysing base performance by conducting several tests, surveys
+#       and measuring their memory and sequential task handling
+#       capability.
+#     - Data classification and curriculum design in a fun and analogous
+#       manner which teaches core concepts of programming.
+#     - Students who were able to partially communicate where able to
+#       perform all programming related tasks which involved recreating
+#       lego blocks from memory, reading and correctly recreating steps
+#       of visual code blocks, and finally solving difficult challenges
+#       with little to no assistance.
 
-    /Stack/: Edison Robot, Research.
+#     /Stack/: Edison Robot, Research.
 
-*** Capstone Project - Interactive Animatronic Dragon {{{span(Jan - Aug’16)}}}
+# *** Capstone Project - Interactive Animatronic Dragon {{{span(Jan - Aug’16)}}}
 
-    An animatronic dragon which scans its vicinity using OpenCV
-    toolkit triggering movement to its multiple sections in the
-    body. I setup the network for the communication between different
-    paths and helped programmed some motors. 
+#     An animatronic dragon which scans its vicinity using OpenCV
+#     toolkit triggering movement to its multiple sections in the
+#     body. I setup the network for the communication between different
+#     paths and helped programmed some motors. 
 
-    - Worked in a student team of 6 people from different technical
-      tracks.
-    - Implemented an ad-hoc network with static IP for P2P connections
-      between two RaspberryPi.
-    - Developed a state machine to map and categorize different
-      outputs to user inputs.
-    - Assisted in programming the movement of mechanical sections by
-      interfacing physical mechanical relays.
+#     - Worked in a student team of 6 people from different technical
+#       tracks.
+#     - Implemented an ad-hoc network with static IP for P2P connections
+#       between two RaspberryPi.
+#     - Developed a state machine to map and categorize different
+#       outputs to user inputs.
+#     - Assisted in programming the movement of mechanical sections by
+#       interfacing physical mechanical relays.
 
-    /Tech Stack/: Python, OpenCV.
+#     /Tech Stack/: Python, OpenCV.
 
-# Deprecated: This is kept just for collection purposes. This project
-# was never completed or even crossed the halfway point.
-# *** Web Development - Non-academic University Project {{{span(Dec’15 - July’16)}}}
+# # Deprecated: This is kept just for collection purposes. This project
+# # was never completed or even crossed the halfway point.
+# # *** Web Development - Non-academic University Project {{{span(Dec’15 - July’16)}}}
 
-#     Create an in-house seat reservation platform for students to use
-#     several office spaces.
+# #     Create an in-house seat reservation platform for students to use
+# #     several office spaces.
 
-#     - Developed the platform using Laravel and hosted in university server.
+# #     - Developed the platform using Laravel and hosted in university server.
 
-#     /Tech Stack/: Laravel, Artisan, PHP.
+# #     /Tech Stack/: Laravel, Artisan, PHP.
 
 ** {{{span(ACTIVITIES)}}}
 
@@ -192,6 +214,5 @@
    Exploring Culture, CaptureTheFlag, Network Security, Physical
    Systems Security, Linux, Arch and Emacs.
 
-   *Languages* - English (Full Professional Proficiency), Bengali
-   (Native).
-
+   *Languages* - English (Full Professional Proficiency), Bengali (Native). I
+   am trying to learn French, Bahasa and Korean using Duolingo, for fun.

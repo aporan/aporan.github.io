@@ -8,12 +8,16 @@ body {
     padding: 1em;
     padding-top: 0em;
     font-family: Open Sans, sans-serif;
-    font-size: 14px;
+    font-size: 12.5px;
     /* comment the following two lines
        to print to pdf via browser */
     margin: 1em auto;
     margin-top: 10px;
+    margin-bottom: 10px;
     max-width: 70em;
+
+    /* background-color: #323232; */
+    /* color: #e5e5e5; */
 }
 
 div {
@@ -21,11 +25,10 @@ div {
 }
 
 p {
-    margin-top: 0.55em;
+    margin-top: 0.30em;
     margin-bottom: 0.3em;
     text-align: justify;
     text-justify: distribute;
-    font-size: 13px;
 }
 
 #resume-head {
@@ -83,12 +86,9 @@ h4 span {
 
 ul {
     margin: 0;
-    padding-left: 30px;
-    font-size: 13px;
+    padding-left: 20px;
 }
 
 ul li {
-    padding: 1px;
+    padding: 2px;
 }
-
-
