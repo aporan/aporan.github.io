@@ -4,105 +4,93 @@
 #+HTML_DOCTYPE: html5
 #+OPTIONS: title:nil toc:nil num:nil html-postamble:nil html-preamble:nil html-style:nil html-scripts:nil
 #+STARTUP: content
-#+macro: span @@html:<span>@@$1@@html:</span>@@
-#+macro: contact @@html:<span id="contact">@@@@html:<span>@@email: $1@@html:</span>@@ @@html:<span>@@phone: $2@@html:</span>@@@@html:</span>@@
+#+macro: span @@html:<span>$1</span>@@
+#+macro: contact @@html:<span id="contact"><span>email: $1</span><span>phone: $2</span></span>@@
 
 * AHNAF SIDDIQI | {{{contact(ahnafsidd[at]gmail.com, +65 97342978)}}}
   :PROPERTIES:
   :CUSTOM_ID: resume-head
   :END:
-   A learner with 3.5 years of experience, with an interest in network
-   security, cloud architecture, and system design.
+  
+  A programmer keen in network security, cloud and system design with 4 years
+  of experience.
    
-** {{{span(EDUCATION)}}}
+** {{{span(Education)}}}
 *** Singapore University of Technology and Design {{{span(Class of 2016)}}}
 
-   Bachelor of Engineering with Honours majoring in Information Systems
+   Bachelor of Engineering with Honors majoring in Information Systems
    Technology and Design. \\
    Specialization: Security and Communications, Artificial Intelligence.
 
-** {{{span(SKILLS)}}}
+** {{{span(Skills)}}}
 
-   I am experienced in: Python, C++, Docker, Git, Linux, Make, Nginx, Sys
-   Admin, PostgreSQL, InfluxDB, Bash, X509 Certs. I am familiar with:
-   Javascript, HTML, CSS, GDB, SQLite, Puppet, Haskell, Valgrind, Redis,
-   Kubernetes.
+   Experienced in: Python, C, Docker, Git, Linux, (C)Make, Nginx, Sys Admin,
+   PostgreSQL, InfluxDB, Bash, X509 Certs, TCP/UDP, TLS, Gitlab, CI/CD, Flask,
+   SQLAlchemy, HTTP(S), SNMP, MQTT, AWS EC2 Management, Windows ADCS.
 
-** {{{span(WORK EXPERIENCE)}}}
-*** Software Engineer in MicroSec Pte. Ltd. {{{span(Dec’17 - Now)}}}
+   Familiar with: Javascript, HTML, CSS, GDB, Puppet, Valgrind, Redis,
+   Django, Grafana, CPP, DTLS, MbedTLS.
 
-    I engage in designing the technical system solution from requirements to
-    application implementation, delivery, maintenance, and customer support
-    for Certificate Management and Load Monitoring Products.
+** {{{span(Work Experience)}}}
+*** MicroSec Pte. Ltd. >| Senior Backend Engineer {{{span(Dec’17 - Now)}}}
+    :PROPERTIES:
+    :ID:       8380bf80-39e4-4c02-bee0-8f94168a87d8
+    :END:
 
-    - Developing X509 Cert Mangament Suite with it's own Cert Auth that allows
-      cert issuance and automated renewal of various supported protocols.
-    - Developing and maintaining a Load Monitoring product suite which uses
-      Raspberry PI as remote agents, providing monitoring and detection
-      capabilites.
-    - Implementing MicroPKI: a proprietary protocol providing end-to-end
-      encryption for embedded devices in IoT, which supports TLS 1.3 using
-      P256, Ed25519, AES.
-    - Implementing REST APIs, near real-time data using MQTT, WebSockets, and
-      developing modified in-house implementations of ACMEv2, EST, SCEP.
-    - Collaborating with multiple teams of 7+ individuals in implementing
-      different product pipeline using Scrum
-    - Relational and TimeSeries Database administration and role management
-      with appropriate security levels.
-    - Performing DevOps with Gitlab and Docker and providing CI/CD for
-      on-premise and cloud servers using docker-swarm, kubernetes.
-    - System Administration of on-premise servers running on Hyper-V and cloud
-      servers on AWS EC2.
-    - Limited experience on frontend dev using Angular and embedded dev for
-      arm-cortex-m0.
-    - Working with CTO, PM and CSM manager to identify product requirements
-      and provide technical solutions.
+    I design and implement technical system solution from stakeholder
+    requirements to application implementation, lifecycle, and delivery
+    pipeline while managing customer operations.
+
+    /Role - Software Engineer/
+
+    - Designing and Implementing RESTful microservices using python that
+      supports in-house implementations of ACMEv2, EST, and SCEP following
+      their respective RFCs: 8555, 7030, 8894.
+    - Developing MicroPKI a performance multithreaded socket server: a
+      proprietary TLS 1.3 protocol providing e2e encryption for embedded
+      devices in IoT that supports multiple curves (P256, Ed25519) and ciphers
+      (AES-128/256).
+    - Developing and maintaining an Energy Monitoring product that uses Modbus
+      to read localized data that is transferred near real-time via MQTT that
+      is batched process and stored InfluxDB.
+    - Microservices deployment in an offline environment using a customized
+      standalone deployment policy.
+    - Continuous deployment in EC2 using Docker Swarm having support for both
+      TCP and UDP clients. 
+    - Implementing Pupppet configuration files that provides remote updates
+      for a custom build Raspbian OS.
+    - Configuration and management of on-premise softwares, hosted both on
+      offline servers and AWS instances.
+    - AWS user role management and VPC configuration for microservices
+      deployment: standalone and Docker Swarm.
+    - System Adminstration of on-premise Gitlab deployment and Runners for
+      microservices pipeline. 
+    - Experience using PSPKI to bridge Linux with Windows ADCS and AD
+      configuration.
+    - Implementing agents for SNMP using PySNMP, SMTP, and Pyradius for RSA
+      SecurID Authentication.
+    - Collaborating with multiple teams of 7+ individuals to ensure product
+      delivery following Scrum methodology.
+
+    /Role - Operations/
+    
+    - Working with internal stakeholders to propose product roadmap
+      requirements and provide technical solutions.
+    - Requirement analysis and translation into well-defined scope of work.
+    - Collaborating with Product Owner in evaluating technological solutions
+      for product.
     - Supervision and management of interns to full time employees following
       companies operating procedure. 
 
-    /Tech Stack/: Python, C++, Flask, SQLAlchemy, Hypothesis, Docker, Nginx,
-    CI, Puppet, PostgreSQL, Angular, Valgrind, Wireshark, AWS EC2, Droplets,
-    X509 Certificates, Certificate Authority, Kubernetes, Redis, Influx
-    
-# *** Software Engineer in MicroSec Pte. Ltd. {{{span(Dec’17 - Now)}}}
-#     A Full Stack Engineer involved in design, architecture, and implementation
-#     of multiple products which handles TLS Certificate Lifecycle Management. 
+*** iTrust Research Center for CyberSecurity >| Research Assistant {{{span(Nov’16 - Oct’17)}}}
 
-#     - Designing and architecting products using various Crypto technologies
-#       including Elliptic Curve Crypto, RSA Crypto which manages multiple
-#       Certificate Systems.
-#     - System Administration of our technologies in different domains including
-#       bare metal deployments in Data Centers, containers in AWS Cloud, and
-#       Embedded Systems.
-#     - Incorporating multifaceted requirements required for a complete product
-#       suite: Database Systems, Frontend Frameworks, and Business Logic.
-#     - Microsec products are network agnostic: Configuration of various network
-#       protocols including LoRaWAN, Bluetooth, NBIoT, MQTT.
-#     - A multithreaded concurrent network server which implements an end to end
-#       TLS 1.3 equivalent security stack for ultra-low powered embedded
-#       devices.
-#     - Continous Integration and Deployment of products across Data Centers
-#       and Cloud Systems.
-#     - Supervision and management of interns to full time employees
-#       following companies operating procedure.
-#     - Use Case driven feature and sprint planning following Agile and Scrum
-#       Principles.
+    Implemented a concurrent Common Industrial Protocol (CIP), a realtime
+    network protocol at Secure Water Treatment (SWaT) testbed in SUTD, that
+    was used in simulation and various research purposes.
 
-#     /Tech Stack/: C++, Python, Flask, SQLAlchemy, Hypothesis, Docker,
-#     Nginx, CI, Puppet, PostgreSQL, Vue, Angular, Valgrind, Wireshark,
-#     AWS EC2, Droplets, X509 Certificates, Certificate Authority.
-    
-*** Research Assistant in iTrust Research Center for CyberSecurity {{{span(Nov’16 - Oct’17)}}}
-
-    Common Industrial Protocol (CIP) is a realtime network protocol
-    being used in Secure Water Treatment (SWaT) testbed at SUTD. I
-    followed specifications to implement a concurrent server to be
-    used in simulation and various research purposes.
-
-    - Analyzed and reconstructed high volume CIP packets of both TCP
-      and UDP variants using wireshark.
+    - Analyzed and reconstructed high volume CIP packets for both TCP and UDP
+      variants using wireshark.
     - Designed application using TDD and SOLID principles of OOP.
-    - Analysed Networks for vulnerabilites in testbeds: SWat and EPIC.
 
     /Publication/: A. Siddiqi, N. O. Tippenhauer, D. Mashima, and
     B. Chen, “On practical threat scenario testing in an electric
@@ -111,7 +99,7 @@
 
     /Tech Stack/: Python, Flask, Wireshark, LxC, EtherNet/IP.
 
-# *** Web Developer in Souschef {{{span(Oct’16 - Jan’17)}}}
+# *** Souschef | Web Developer {{{span(Oct’16 - Jan’17)}}}
 
 #     Prototype, developed, and participated in the initial deployment
 #     of a configuration panel across mutliple remote machines.
@@ -121,7 +109,7 @@
 
 #     /Tech Stack/: Node, Python, Express.
 
-# *** Teaching Assistant in General Assembly {{{span(Aug - Sep’16)}}}
+# *** General Assembly | Teaching Assistant {{{span(Aug - Sep’16)}}}
 
 #     Assisted instructors to teach students the basics of programming,
 #     web development, and CLI magic.
@@ -130,35 +118,35 @@
 #     - Managed multiple tasks including grading programming
 #       tests and evaluating student projects.
 
-# *** Web Developer Intern in Tinkerbox Studios {{{span(May - Aug’15)}}}
+# *** Tinkerbox Studios | Web Dev. Internship  {{{span(May - Aug’15)}}}
 
-# #     Summer Internship where I developed business logic and implemented
-# #     test cases of projects.
+#     Summer Internship where I developed business logic and implemented
+#     test cases of projects.
 
-# #     - Practiced Test Driven Development using Ruby-on-Rails.
-# #     - Worked on models, views, and controllers and wrote/refactored
-# #       their new/old tests.
-# #     - Implemented simple front-end interactive pages.
+#     - Practiced Test Driven Development using Ruby-on-Rails.
+#     - Worked on models, views, and controllers and wrote/refactored
+#       their new/old tests.
+#     - Implemented simple front-end interactive pages.
 
-# #     /Tech Stack/: Rails, HTML, CSS, Heroku.
+#     /Tech Stack/: Rails, HTML, CSS, Heroku.
 
-# *** Web Developer Intern in BetterWebPages {{{span(May - Aug’14)}}}
+# *** BetterWebPages | Web Dev. Internship {{{span(May - Aug’14)}}}
 
-# #     First work experience as a summer intern in a startup in infancy.
+#     First work experience as a summer intern in a startup in infancy.
 
-# #     - Worked as a beginner full-stack developer and customized
-# #       third-party packages to project requirements to deliver a fully
-# #       operational website.
-# #     - Learned the major sections of the framework in two weeks and
-# #       implemented started doing customer projects.
-# #     - Rewrote django packages to suit the functionality requirements
-# #       of projects.
-# #     - Implemented some user interface elements which included bar
-# #       chart, and pie charts.
+#     - Worked as a beginner full-stack developer and customized
+#       third-party packages to project requirements to deliver a fully
+#       operational website.
+#     - Learned the major sections of the framework in two weeks and
+#       implemented started doing customer projects.
+#     - Rewrote django packages to suit the functionality requirements
+#       of projects.
+#     - Implemented some user interface elements which included bar
+#       chart, and pie charts.
 
-# #     /Tech Stack/: Python, Django.
+#     /Tech Stack/: Python, Django.
 
-# ** {{{span(PROJECTS)}}}
+# ** {{{span(Projects)}}}
 # *** Social Project for Children with Autism {{{span(Sep’16 - Nov’17)}}}
 
 #     Special needs children may be able to excel in programming. The
@@ -207,14 +195,10 @@
 
 # #     /Tech Stack/: Laravel, Artisan, PHP.
 
-** {{{span(ACTIVITIES)}}}
+** {{{span(Activities)}}}
 
-   *External Involvements* - NUS XCTF 2016, Finalists for APEX
-   Business-IT Global Case Challenge 2016, SG50 Hackathon 2015 Smart
-   Nation, Secretary for University Photography Club.
+   *Competitions* - NUS XCTF 2016, APEX Business-IT Global Case Challenge
+   2016 Finalists, Multiple Hackathons
 
-   *Interests* - Photography, Running, Non-Profit Social Events,
-   Exploring Culture, CaptureTheFlag, Network Security, Physical
-   Systems Security, Linux, Arch and Emacs.
-
-   *Languages* - English (Full Professional Proficiency), Bengali (Native). 
+   *Interests* - Photography, Running, CaptureTheFlag, Network Security,
+   Physical Systems Security, Linux, Arch and Emacs.
