@@ -88,8 +88,8 @@
     network protocol at Secure Water Treatment (SWaT) testbed in SUTD, that
     was used in simulation and various research purposes.
 
-    - Analyzed and reconstructed high volume CIP packets for both TCP and UDP
-      variants using wireshark.
+    - Packet Sniffing and Reconstruction of high volume CIP packets for both
+      TCP and UDP.
     - Designed application using TDD and SOLID principles of OOP.
 
     /Publication/: A. Siddiqi, N. O. Tippenhauer, D. Mashima, and
