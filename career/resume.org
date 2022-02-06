@@ -5,14 +5,13 @@
 #+OPTIONS: title:nil toc:nil num:nil html-postamble:nil html-preamble:nil html-style:nil html-scripts:nil
 #+STARTUP: content
 #+macro: span @@html:<span>$1</span>@@
-#+macro: contact @@html:<span id="contact"><span>email: $1</span><span>phone: $2</span></span>@@
+#+macro: contact @@html:<span id="contact"><span>email: $1</span><span id="phone"><span>phone: $2</span>@@
 
-* AHNAF SIDDIQI | {{{contact(ahnafsidd[at]gmail.com, +65 97342978)}}}
+* AHNAF SIDDIQI | {{{contact(ahnaf[at]usec.io, +65 97342978)}}}
   :PROPERTIES:
   :CUSTOM_ID: resume-head
   :END:
-  
-  A programmer keen in network security, cloud and system design with 4 years
+  A programmer keen in network security, cloud and system design with 4+ years
   of experience.
    
 ** {{{span(Education)}}}
@@ -32,7 +31,7 @@
    Django, Grafana, CPP, DTLS, MbedTLS.
 
 ** {{{span(Work Experience)}}}
-*** MicroSec Pte. Ltd. >| Senior Backend Engineer {{{span(Dec’17 - Now)}}}
+*** MicroSec Pte. Ltd. >| Senior Software Engineer {{{span(Dec’17 - Now)}}}
     :PROPERTIES:
     :ID:       8380bf80-39e4-4c02-bee0-8f94168a87d8
     :END:
@@ -43,42 +42,39 @@
 
     /Role - Software Engineer/
 
+    - AWS and Azure user role management and VPC configuration for
+      microservices deployment using Docker Swarm
+    - Streamlining development pipeline to include static and dynamic analysis
+    - System Adminstration of on-premise Gitlab deployment and Runners for
+      microservices.
     - Designing and Implementing RESTful microservices using python that
       supports in-house implementations of ACMEv2, EST, and SCEP following
       their respective RFCs: 8555, 7030, 8894.
-    - Developing MicroPKI a performance multithreaded socket server: a
+    - Developing MicroPKI: a performance multithreaded socket server: a
       proprietary TLS 1.3 protocol providing e2e encryption for embedded
       devices in IoT that supports multiple curves (P256, Ed25519) and ciphers
       (AES-128/256).
     - Developing and maintaining an Energy Monitoring product that uses Modbus
       to read localized data that is transferred near real-time via MQTT that
       is batched process and stored InfluxDB.
-    - Microservices deployment in an offline environment using a customized
-      standalone deployment policy.
     - Continuous deployment in EC2 using Docker Swarm having support for both
       TCP and UDP clients. 
     - Implementing Pupppet configuration files that provides remote updates
       for a custom build Raspbian OS.
     - Configuration and management of on-premise softwares, hosted both on
       offline servers and AWS instances.
-    - AWS user role management and VPC configuration for microservices
-      deployment: standalone and Docker Swarm.
-    - System Adminstration of on-premise Gitlab deployment and Runners for
-      microservices pipeline. 
     - Experience using PSPKI to bridge Linux with Windows ADCS and AD
       configuration.
     - Implementing agents for SNMP using PySNMP, SMTP, and Pyradius for RSA
       SecurID Authentication.
-    - Collaborating with multiple teams of 7+ individuals to ensure product
+    - Collaborating with multiple teams of 20+ individuals to ensure product
       delivery following Scrum methodology.
 
     /Role - Operations/
-    
-    - Working with internal stakeholders to propose product roadmap
-      requirements and provide technical solutions.
+
+    - Conducting Scrum Master duties for a team of 10+ individuals to meet deliverables
+    - Working with internal stakeholders to propose roadmap requirements.
     - Requirement analysis and translation into well-defined scope of work.
-    - Collaborating with Product Owner in evaluating technological solutions
-      for product.
     - Supervision and management of interns to full time employees following
       companies operating procedure. 
 
