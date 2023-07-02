@@ -1,0 +1,140 @@
+#+TITLE: Gnu GPG Encryption
+#+DATE: <2020-01-07 Tue>
+#+ESSENCE: How to use GPG2
+#+TAG: ECC GPG
+#+MODIFIED: 
+#+STARTUP: showall
+
+GNU GPG is blah blah blah blah blah blah blah blah blah blah blah blah
+
+Types of keys:
+
+- Key Certification [C]
+- Sign Data [S]
+- Encrypt Communication / Storage [E]
+
+There are more of defined in RFC^5 but for our purposes this is sufficient.
+
+*Key Certification*: <description>
+
+*Sign Data*: <description>
+
+*Encrypt Communication*: <description>
+
+Generate
+Strengthen
+Sub
+Remove
+Copy
+Revoke
+
+** Steps
+
+*** Create Key Pair in /expert/ mode
+
+    #+BEGIN_SRC bash
+    gpg2 --full-gen-key --expert 
+    #+END_SRC
+
+    It'll prompt for the following options:
+
+    #+BEGIN_EXAMPLE
+    Please select what kind of key you want:
+     (1) RSA and RSA (default)
+     (2) DSA and Elgamal
+     (3) DSA (sign only)
+     (4) RSA (sign only)
+     (7) DSA (set your own capabilities)
+     (8) RSA (set your own capabilities)
+     (9) ECC and ECC
+    (10) ECC (sign only)
+    (11) ECC (set your own capabilities)
+    #+END_EXAMPLE
+
+    I chose =9=.
+
+    It will then prompt for the type of curve to choose:
+
+    #+BEGIN_EXAMPLE
+    Please select which elliptic curve you want:
+    (2) NIST P-256
+    (3) NIST P-384
+    (4) NIST P-521
+    (5) Brainpool P-256
+    (6) Brainpool P-384
+    (7) Brainpool P-512
+    #+END_EXAMPLE
+
+    I chose =4=.
+
+    Validity is set to 0 and the rest of the prompts are filled in. Finally,
+    GPG will prompt for a password. Provide a strong password, I used:
+
+    #+BEGIN_SRC bash
+    pwgen -sy 12
+    #+END_SRC
+
+    Yes, I'm aware that I'm using NIST verified keys. Show the /public/ keys: 
+
+    #+BEGIN_SRC bash
+    gpg2 --list-keys
+
+    // This will be the output
+
+    // /home/augusthome/.gnupg/pubring.gpg
+    // -----------------------------------
+    // pub   nistp521/******** 2019-11-10 [SC]
+    // uid         [ultimate] aporan (MasterKey) <ahnafsidd@gmail.com>
+    // sub   nistp521/******** 2019-11-10 [E]
+    #+END_SRC
+
+    You can also show the /private/ keys:
+
+    #+BEGIN_SRC bash
+    gpg2 --list-secret-keys
+
+    // This will be the output
+
+    // /home/augusthome/.gnupg/pubring.gpg
+    // -----------------------------------
+    // sec  nistp521/******** 2019-11-10 [SC]
+    // uid         [ultimate] aporan (MasterKey) <ahnafsidd@gmail.com>
+    // sub   nistp521/******** 2019-11-10 [E]
+    #+END_SRC
+
+*** Set Stronger Hash Preferences
+
+    #+BEGIN_SRC bash
+    gpg2 --edit-key --expert <email>
+    #+END_SRC
+
+    It'll provide a prompt, enter the following:
+
+    #+BEGIN_EXAMPLE
+    gpg> setpref SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES \
+                 CAST5 ZLIB BZIP2 ZIP
+    #+END_EXAMPLE
+
+    gpg will prompt for your password then: /save/.
+
+*** Create a SubKey
+
+    The output  view
+
+    
+
+*** Remove
+*** Copy
+*** Revoke
+
+
+    
+
+** References
+
+   1) https://alexcabal.com/creating-the-perfect-gpg-keypair
+   2) https://incenp.org/notes/2015/using-an-offline-gnupg-master-key.html
+   3) https://wiki.debian.org/Subkeys?action=show&redirect=subkeys
+   4) https://spin.atomicobject.com/2013/11/24/secure-gpg-keys-guide/
+   5) https://tools.ietf.org/html/rfc4880#section-5.2.3.21
+

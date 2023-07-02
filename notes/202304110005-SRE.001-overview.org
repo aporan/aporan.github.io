@@ -1,0 +1,93 @@
+#+TITLE: Overview
+#+DATE: <2022-01-08 Sat>
+#+GENRE: DevOps
+#+ESSENCE: DeploymentSecurity
+#+TAG: DevOps CI CD 
+#+MODIFIED: 
+#+STARTUP: showall
+
+* Overview Depth
+
+1. Embed Security in DevOps
+2. Secure SDLC
+3. Infra as Code
+4. Compliance as Code
+5. Consolidate and Relate Vulnerabilities
+
+* Story 
+
+A CISO's (Chief Info Sec Officer) duty to ensure application are
+secured. Usually this can be further divided into two categories:
+
+1. InfoSec Engineer
+   * Network Sec Engineer
+2. AppSec Engineer
+   
+Security Issues are generally due to 3 reasons:
+
+1. Lack of Infra Hardening
+2. Lack of Visibility into Environment
+3. Lack of Security focus from the beginning of the SDLC
+
+Additional of those items will definitely slow down Product Deployment, but
+it's essential that the process remains smooth
+
+* Free Courses
+
+1. AppSec Course: https://www.hacker101.com/videos
+2. WebApplication Security: https://portswigger.net/web-security/all-materials
+
+* DevSecOps (DSO) Domain Scope
+
+  The domain of DSO contains a lot of things, including providing the correct
+background of training people in the DevSecOps lifecycle. Microsoft has
+efficiently captures the Deployment LifeCycle here:
+https://www.microsoft.com/en-us/securityengineering/devsecops. It's a Culture,
+and not just a routine.
+
+
+* What is DevOps?
+
+  A software engineering practice that attempts to unify software development
+  and software operation. A typical cycle has 7 stages:
+
+  1. Plan and Create: Plan and implement the code using SCM
+  2. Verify: Verify that the code does what the business wants
+  3. Package: Code should be in a deployable artifcate, ready to be tested in
+     a staging environment
+  4. Release: Product ready artiefact after release approvals
+  5. Configure: Configuration management of application stack
+  6. Monitor: Monitor application performance
+
+  A good implementation of DSO would achieve the following, in no particular
+  order:
+
+  * Reslience: Helps organization design and build resilient systems
+  * Flexibility: Be Agile
+  * Speed: Speed is competitive advantage
+  * Reliability: DSO reduces failure rates
+  * Automation: Reduces complexity as scale
+
+  And an implementation consists of the following items:
+
+  1. Embed Security in Pipeline
+  2. Give Devs Visitlity into Security Activities
+  3. Encourage people to pick security tasks
+  4. Eveything as code: Compliance as code, hardening via configuraiton
+     management systems 
+  5. Use better securty frameworks
+  6. Use Maturity Models
+
+** Four Core DSO Principles:
+
+   * Automation
+   * Culture: Is the most under appreciated
+   * Sharing
+   * Communication
+
+* Resources
+
+  1. Main: https://www.practical-devsecops.com/devsecops-university/
+  2. Tools: https://github.com/analysis-tools-dev/static-analysis
+  3. Site Scan: https://github.com/ssllabs/ssllabs-scan
+  4. Docker Benchmark: https://github.com/dev-sec/cis-docker-benchmark

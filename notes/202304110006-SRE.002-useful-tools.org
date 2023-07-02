@@ -1,0 +1,43 @@
+#+TITLE: Useful Tools
+#+DATE: <2022-01-09 Sun>
+#+GENRE: DevOps
+#+ESSENCE: Bash
+#+TAG: bash 
+#+MODIFIED: 
+#+STARTUP: showall
+
+* Named Pipes
+
+  Pipe's =|= allow's to pass one commands output to the next command. In bash,
+  one can have /named pipes/.
+
+  #+BEGIN_SRC bash
+  mkfifo <pipe-name>
+  # or 
+  mknod p <pipe-name>
+  #+END_SRC  
+
+* File Permissions
+
+  Everything is a file, and every file has permissions, and that can be
+  reviewed by either using:
+
+  #+BEGIN_SRC bash
+  ls -l
+  # or 
+  stat
+  #+END_SRC  
+
+  Example usage of stat,
+
+  #+BEGIN_SRC bash
+  /# stat myfile
+  File: myfile
+  Size: 3               Blocks: 8          IO Block: 4096   regular file
+  Device: 1000dah/1048794d        Inode: 120455793   Links: 1
+  Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+  Access: 2022-01-09 13:01:12.813719663 +0000
+  Modify: 2022-01-09 13:01:08.533688399 +0000
+  Change: 2022-01-09 13:01:08.533688399 +0000
+  Birth: -
+  #+END_SRC  

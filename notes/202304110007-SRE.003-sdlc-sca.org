@@ -1,0 +1,96 @@
+#+TITLE: SDLC and SCA
+#+DATE: <2022-01-09 Sun>
+#+GENRE: DevOps
+#+ESSENCE: Release
+#+TAG: CI CD
+#+MODIFIED: 
+#+STARTUP: showall
+
+* DSO Maturity Model (DSOMM)
+
+  A model for DSO that focuses on the following aspects:
+
+  * Dynamic Depth:
+  * Static Depth: Depth of Sast
+  * Intensity: Frequency
+  * Consolidation: Analysis
+
+  There are 4 levels to DSOMM
+
+  * Level 1
+
+    Run SAST, component analysis and secrets scannings as it is. The same goes
+    for DAST tools
+
+  * Level 2
+
+    Minor Tweaks to toolset to improve findings and reduce false-positive
+
+  * Level 3 / Level 4
+
+    Read up.
+
+  You **do not want** to /fail/ the builds in DevSecOps Maturity Levels 1 and 2. If
+  a security tool fails a build upon security findings, you would not want
+  this job to block the other jobs and stages as there could be false
+  positives in the results.
+
+* Software Component Analysis (SCA)
+
+  A Testing technique to find security vulnerabilities in 3rd party
+  products. It's great in finding isseus related to licensing, packages,
+  libraries, etc. 
+
+  It is still a SAST technique as the code is not run. There are 4 areas of
+  concerns:
+
+  * Strengths: Less false positive than SAST, and component analysis is easy
+    to get started
+  * Weaknesses: Only uses checksums or some preliminary measures to find
+    vulnerabilities. It's not really a fit for finding internal packages or
+    packages that the vendor's themselves did not analyze. 
+  * Threats: False Postivies and License checks can be pretty vague, as
+    dependency matroshka dolls is really a plague. 
+  * Opportunities: Abilitiy to scan code to see if vulnerable methods are
+    being used can be improved / added 
+
+** Operational Costs Questions / Decisions
+
+   1. Vulnerable components doesn't have a fix
+   2. There is no patch (legacy version?)
+   3. There is a patch (managing the patch?)
+      * Don't personally patch unless internal team is not an expert in the
+        package. 
+   4. Application breaks if the patched version is applied 
+   5. Direct Dependecy vs Transitive Dependency (Matroshka Dolls)
+   6. Who does the FPA (False Positive Analysis?)
+   7. Apt / Artifactory / Sonatype nexus manages inhouse package repositories 
+   8. Virtual Patching?
+   9. There maybe hundreds of Issues
+      * Which one's are resolved?
+      * How often should they be resolved?
+   10. Traditional Risk Management answers the questions:
+       * Accept 
+       * Ignore
+       * Fix 
+       * Transfer
+
+** Simple Best Practices (Bible)
+
+   1. CI / CD < 15 mins
+   2. Separate jobs for each type of scan
+   3. Fail builds when maturity level 3 or above 
+   4. Roll out tools in phases
+   5. Linking Wiki in the CI/CD which provides contexts
+   6. Tools which provides APIs are awesome! At least ensure tools they have
+      CLI
+      * Ability to control the scope and false positive is nice 
+   7. Avoid using frameworks, and convert everything as code 
+
+** Practices
+
+   * WebGoat
+     * Dependency-Check
+     * Language specific OS tools: safety, retirejs, and more
+   * TruffleHog 
+     * 

@@ -1,0 +1,29 @@
+#+TITLE: Static and Dynamic Analysis
+#+DATE: <2022-02-13 Sun>
+#+GENRE: DevOps
+#+ESSENCE: Analysis
+#+TAG: CI CD
+#+MODIFIED: 
+#+STARTUP: showall
+
+* Static
+
+  Nothing much to explain. The toolkits here check the raw codes /
+  configuration files to check for known Vulnerabilites.
+
+* Dynamic
+
+  Technique to analyse running application for security vulnerabilities. One
+  of biggest pivot poing about Dynamic Analysis is about Spidering. The better
+  the spidering job, the better the application results.
+
+  1. Usually, DA scans takes longer than 10 minutes or so, so it's important
+     to safer to run this in non-blocking path
+  2. Spidering is an active part of the dynamic analysis process
+  3. There are many separate tool kits for this, crossing many different
+     domains: 
+     * nmap,
+     * sslyze
+     * zap proxy
+     * nikto
+

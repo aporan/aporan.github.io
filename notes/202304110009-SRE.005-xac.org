@@ -1,0 +1,117 @@
+#+TITLE: Things as Code
+#+DATE: <2022-02-16 Wed>
+#+GENRE: DevOps
+#+ESSENCE: Configurations as Code
+#+TAG: CI CD
+#+MODIFIED: 
+#+STARTUP: showall
+
+* Infra as Code 
+
+  The first lesson is about Ansible, and it is really about configuration
+  management. The idea is to handle remote configurations. It does not,
+  however, manage actual deployment of systems
+
+  Resources:
+
+  * https://www.youtube.com/watch?v=w8fOEEMqpOw
+  * https://serversforhackers.com/s/ansible
+  * https://github.com/dev-sec/ansible-collection-hardening
+
+** Ansible Overview
+   
+   Playbooks are a collection of Tasks. One can run playbook locally to find
+   test the set of tasks to be run; It's also possible to nest ansible
+   playbooks and access them from a main.yml file.
+
+   One of the interesting abilities of Ansible is that it can find variables
+   about a system, using it's =setup= module. 
+
+* Compliance as Code
+
+  Internet Security Linux Benchmark can be audited using the linus-baseline
+  Inspec profile. It runs compliance check against existing server; Although
+  this is not as important for development purposes, it's actually very good
+  for deployments and audits, especially multiple servers are being managed in
+  a company.
+
+  Inspec can be used to check if extra items can / are installed in the
+  current platform. There are some global rules that everyone might need to
+  follow. However, right now, we don't have tooling requirements.
+
+  A combination of Ansible and Inspec can be used to maintain the hardened
+  state of a distribution box
+
+  Inspec is a ruby gem, with a default inspec.yml file, which does
+  nothing. The actual code is established in .rb files, for compliance checks.
+
+  Cardholder information security guidelines and documentation can be found
+  here: https://www.pcisecuritystandards.org/document_library
+
+  Essentially, depending on information especially when a system is used to
+  store cardholder information, many items could be checked. A summary is
+  available here: 
+
+  * https://linux-audit.com/linux-systems-guide-to-achieve-pci-dss-compliance-and-certification/
+
+  Running applications (containers) can also be checked against
+  compliance. There are already open source items available online. Just using
+  them is already a good start
+
+  https://github.com/dev-sec/cis-docker-benchmark
+
+* Vulnerability Management Tools
+
+  Helps in creating metrics for the business team, in terms of things to
+  do. An approach to Vul Management would define the path of the DevOps route:
+
+  1. Have a primary (simple) metric, and
+  2. Have a secondary metric,
+
+  Both of which defines a maturity level. The better criteria of building up a
+  management configuration matrix (something which tells you exactly what to
+  do when an incident appears), and the more readable it is, the better it is
+  for the team.
+
+  Get discussions started using simple items like linting, software package
+  dependency testing.
+
+  3. Find
+  4. Aggregate,
+  5. Manage,
+  6. Fix, 
+  7. Improve
+
+** Design Matrix
+
+   1. Don't file issues with false positive
+   2. Use known tools to file issues.
+   3. Prioritize projects, and other items
+   4. Generate metrics for showing performance
+   5. The risk management metrics should provide guideline for the maturity
+      level of the product
+   6. Matrics should not be a "catch all" thing. It should capture the
+      organization's culture
+
+   Example metrics:
+
+   1. No. of High/Med/Low Severe Vulnerabilities,
+   2. Top 5/10 vulnerabilities per business product
+   3. No. of issues fixed in past month/quarter/year
+   4. Percentage of project with automated scanning
+
+    
+*** Defect Dojo DevSecOps
+
+   The way DevSecOps box does the resolution, for most of it's toolkits:
+
+   docker run --user $(id -u):$(id -g) -w /zap -v $(pwd):/zap/wrk:rw \
+           --rm owasp/zap2docker-stable:2.10.0 zap-baseline.py \
+           -t https://prod-YQ2yQ8oq.lab.practical-devsecops.training \
+           -d -x zap-output.xml
+
+   # This will be useful
+   export API_KEY=$(curl -s -XPOST -H 'content-type: application/json' https://dojo-YQ2yQ8oq.lab.practical-devsecops.training/api/v2/api-token-auth/ -d '{"username": "root", "password": "pdso-training"}' | jq -r '.token' )
+
+   # So would this
+   python3 upload-results.py --host dojo-YQ2yQ8oq.lab.practical-devsecops.training --api_key $API_KEY --engagement_id 1 --product_id 1 --lead_id 1 --environment "Production" --result_file zap-output.xml --scanner "ZAP Scan"

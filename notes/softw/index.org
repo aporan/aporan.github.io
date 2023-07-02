@@ -1,3 +1,0 @@
-[[arch/index.org][arch/]]
-[[cmd-line/index.org][cmd-line/]]
-[[flutter/index.org][flutter/]]

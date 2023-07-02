@@ -1,2 +1,0 @@
-[[./emacs-prog-intro.org][emacs-prog-intro]]
-

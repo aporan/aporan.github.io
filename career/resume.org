@@ -7,12 +7,13 @@
 #+macro: span @@html:<span>$1</span>@@
 #+macro: contact @@html:<span id="contact"><span>email: $1</span><span id="phone"><span>phone: $2</span>@@
 
-* AHNAF SIDDIQI | {{{contact(ahnaf[at]usec.io, +65 97342978)}}}
+* AHNAF SIDDIQI | {{{contact(ahnafsidd@gmail.com, +65 97342978)}}}
   :PROPERTIES:
   :CUSTOM_ID: resume-head
   :END:
-  A programmer keen in network security, cloud and system design with 4+ years
-  of experience.
+  An engineer keen in cloud, network security, high traffic systems, and
+  system design with 5+ years of experience. I love the possibilites of
+  exploring new paths and building secure products.
    
 ** {{{span(Education)}}}
 *** Singapore University of Technology and Design {{{span(Class of 2016)}}}
@@ -23,77 +24,118 @@
 
 ** {{{span(Skills)}}}
 
-   Experienced in: Python, C, Docker, Git, Linux, (C)Make, Nginx, Sys Admin,
-   PostgreSQL, InfluxDB, Bash, X509 Certs, TCP/UDP, TLS, Gitlab, CI/CD, Flask,
-   SQLAlchemy, HTTP(S), SNMP, MQTT, AWS EC2 Management, Windows ADCS.
+   Experienced in: Python, C, Go, Docker, System Design, Git, Linux, Make,
+   Nginx, Sys Admin, PostgreSQL, InfluxDB, Bash, X509 Certs, TCP/UDP, TLS,
+   Gitlab, CI/CD, Flask, SQLAlchemy, HTTP(S), SNMP, MQTT, AWS.
 
-   Familiar with: Javascript, HTML, CSS, GDB, Puppet, Valgrind, Redis,
-   Django, Grafana, CPP, DTLS, MbedTLS.
+   Familiar with: JS, HTML, CSS, GDB, Puppet, Valgrind, Redis, Django,
+   Grafana, CPP, MongoDB, DTLS, AWS ELB, Packer.
 
 ** {{{span(Work Experience)}}}
-*** MicroSec Pte. Ltd. >| Senior Software Engineer {{{span(Dec’17 - Now)}}}
+*** MicroSec Pte. Ltd.  {{{span(Dec’17 - Now)}}}
     :PROPERTIES:
     :ID:       8380bf80-39e4-4c02-bee0-8f94168a87d8
     :END:
 
-    I design and implement technical system solution from stakeholder
-    requirements to application implementation, lifecycle, and delivery
-    pipeline while managing customer operations.
+    I design technical system solution from stakeholder requirements to
+    application implementation, lifecycle and deployment, while managing
+    technical customer operations. I am also in charge of managing the
+    companies DevOps pipeline from application development to cloud
+    deployment.
+
+    /Role - DevOps Engineer/
+
+    - Led the deployment of 3 main products and designed the development
+      workflow to increase dev interations.
+    - Deployed and managed a production delivery of 16K devices using Docker
+      Swarm in AWS.
+    - Accelerated the development pipeline by mentoring the developers to
+      practice good DevOps practices including writing Docker images and
+      proper Unit Testing.
+    - Developed a local product deployment script using Bash for all
+      developers to experience the full product deployment. The script is also
+      used to demonstrate repeatable demos to internal stakeholders.
+    - Wrote lightweight Docker images using multi-stage build that uses alpine
+      to significantly reduce image size.
+    - Developed companies Software Release Management strategies working
+      within the Scrum methodology. 
+    - Accelerating the Software Testing Lifecycle process by introducing
+      standardized Test Protocols with future steps to automate the process
+      using Gherkin.
+    - Collaborating with Development, QA, Product Manager, and CEO to enhance
+      product development pipeline and ensuring developers are following
+      strict timelines
+    - Manage and update self-hosted Gitlab instance to be always up-to-date.
+    - Configuring Backups for products and our self-hosted Gitlab instance in
+      AWS.
+    - Introduced several CI integration checks to perform static analysis that
+      detects vulnerabilites during build pipeline.
+    - Enabled and Managed KVM based hypervisors for in-house infra for various
+      OS.
+    - Deployed and maintained several microservices in Docker Swarm that
+      included docker based secret management.
+    - Research continously to improve the DevOps pipeline: Recently introduced
+      Terraform to understand it's use case match for companies requirements.
 
     /Role - Software Engineer/
 
-    - AWS and Azure user role management and VPC configuration for
-      microservices deployment using Docker Swarm
-    - Streamlining development pipeline to include static and dynamic analysis
-    - System Adminstration of on-premise Gitlab deployment and Runners for
-      microservices.
-    - Designing and Implementing RESTful microservices using python that
-      supports in-house implementations of ACMEv2, EST, and SCEP following
-      their respective RFCs: 8555, 7030, 8894.
-    - Developing MicroPKI: a performance multithreaded socket server: a
-      proprietary TLS 1.3 protocol providing e2e encryption for embedded
-      devices in IoT that supports multiple curves (P256, Ed25519) and ciphers
-      (AES-128/256).
-    - Developing and maintaining an Energy Monitoring product that uses Modbus
-      to read localized data that is transferred near real-time via MQTT that
-      is batched process and stored InfluxDB.
-    - Continuous deployment in EC2 using Docker Swarm having support for both
-      TCP and UDP clients. 
-    - Implementing Pupppet configuration files that provides remote updates
-      for a custom build Raspbian OS.
-    - Configuration and management of on-premise softwares, hosted both on
-      offline servers and AWS instances.
-    - Experience using PSPKI to bridge Linux with Windows ADCS and AD
-      configuration.
-    - Implementing agents for SNMP using PySNMP, SMTP, and Pyradius for RSA
-      SecurID Authentication.
-    - Collaborating with multiple teams of 20+ individuals to ensure product
-      delivery following Scrum methodology.
+    - Responsible for requirement gathering, analysis and translation into
+      well-defined work description for developers to design and implement.
+    - Developed MicroPKI: a performant multithreaded socket server, that
+      implements a proprietary TLS 1.3 for embedded devices in IoT that uses
+      ECC Keys.
+    - Implemented MicroPKI Core in C compiled for embedded clients and uses a
+      Python Wrapper for a Web Service.
+    - Maintained an Energy Monitoring product that uses Modbus to read
+      localized data that is transferred near real-time via MQTT that is
+      batched process and stored in InfluxDB.
+    - Led the design and implementation of RESTful microservices using python
+      that supports in-house implementations of ACMEv2, EST, and SCEP
+      following their respective RFCs: 8555, 7030, 8894.
+    - Introduced the automation of backend e2e testing with unit test at
+      microservices level and integration test at a separate product level.
+    - Implement simulation testbeds that replicates a CANBUS protocol scenario
+      using Docker.
+    - Collaborated with a team of 30+ individuals to build and deliver 3
+      different products.
+    - Implemented profiling mechanisms for different deployment stacks:
+      ng.profile for Angular, cProfile for Flask Apps, and pycallgraph to
+      visual python function calls.
 
     /Role - Operations/
 
-    - Conducting Scrum Master duties for a team of 10+ individuals to meet deliverables
-    - Working with internal stakeholders to propose roadmap requirements.
-    - Requirement analysis and translation into well-defined scope of work.
-    - Supervision and management of interns to full time employees following
-      companies operating procedure. 
+    - Led Scrum Master duties for a team of 10+ individuals.
+    - Evangelize the Scrum philosophy with the development team to promote
+      code reviews and collaboration.
+    - Increased team delivery yield by a factor of 1.5, rotating or setting
+      expectations after various 1-1 meetings.
+    - Negotiated product deliverable timeline per sprint between different
+      internal stakeholders.
+    - Deployed products on customer premises cloud premises and off-line
+      systems.
+    - Consulted customer for support engineering roles for technical
+      deployments.
+    - Mentored and supervised interns to full time employees following
+      companies operating procedure.
 
 *** iTrust Research Center for CyberSecurity >| Research Assistant {{{span(Nov’16 - Oct’17)}}}
 
     Implemented a concurrent Common Industrial Protocol (CIP), a realtime
     network protocol at Secure Water Treatment (SWaT) testbed in SUTD, that
-    was used in simulation and various research purposes.
+    was used in simulation, mutliple research projects, and as proxies for
+    developing attack scenarios for competitions.
 
     - Packet Sniffing and Reconstruction of high volume CIP packets for both
       TCP and UDP.
-    - Designed application using TDD and SOLID principles of OOP.
+    - Designed CRUD HTTPS API to handle application requests using using TDD
+      and SOLID principles of OOP.
+    - Followed a design guideline to implement a CaptureTheFlag question that
+      was used in university competition.
 
     /Publication/: A. Siddiqi, N. O. Tippenhauer, D. Mashima, and
     B. Chen, “On practical threat scenario testing in an electric
     power ics testbed,” in Proceedings of the cyber-physical system
     security workshop (cpss), co-located with asiaccs, 2018.
-
-    /Tech Stack/: Python, Flask, Wireshark, LxC, EtherNet/IP.
 
 # *** Souschef | Web Developer {{{span(Oct’16 - Jan’17)}}}
 
@@ -190,6 +232,20 @@
 # #     - Developed the platform using Laravel and hosted in university server.
 
 # #     /Tech Stack/: Laravel, Artisan, PHP.
+
+** {{{span(Professional Certifications)}}}
+
+   # | Certified DevSecOps Professional (CDP) - May 2022 | Certified DevSecOps Professional (CDP) - May 2022 | Certified DevSecOps Professional (CDP) - May 2022                                |
+   # | Issuer: Practical DevSecOps                       | Issuer: Practical DevSecOps                       | Issuer: Practical DevSecOps                                                      |
+   # | [[https://www.credly.com/badges/050092ca-2a33-4abc-bacd-287462b27e58][Badge Link]]                                        | [[https://www.credly.com/badges/050092ca-2a33-4abc-bacd-287462b27e58][Badge Link]]                                        | [[https://www.credly.com/badges/050092ca-2a33-4abc-bacd-287462b27e58][Badge Link]] |
+   # |---------------------------------------------------+---------------------------------------------------+----------------------------------------------------------------------------------|
+   # | Certified DevSecOps Professional (CDP) - May 2022 | Certified DevSecOps Professional (CDP) - May 2022 |                                                                                  |
+   # | Issuer: Practical DevSecOps                       | Issuer: Practical DevSecOps                       |                                                                                  |
+   # | [[https://www.credly.com/badges/050092ca-2a33-4abc-bacd-287462b27e58][Badge Link]]                                        | [[https://www.credly.com/badges/050092ca-2a33-4abc-bacd-287462b27e58][Badge Link]]                                        |                                                                                  |
+
+   Certified DevSecOps Professional (CDP) - May 2022 
+   - Issuer: Practical DevSecOps
+   - [[https://www.credly.com/badges/050092ca-2a33-4abc-bacd-287462b27e58][Badge Link]]
 
 ** {{{span(Activities)}}}
 
