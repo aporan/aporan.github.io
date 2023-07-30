@@ -26,4 +26,3 @@ it’s almost, almost
 the way i’d like it.
 
 - @aporan
-
