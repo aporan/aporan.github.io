@@ -32,7 +32,17 @@
    Grafana, CPP, MongoDB, DTLS, AWS ELB, Packer.
 
 ** {{{span(Work Experience)}}}
-*** MicroSec Pte. Ltd.  {{{span(Dec’17 - Now)}}}
+*** Bytedance Pte. Ltd. ~ Site Reliability Engineer  {{{span(Nov’22 - Now)}}}
+
+    As SRE of Bytedance's Security Department, I deliver the availability of
+    the security products to ensure Bytedance's system are protected. I also
+    manage the Kubernetes deployment environment, provisioning storage,
+    monitoring, certificate management, continuous deployment using argocd,
+    database provisiong and other system admin duties.
+
+    *  
+
+*** MicroSec Pte. Ltd. ~ {DevOps, Software,Operations} Engineer {{{span(Nov’17 - Oct’22)}}}
     :PROPERTIES:
     :ID:       8380bf80-39e4-4c02-bee0-8f94168a87d8
     :END:
@@ -102,7 +112,7 @@
       ng.profile for Angular, cProfile for Flask Apps, and pycallgraph to
       visual python function calls.
 
-    /Role - Operations/
+    /Role - Operations Engineer/
 
     - Led Scrum Master duties for a team of 10+ individuals.
     - Evangelize the Scrum philosophy with the development team to promote
@@ -118,7 +128,7 @@
     - Mentored and supervised interns to full time employees following
       companies operating procedure.
 
-*** iTrust Research Center for CyberSecurity >| Research Assistant {{{span(Nov’16 - Oct’17)}}}
+*** iTrust Research Center for CyberSecurity ~ Research Assistant {{{span(Nov’16 - Oct’17)}}}
 
     Implemented a concurrent Common Industrial Protocol (CIP), a realtime
     network protocol at Secure Water Treatment (SWaT) testbed in SUTD, that
@@ -137,90 +147,88 @@
     power ics testbed,” in Proceedings of the cyber-physical system
     security workshop (cpss), co-located with asiaccs, 2018.
 
-# *** Souschef | Web Developer {{{span(Oct’16 - Jan’17)}}}
+*** Souschef ~ Web Developer {{{span(Oct’16 - Jan’17)}}}
 
-#     Prototype, developed, and participated in the initial deployment
-#     of a configuration panel across mutliple remote machines.
+    Prototype, developed, and participated in the initial deployment
+    of a configuration panel across mutliple remote machines.
 
-#     - Learnt and developed JS based web service following TDD
-#       principles.
+    - Learnt and developed JS based web service following TDD
+      principles.
+      
+*** General Assembly ~ Teaching Assistant {{{span(Aug - Sep’16)}}}
 
-#     /Tech Stack/: Node, Python, Express.
+    Assisted instructors to teach students the basics of programming,
+    web development, and CLI magic.
 
-# *** General Assembly | Teaching Assistant {{{span(Aug - Sep’16)}}}
+    - Taught Git, HTML, CSS, Javascript, and Express.
+    - Managed multiple tasks including grading programming
+      tests and evaluating student projects.
 
-#     Assisted instructors to teach students the basics of programming,
-#     web development, and CLI magic.
+*** Tinkerbox Studios ~ Web Developer {{{span(May - Aug’15)}}}
 
-#     - Taught Git, HTML, CSS, Javascript, and Express.
-#     - Managed multiple tasks including grading programming
-#       tests and evaluating student projects.
+    Summer Internship where I developed business logic and implemented
+    test cases of projects.
 
-# *** Tinkerbox Studios | Web Dev. Internship  {{{span(May - Aug’15)}}}
+    - Practiced Test Driven Development using Ruby-on-Rails.
+    - Worked on models, views, and controllers and wrote/refactored
+      their new/old tests.
+    - Implemented simple front-end interactive pages.
 
-#     Summer Internship where I developed business logic and implemented
-#     test cases of projects.
+    /Tech Stack/: Rails, HTML, CSS, Heroku.
 
-#     - Practiced Test Driven Development using Ruby-on-Rails.
-#     - Worked on models, views, and controllers and wrote/refactored
-#       their new/old tests.
-#     - Implemented simple front-end interactive pages.
+*** BetterWebPages ~ Web Developer {{{span(May - Aug’14)}}}
 
-#     /Tech Stack/: Rails, HTML, CSS, Heroku.
+    First work experience as a summer intern in a startup in infancy.
 
-# *** BetterWebPages | Web Dev. Internship {{{span(May - Aug’14)}}}
+    - Worked as a beginner full-stack developer and customized
+      third-party packages to project requirements to deliver a fully
+      operational website.
+    - Learned the major sections of the framework in two weeks and
+      implemented started doing customer projects.
+    - Rewrote django packages to suit the functionality requirements
+      of projects.
+    - Implemented some user interface elements which included bar
+      chart, and pie charts.
 
-#     First work experience as a summer intern in a startup in infancy.
+    /Tech Stack/: Python, Django.
 
-#     - Worked as a beginner full-stack developer and customized
-#       third-party packages to project requirements to deliver a fully
-#       operational website.
-#     - Learned the major sections of the framework in two weeks and
-#       implemented started doing customer projects.
-#     - Rewrote django packages to suit the functionality requirements
-#       of projects.
-#     - Implemented some user interface elements which included bar
-#       chart, and pie charts.
+** {{{span(Projects)}}}
+*** Social Project for Children with Autism {{{span(Sep’16 - Nov’17)}}}
 
-#     /Tech Stack/: Python, Django.
+    Special needs children may be able to excel in programming. The
+    project involved research, user data collection, designing, and
+    testing a new curriculum to teach children basic coding concepts.
 
-# ** {{{span(Projects)}}}
-# *** Social Project for Children with Autism {{{span(Sep’16 - Nov’17)}}}
+    - Analysing base performance by conducting several tests, surveys
+      and measuring their memory and sequential task handling
+      capability.
+    - Data classification and curriculum design in a fun and analogous
+      manner which teaches core concepts of programming.
+    - Students who were able to partially communicate where able to
+      perform all programming related tasks which involved recreating
+      lego blocks from memory, reading and correctly recreating steps
+      of visual code blocks, and finally solving difficult challenges
+      with little to no assistance.
 
-#     Special needs children may be able to excel in programming. The
-#     project involved research, user data collection, designing, and
-#     testing a new curriculum to teach children basic coding concepts.
+    /Stack/: Edison Robot, Research.
 
-#     - Analysing base performance by conducting several tests, surveys
-#       and measuring their memory and sequential task handling
-#       capability.
-#     - Data classification and curriculum design in a fun and analogous
-#       manner which teaches core concepts of programming.
-#     - Students who were able to partially communicate where able to
-#       perform all programming related tasks which involved recreating
-#       lego blocks from memory, reading and correctly recreating steps
-#       of visual code blocks, and finally solving difficult challenges
-#       with little to no assistance.
+*** Capstone Project - Interactive Animatronic Dragon {{{span(Jan - Aug’16)}}}
 
-#     /Stack/: Edison Robot, Research.
+    An animatronic dragon which scans its vicinity using OpenCV
+    toolkit triggering movement to its multiple sections in the
+    body. I setup the network for the communication between different
+    paths and helped programmed some motors. 
 
-# *** Capstone Project - Interactive Animatronic Dragon {{{span(Jan - Aug’16)}}}
+    - Worked in a student team of 6 people from different technical
+      tracks.
+    - Implemented an ad-hoc network with static IP for P2P connections
+      between two RaspberryPi.
+    - Developed a state machine to map and categorize different
+      outputs to user inputs.
+    - Assisted in programming the movement of mechanical sections by
+      interfacing physical mechanical relays.
 
-#     An animatronic dragon which scans its vicinity using OpenCV
-#     toolkit triggering movement to its multiple sections in the
-#     body. I setup the network for the communication between different
-#     paths and helped programmed some motors. 
-
-#     - Worked in a student team of 6 people from different technical
-#       tracks.
-#     - Implemented an ad-hoc network with static IP for P2P connections
-#       between two RaspberryPi.
-#     - Developed a state machine to map and categorize different
-#       outputs to user inputs.
-#     - Assisted in programming the movement of mechanical sections by
-#       interfacing physical mechanical relays.
-
-#     /Tech Stack/: Python, OpenCV.
+    /Tech Stack/: Python, OpenCV.
 
 # # Deprecated: This is kept just for collection purposes. This project
 # # was never completed or even crossed the halfway point.
