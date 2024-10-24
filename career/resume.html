@@ -1,86 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2023-09-19 Tue 00:00 -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 2024-10-18 Fri 01:38 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Resume</title>
-<meta name="generator" content="Org mode">
-<meta name="author" content="ahnaf">
+<meta name="author" content="ahnaf" />
+<meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="../static/css/resume.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 
-<div id="outline-container-orgc971dba" class="outline-2">
+<div id="outline-container-resume-head" class="outline-2">
 <h2 id="resume-head">AHNAF SIDDIQI | <span id="contact"><span>email: ahnafsidd@gmail.com</span><span id="phone"><span>phone:  +65 97342978</span></h2>
 <div class="outline-text-2" id="text-resume-head">
 <p>
 An engineer keen in cloud, network security, high traffic systems, and
 system design with 6+ years of experience. I love building secure products
-with high availability.
+with high availability. I am also interested to learn about Network Science
 </p>
 </div>
 
-<div id="outline-container-orgebfda9a" class="outline-3">
-<h3 id="orgebfda9a"><span>Skills</span></h3>
-<div class="outline-text-3" id="text-orgebfda9a">
+<div id="outline-container-orgbc4d2ae" class="outline-3">
+<h3 id="orgbc4d2ae"><span>Tools</span></h3>
+<div class="outline-text-3" id="text-orgbc4d2ae">
 <p>
 Experienced in: Python, C, Go, Docker, Git, Linux, Make, Nginx, PostgreSQL,
-MySQL InfluxDB, Bash, X509 Certs, TCP/UDP, TLS, Gitlab, CI/CD, Flask,
+MySQL, InfluxDB, Bash, X509 Certs, TCP/UDP, TLS, Gitlab, CI/CD, Flask,
 SQLAlchemy, HTTP(S), SNMP, MQTT, AWS, Kafka, ES, Kibana, Kubernetes
 </p>
 
 <p>
 Familiar with: JS, HTML, CSS, GDB, Puppet, Redis, Grafana, CPP, MongoDB,
-DTLS, Packer, Ansible, Ceph
+DTLS, Ansible
 </p>
 </div>
 </div>
 
-<div id="outline-container-orge79900a" class="outline-3">
-<h3 id="orge79900a"><span>Work Experience</span></h3>
-<div class="outline-text-3" id="text-orge79900a">
+<div id="outline-container-org0f0aad7" class="outline-3">
+<h3 id="org0f0aad7"><span>Work Experience</span></h3>
+<div class="outline-text-3" id="text-org0f0aad7">
 </div>
-<div id="outline-container-orgf35ec7f" class="outline-4">
-<h4 id="orgf35ec7f">Bytedance Pte. Ltd. ~ Security Site Reliability Engineer  <span>Nov’22 - Now</span></h4>
-<div class="outline-text-4" id="text-orgf35ec7f">
+<div id="outline-container-org7342617" class="outline-4">
+<h4 id="org7342617">Bytedance Pte. Ltd. ~ Site Reliability Engineer (Security) <span>Nov’22 - Now</span></h4>
+<div class="outline-text-4" id="text-org7342617">
 <p>
-As Bytedance's Security SRE, I ensure the availability of security
-products. Additionally, I also manage their Kubernetes environment,
-provision storage, monitoring, certificate management, databases,
-continuous deployment using argocd, and standard sys admin duties.
+SRE in charge of 2 direct security products in a team of 25. I also
+manage/provision our internal Kubernetes cluster including standard
+sysadmin responsibilities
 </p>
 
 <ul class="org-ul">
-<li>Managed the uptime and availability of Bytedance's Cloud Protection
-Platform: <a href="https://github.com/bytedance/Elkeid">https://github.com/bytedance/Elkeid</a></li>
-<li>Initiate discussion and perform resource estimation planning for 2
-products: Open Source and Internal</li>
-<li>Suggested redesign of the Cloud Protection Platform to sustain high load
-and high traffic burst.</li>
-<li>Introduced database migration to a 3rd Internal Security Toolkit.</li>
-<li>Performed torture/stress testing to provide a baseline QPS of the
-product</li>
-<li>Introduced several SLIs and proposed SLAs for the 3rd product, and
-introduced the concept of an error-budget.</li>
-<li>Implemented a wrapper around proxy-protocol to forward client IP
-addresses proxied using HaProxy.</li>
-<li>Provisioned Hashicorp/vault backed by Oracle KMS and a secondary vault
-to perform auto-unseal.</li>
-<li>Continued suggesting improvements/reduction of Dockerfiles</li>
+<li>Designed and implemented application metrics which captured errors which
+were eventually converted to P0 (alerts on symptomps), reducing the P0
+stats by over 50%</li>
+<li>Metrics redesign helped to negotiate a clear SLA with our stakeholders
+with a enforced, data backed agreement of 99.9% which also established a
+Runbook</li>
+<li>Correlated cpu, memory information which was piped into metrics with
+host data to provided yearly estimates of resources using a simple
+linear regression model.</li>
+<li>Stabilized apache Kafka platform which consistenly produces 76 Million
+messages/sec. Identified critical bottlenecks and proposed redesign of
+the system architecture to handle congestion. The system recovered
+without any data loss.</li>
+<li>Provisioned Hashicorp/vault in a high availability cluster backed by
+Oracle KMS and a secondary vault to perform auto-unseal:
+<a href="https://developer.hashicorp.com/vault/docs/configuration/seal/ocikms">https://developer.hashicorp.com/vault/docs/configuration/seal/ocikms</a></li>
+<li>Introduced blue-green/canary deployment concepts to infrastructure team
+with 0 downtime upgrade of applications.</li>
+<li>Reduced the runtime of Apache Flink job processing 20+Tb of data 10+
+hours to 4.</li>
+<li>Managed, reviewed, provisioned host instances, provisinded kubernetes
+deployment, configured Ingress, scraped cluster metrics using prometheus
+agent, and collected logs using Loki.</li>
+<li>Configured Kibana Indexes which ingested msgs from high load Kafka broker.</li>
+<li>Conducted standard DevOps/Testing practices: Torture testing, regression
+testing, integration testing.</li>
+<li>Collaborated with R&amp;D to introduce database migration tool to ensure a
+schema consistency</li>
+<li>Reduced Docker image file sizes by using Alpine Linux based images.</li>
+<li>Introduced go-mmproxy which attaches client address infront of the TCP
+packet header to preserve ip addresses in Layer 4 of the OSI model</li>
+<li>Automated several dry operations which installs, provisions, fix various
+adhoc tasks using python, go, and bash.</li>
+<li>Regularly particpated in global-oncall with colleagues in 4 different
+timezone, while managing internal customer requriements across two
+different cultures.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org467da3a" class="outline-4">
-<h4 id="org467da3a">MicroSec Pte. Ltd. ~ {DevOps, Software,Operations} Engineer <span>Nov’17 - Oct’22</span></h4>
-<div class="outline-text-4" id="text-org467da3a">
+<div id="outline-container-orgf98bd17" class="outline-4">
+<h4 id="orgf98bd17">MicroSec Pte. Ltd. ~ {DevOps, Software,Operations} Engineer <span>Nov’17 - Oct’22</span></h4>
+<div class="outline-text-4" id="text-orgf98bd17">
 <p>
-I designed software system solutions from stakeholder requirements to
-application implementation, lifecycle and deployment, while managing
-technical customer operations. I also provisioned their DevOps pipeline.
+I crafted the product API requirements for device enrollments from
+stakeholder requirements to application implementation, lifecycle and
+deployment, while managing technical customer operations. I also
+provisioned their DevOps pipeline.
 </p>
 
 <p>
@@ -89,7 +109,7 @@ technical customer operations. I also provisioned their DevOps pipeline.
 
 <ul class="org-ul">
 <li>Led the deployment of 3 main products and designed the development
-workflow to increase dev interations.</li>
+workflow to increase dev iterations using Gitlab Runner.</li>
 <li>Deployed and managed a production delivery of 16K devices using Docker
 Swarm in AWS.</li>
 <li>Accelerated the development pipeline by mentoring the developers to
@@ -102,19 +122,10 @@ used to demonstrate repeatable demos to internal stakeholders.</li>
 to significantly reduce image size.</li>
 <li>Developed companies Software Release Management strategies working
 within the Scrum methodology.</li>
-<li>Accelerating the Software Testing Lifecycle process by introducing
-standardized Test Protocols.</li>
-<li>Collaborated with Development, QA, Product Manager, and CEO to enhance
-product development pipeline and ensuring developers are following
-strict timelines.</li>
 <li>Manage and update self-hosted Gitlab instance to be always up-to-date.</li>
-<li>Configuring Backups for products and our self-hosted Gitlab instance in
-AWS.</li>
-<li>Introduced several CI integration checks to perform static analysis that
-detects vulnerabilites during build pipeline.</li>
-<li>Managed KVM based hypervisors for in-house infra for various OS.</li>
-<li>Deployed and maintained several microservices in Docker Swarm that
-included docker based secret management.</li>
+<li>Managed AWS IAM roles following least privlege principle for users and
+application system.</li>
+<li>Deployed and maintained several microservices in Docker Swarm.</li>
 </ul>
 
 <p>
@@ -125,8 +136,10 @@ included docker based secret management.</li>
 <li>Responsible for requirement gathering, analysis and translation into
 well-defined work description for developers to design and implement.</li>
 <li>Developed MicroPKI: a performant multithreaded socket server, that
-implements a proprietary TLS 1.3 for embedded devices in IoT that uses
-ECC Keys.</li>
+implements a proprietary TLS 1.3 for embedded devices in IoT strictly
+uses ECC Keys, specifically Ed25519</li>
+<li>Proprietery certificates are fine-tuned for embedded devices, with its
+custom inhouse implementatino of CRL and OCSP responder</li>
 <li>Implemented MicroPKI Core in C compiled for embedded clients that uses a
 Python Wrapper for a Web Service.</li>
 <li>Maintained an Energy Monitoring product that uses Modbus to read
@@ -139,11 +152,8 @@ following their respective RFCs: 8555, 7030, 8894.</li>
 microservices level and integration test at a separate product level.</li>
 <li>Implement simulation testbeds that replicates a CANBUS protocol scenario
 using Docker.</li>
-<li>Collaborated with a team of 30+ individuals to build and deliver 3
-different products.</li>
-<li>Implemented profiling mechanisms for different deployment stacks:
-ng.profile for Angular, cProfile for Flask Apps, and pycallgraph to
-visual python function calls.</li>
+<li>Identified a missing parser in Microsofts Library for SCEP protocol
+after parsing the ASN.1 certificate data structure.</li>
 </ul>
 
 <p>
@@ -151,7 +161,7 @@ visual python function calls.</li>
 </p>
 
 <ul class="org-ul">
-<li>Led Scrum Master duties for a team of 10+ individuals.</li>
+<li>Led Scrum Master duties for two teams of 10+ individuals.</li>
 <li>Evangelize the Scrum philosophy with the development team to promote
 code reviews and collaboration.</li>
 <li>Increased team delivery yield by a factor of 1.5, rotating or setting
@@ -160,17 +170,15 @@ expectations after various 1-1 meetings.</li>
 internal stakeholders.</li>
 <li>Deployed products on customer premises cloud premises and off-line
 systems.</li>
-<li>Consulted customer for support engineering roles for technical
-deployments.</li>
 <li>Mentored and supervised interns to full time employees following
 companies guidelines.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org0a568d5" class="outline-4">
-<h4 id="org0a568d5">iTrust Research Center for CyberSecurity ~ Research Assistant <span>Nov’16 - Oct’17</span></h4>
-<div class="outline-text-4" id="text-org0a568d5">
+<div id="outline-container-orgccacae5" class="outline-4">
+<h4 id="orgccacae5">iTrust Research Center for CyberSecurity ~ Research Assistant <span>Nov’16 - Oct’17</span></h4>
+<div class="outline-text-4" id="text-orgccacae5">
 <p>
 Implemented a concurrent Common Industrial Protocol (CIP), a realtime
 network protocol at Secure Water Treatment (SWaT) testbed in SUTD, that
@@ -197,13 +205,13 @@ security workshop (cpss), co-located with asiaccs, 2018.
 </div>
 </div>
 
-<div id="outline-container-org0ad966c" class="outline-3">
-<h3 id="org0ad966c"><span>Education</span></h3>
-<div class="outline-text-3" id="text-org0ad966c">
+<div id="outline-container-org49af92d" class="outline-3">
+<h3 id="org49af92d"><span>Education</span></h3>
+<div class="outline-text-3" id="text-org49af92d">
 </div>
-<div id="outline-container-org2a1d5b1" class="outline-4">
-<h4 id="org2a1d5b1">Singapore University of Technology and Design <span>Class of 2016</span></h4>
-<div class="outline-text-4" id="text-org2a1d5b1">
+<div id="outline-container-org66b8c76" class="outline-4">
+<h4 id="org66b8c76">Singapore University of Technology and Design <span>Class of 2016</span></h4>
+<div class="outline-text-4" id="text-org66b8c76">
 <p>
 Bachelor of Engineering with Honors majoring in Information Systems
 Technology and Design. <br>
@@ -213,9 +221,9 @@ Specialization: Security and Communications, Artificial Intelligence.
 </div>
 </div>
 
-<div id="outline-container-orgfc40c30" class="outline-3">
-<h3 id="orgfc40c30"><span>Professional Certifications</span></h3>
-<div class="outline-text-3" id="text-orgfc40c30">
+<div id="outline-container-org6e5add0" class="outline-3">
+<h3 id="org6e5add0"><span>Professional Certifications</span></h3>
+<div class="outline-text-3" id="text-org6e5add0">
 <p>
 Certified DevSecOps Professional (CDP) - May 2022 
 </p>
@@ -223,21 +231,6 @@ Certified DevSecOps Professional (CDP) - May 2022
 <li>Issuer: Practical DevSecOps</li>
 <li><a href="https://www.credly.com/badges/050092ca-2a33-4abc-bacd-287462b27e58">Badge Link</a></li>
 </ul>
-</div>
-</div>
-
-<div id="outline-container-orge629175" class="outline-3">
-<h3 id="orge629175"><span>Activities</span></h3>
-<div class="outline-text-3" id="text-orge629175">
-<p>
-<b>Competitions</b> - NUS XCTF 2016, APEX Business-IT Global Case Challenge
-2016 Finalists, Multiple Hackathons
-</p>
-
-<p>
-<b>Interests</b> - Photography, Running, CaptureTheFlag, Network Security,
-Physical Systems Security, Linux, Arch and Emacs.
-</p>
 </div>
 </div>
 </div>

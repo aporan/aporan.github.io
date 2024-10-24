@@ -13,55 +13,75 @@
   :END:
   An engineer keen in cloud, network security, high traffic systems, and
   system design with 6+ years of experience. I love building secure products
-  with high availability.
+  with high availability. I am also interested to learn about Network Science
    
-** {{{span(Skills)}}}
+** {{{span(Tools)}}}
 
    Experienced in: Python, C, Go, Docker, Git, Linux, Make, Nginx, PostgreSQL,
-   MySQL InfluxDB, Bash, X509 Certs, TCP/UDP, TLS, Gitlab, CI/CD, Flask,
+   MySQL, InfluxDB, Bash, X509 Certs, TCP/UDP, TLS, Gitlab, CI/CD, Flask,
    SQLAlchemy, HTTP(S), SNMP, MQTT, AWS, Kafka, ES, Kibana, Kubernetes
 
    Familiar with: JS, HTML, CSS, GDB, Puppet, Redis, Grafana, CPP, MongoDB,
-   DTLS, Packer, Ansible, Ceph
+   DTLS, Ansible
 
 ** {{{span(Work Experience)}}}
-*** Bytedance Pte. Ltd. ~ Security Site Reliability Engineer  {{{span(Nov’22 - Now)}}}
+*** Bytedance Pte. Ltd. ~ Site Reliability Engineer (Security) {{{span(Nov’22 - Now)}}}
 
-    As Bytedance's Security SRE, I ensure the availability of security
-    products. Additionally, I also manage their Kubernetes environment,
-    provision storage, monitoring, certificate management, databases,
-    continuous deployment using argocd, and standard sys admin duties.
+    SRE in charge of 2 direct security products in a team of 25. I also
+    manage/provision our internal Kubernetes cluster including standard
+    sysadmin responsibilities
 
-    * Managed the uptime and availability of Bytedance's Cloud Protection
-      Platform: https://github.com/bytedance/Elkeid
-    * Initiate discussion and perform resource estimation planning for 2
-      products: Open Source and Internal
-    * Suggested redesign of the Cloud Protection Platform to sustain high load
-      and high traffic burst.
-    * Introduced database migration to a 3rd Internal Security Toolkit.
-    * Performed torture/stress testing to provide a baseline QPS of the
-      product
-    * Introduced several SLIs and proposed SLAs for the 3rd product, and
-      introduced the concept of an error-budget.
-    * Implemented a wrapper around proxy-protocol to forward client IP
-      addresses proxied using HaProxy. 
-    * Provisioned Hashicorp/vault backed by Oracle KMS and a secondary vault
-      to perform auto-unseal.
-    * Continued suggesting improvements/reduction of Dockerfiles
+    * Designed and implemented application metrics which captured errors which
+      were eventually converted to P0 (alerts on symptomps), reducing the P0
+      stats by over 50%
+    * Metrics redesign helped to negotiate a clear SLA with our stakeholders
+      with a enforced, data backed agreement of 99.9% which also established a
+      Runbook
+    * Correlated cpu, memory information which was piped into metrics with
+      host data to provided yearly estimates of resources using a simple
+      linear regression model.
+    * Stabilized apache Kafka platform which consistenly produces 76 Million
+      messages/sec. Identified critical bottlenecks and proposed redesign of
+      the system architecture to handle congestion. The system recovered
+      without any data loss.
+    * Provisioned Hashicorp/vault in a high availability cluster backed by
+      Oracle KMS and a secondary vault to perform auto-unseal:
+      https://developer.hashicorp.com/vault/docs/configuration/seal/ocikms
+    * Introduced blue-green/canary deployment concepts to infrastructure team
+      with 0 downtime upgrade of applications.
+    * Reduced the runtime of Apache Flink job processing 20+Tb of data 10+
+      hours to 4.
+    * Managed, reviewed, provisioned host instances, provisinded kubernetes
+      deployment, configured Ingress, scraped cluster metrics using prometheus
+      agent, and collected logs using Loki.
+    * Configured Kibana Indexes which ingested msgs from high load Kafka broker.
+    * Conducted standard DevOps/Testing practices: Torture testing, regression
+      testing, integration testing.
+    * Collaborated with R&D to introduce database migration tool to ensure a
+      schema consistency
+    * Reduced Docker image file sizes by using Alpine Linux based images. 
+    * Introduced go-mmproxy which attaches client address infront of the TCP
+      packet header to preserve ip addresses in Layer 4 of the OSI model
+    * Automated several dry operations which installs, provisions, fix various
+      adhoc tasks using python, go, and bash.
+    * Regularly particpated in global-oncall with colleagues in 4 different
+      timezone, while managing internal customer requriements across two
+      different cultures.
 
 *** MicroSec Pte. Ltd. ~ {DevOps, Software,Operations} Engineer {{{span(Nov’17 - Oct’22)}}}
     :PROPERTIES:
     :ID:       8380bf80-39e4-4c02-bee0-8f94168a87d8
     :END:
 
-    I designed software system solutions from stakeholder requirements to
-    application implementation, lifecycle and deployment, while managing
-    technical customer operations. I also provisioned their DevOps pipeline.
+    I crafted the product API requirements for device enrollments from
+    stakeholder requirements to application implementation, lifecycle and
+    deployment, while managing technical customer operations. I also
+    provisioned their DevOps pipeline.
 
     /Role - DevOps Engineer/
 
     - Led the deployment of 3 main products and designed the development
-      workflow to increase dev interations.
+      workflow to increase dev iterations using Gitlab Runner.
     - Deployed and managed a production delivery of 16K devices using Docker
       Swarm in AWS.
     - Accelerated the development pipeline by mentoring the developers to
@@ -74,27 +94,20 @@
       to significantly reduce image size.
     - Developed companies Software Release Management strategies working
       within the Scrum methodology. 
-    - Accelerating the Software Testing Lifecycle process by introducing
-      standardized Test Protocols.
-    - Collaborated with Development, QA, Product Manager, and CEO to enhance
-      product development pipeline and ensuring developers are following
-      strict timelines.
     - Manage and update self-hosted Gitlab instance to be always up-to-date.
-    - Configuring Backups for products and our self-hosted Gitlab instance in
-      AWS.
-    - Introduced several CI integration checks to perform static analysis that
-      detects vulnerabilites during build pipeline.
-    - Managed KVM based hypervisors for in-house infra for various OS.
-    - Deployed and maintained several microservices in Docker Swarm that
-      included docker based secret management.
+    - Managed AWS IAM roles following least privlege principle for users and
+      application system. 
+    - Deployed and maintained several microservices in Docker Swarm.
 
     /Role - Software Engineer/
 
     - Responsible for requirement gathering, analysis and translation into
       well-defined work description for developers to design and implement.
     - Developed MicroPKI: a performant multithreaded socket server, that
-      implements a proprietary TLS 1.3 for embedded devices in IoT that uses
-      ECC Keys.
+      implements a proprietary TLS 1.3 for embedded devices in IoT strictly
+      uses ECC Keys, specifically Ed25519
+    - Proprietery certificates are fine-tuned for embedded devices, with its
+      custom inhouse implementatino of CRL and OCSP responder
     - Implemented MicroPKI Core in C compiled for embedded clients that uses a
       Python Wrapper for a Web Service.
     - Maintained an Energy Monitoring product that uses Modbus to read
@@ -107,15 +120,12 @@
       microservices level and integration test at a separate product level.
     - Implement simulation testbeds that replicates a CANBUS protocol scenario
       using Docker.
-    - Collaborated with a team of 30+ individuals to build and deliver 3
-      different products.
-    - Implemented profiling mechanisms for different deployment stacks:
-      ng.profile for Angular, cProfile for Flask Apps, and pycallgraph to
-      visual python function calls.
+    - Identified a missing parser in Microsofts Library for SCEP protocol
+      after parsing the ASN.1 certificate data structure.
 
     /Role - Operations Engineer/
 
-    - Led Scrum Master duties for a team of 10+ individuals.
+    - Led Scrum Master duties for two teams of 10+ individuals.
     - Evangelize the Scrum philosophy with the development team to promote
       code reviews and collaboration.
     - Increased team delivery yield by a factor of 1.5, rotating or setting
@@ -124,8 +134,6 @@
       internal stakeholders.
     - Deployed products on customer premises cloud premises and off-line
       systems.
-    - Consulted customer for support engineering roles for technical
-      deployments.
     - Mentored and supervised interns to full time employees following
       companies guidelines. 
 
@@ -259,10 +267,10 @@
    - Issuer: Practical DevSecOps
    - [[https://www.credly.com/badges/050092ca-2a33-4abc-bacd-287462b27e58][Badge Link]]
 
-** {{{span(Activities)}}}
+# ** {{{span(Activities)}}}
 
-   *Competitions* - NUS XCTF 2016, APEX Business-IT Global Case Challenge
-   2016 Finalists, Multiple Hackathons
+#    *Competitions* - NUS XCTF 2016, APEX Business-IT Global Case Challenge
+#    2016 Finalists, Multiple Hackathons
 
-   *Interests* - Photography, Running, CaptureTheFlag, Network Security,
-   Physical Systems Security, Linux, Arch and Emacs.
+#    *Interests* - Photography, Running, CaptureTheFlag, Network Security,
+#    Physical Systems Security, Linux, Arch and Emacs.
