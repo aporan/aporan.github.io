@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-26 Sun 14:26 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gnu GPG Encryption</title>
+<meta name="author" content="ahnaf" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Gnu GPG Encryption</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgab67c2f">1. Steps</a>
+<ul>
+<li><a href="#org91aa10b">1.1. Create Key Pair in <i>expert</i> mode</a></li>
+<li><a href="#org047fcee">1.2. Set Stronger Hash Preferences</a></li>
+<li><a href="#org6f80dc0">1.3. Create a SubKey</a></li>
+<li><a href="#orgba8e84a">1.4. Remove</a></li>
+<li><a href="#orgdb7c997">1.5. Copy</a></li>
+<li><a href="#org1d8d386">1.6. Revoke</a></li>
+</ul>
+</li>
+<li><a href="#org278d6b3">2. References</a></li>
+</ul>
+</div>
+</div>
+<p>
+GNU GPG is blah blah blah blah blah blah blah blah blah blah blah blah
+</p>
+
+<p>
+Types of keys:
+</p>
+
+<ul class="org-ul">
+<li>Key Certification [C]</li>
+<li>Sign Data [S]</li>
+<li>Encrypt Communication / Storage [E]</li>
+</ul>
+
+<p>
+There are more of defined in RFC<sup>5</sup> but for our purposes this is sufficient.
+</p>
+
+<p>
+<b>Key Certification</b>: &lt;description&gt;
+</p>
+
+<p>
+<b>Sign Data</b>: &lt;description&gt;
+</p>
+
+<p>
+<b>Encrypt Communication</b>: &lt;description&gt;
+</p>
+
+<p>
+Generate
+Strengthen
+Sub
+Remove
+Copy
+Revoke
+</p>
+
+<div id="outline-container-orgab67c2f" class="outline-2">
+<h2 id="orgab67c2f"><span class="section-number-2">1.</span> Steps</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org91aa10b" class="outline-3">
+<h3 id="org91aa10b"><span class="section-number-3">1.1.</span> Create Key Pair in <i>expert</i> mode</h3>
+<div class="outline-text-3" id="text-1-1">
+<div class="org-src-container">
+<pre class="src src-bash">gpg2 --full-gen-key --expert 
+</pre>
+</div>
+
+<p>
+It'll prompt for the following options:
+</p>
+
+<pre class="example" id="org4d688f8">
+Please select what kind of key you want:
+ (1) RSA and RSA (default)
+ (2) DSA and Elgamal
+ (3) DSA (sign only)
+ (4) RSA (sign only)
+ (7) DSA (set your own capabilities)
+ (8) RSA (set your own capabilities)
+ (9) ECC and ECC
+(10) ECC (sign only)
+(11) ECC (set your own capabilities)
+</pre>
+
+<p>
+I chose <code>9</code>.
+</p>
+
+<p>
+It will then prompt for the type of curve to choose:
+</p>
+
+<pre class="example" id="orgc1d68b3">
+Please select which elliptic curve you want:
+(2) NIST P-256
+(3) NIST P-384
+(4) NIST P-521
+(5) Brainpool P-256
+(6) Brainpool P-384
+(7) Brainpool P-512
+</pre>
+
+<p>
+I chose <code>4</code>.
+</p>
+
+<p>
+Validity is set to 0 and the rest of the prompts are filled in. Finally,
+GPG will prompt for a password. Provide a strong password, I used:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">pwgen -sy 12
+</pre>
+</div>
+
+<p>
+Yes, I'm aware that I'm using NIST verified keys. Show the <i>public</i> keys: 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">gpg2 --list-keys
+
+// This will be the output
+
+// /home/augusthome/.gnupg/pubring.gpg
+// -----------------------------------
+// pub   nistp521/******** 2019-11-10 [SC]
+// uid         [ultimate] aporan (MasterKey) &lt;ahnafsidd@gmail.com&gt;
+// sub   nistp521/******** 2019-11-10 [E]
+</pre>
+</div>
+
+<p>
+You can also show the <i>private</i> keys:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">gpg2 --list-secret-keys
+
+// This will be the output
+
+// /home/augusthome/.gnupg/pubring.gpg
+// -----------------------------------
+// sec  nistp521/******** 2019-11-10 [SC]
+// uid         [ultimate] aporan (MasterKey) &lt;ahnafsidd@gmail.com&gt;
+// sub   nistp521/******** 2019-11-10 [E]
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org047fcee" class="outline-3">
+<h3 id="org047fcee"><span class="section-number-3">1.2.</span> Set Stronger Hash Preferences</h3>
+<div class="outline-text-3" id="text-1-2">
+<div class="org-src-container">
+<pre class="src src-bash">gpg2 --edit-key --expert &lt;email&gt;
+</pre>
+</div>
+
+<p>
+It'll provide a prompt, enter the following:
+</p>
+
+<pre class="example" id="org56b0d9c">
+gpg&gt; setpref SHA512 SHA384 SHA256 SHA224 AES256 AES192 AES \
+             CAST5 ZLIB BZIP2 ZIP
+</pre>
+
+<p>
+gpg will prompt for your password then: <i>save</i>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6f80dc0" class="outline-3">
+<h3 id="org6f80dc0"><span class="section-number-3">1.3.</span> Create a SubKey</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+The output  view
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgba8e84a" class="outline-3">
+<h3 id="orgba8e84a"><span class="section-number-3">1.4.</span> Remove</h3>
+</div>
+<div id="outline-container-orgdb7c997" class="outline-3">
+<h3 id="orgdb7c997"><span class="section-number-3">1.5.</span> Copy</h3>
+</div>
+<div id="outline-container-org1d8d386" class="outline-3">
+<h3 id="org1d8d386"><span class="section-number-3">1.6.</span> Revoke</h3>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org278d6b3" class="outline-2">
+<h2 id="org278d6b3"><span class="section-number-2">2.</span> References</h2>
+<div class="outline-text-2" id="text-2">
+<ol class="org-ol">
+<li><a href="https://alexcabal.com/creating-the-perfect-gpg-keypair">https://alexcabal.com/creating-the-perfect-gpg-keypair</a></li>
+<li><a href="https://incenp.org/notes/2015/using-an-offline-gnupg-master-key.html">https://incenp.org/notes/2015/using-an-offline-gnupg-master-key.html</a></li>
+<li><a href="https://wiki.debian.org/Subkeys?action=show&amp;redirect=subkeys">https://wiki.debian.org/Subkeys?action=show&amp;redirect=subkeys</a></li>
+<li><a href="https://spin.atomicobject.com/2013/11/24/secure-gpg-keys-guide/">https://spin.atomicobject.com/2013/11/24/secure-gpg-keys-guide/</a></li>
+<li><a href="https://tools.ietf.org/html/rfc4880#section-5.2.3.21">https://tools.ietf.org/html/rfc4880#section-5.2.3.21</a></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2020-01-07 Tue 00:00</p>
+<p class="author">Author: ahnaf</p>
+<p class="date">Created: 2025-01-26 Sun 14:26</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-26 Sun 14:26 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sentences</title>
+<meta name="author" content="ahnaf" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Sentences</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org0c285fe">1. Phrase</a></li>
+<li><a href="#org217805a">2. Clause</a>
+<ul>
+<li><a href="#org8a27661">2.1. Dependent Clause</a>
+<ul>
+<li><a href="#org7deea59">2.1.1. Relative Clause</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orged4b988">3. Independent Clause / Sentence</a></li>
+<li><a href="#orgf6ad99e">4. Parts of Sentence</a></li>
+<li><a href="#org33a08c6">5. Construction by Sentence</a>
+<ul>
+<li><a href="#org28e614e">5.1. Simple Sentence</a></li>
+<li><a href="#orgc42c7cb">5.2. Compound Sentence</a></li>
+<li><a href="#orgc14c2f9">5.3. Complex Sentence</a></li>
+<li><a href="#org5802d75">5.4. Compound-Complex Sentence</a></li>
+</ul>
+</li>
+<li><a href="#org463c251">6. Classification of Sentences</a>
+<ul>
+<li><a href="#org42e570f">6.1. Declarative Sentence</a></li>
+<li><a href="#org2481126">6.2. Interrogative Sentence</a></li>
+<li><a href="#orgf87832a">6.3. Imperative Sentence</a></li>
+<li><a href="#org22abc97">6.4. Exclamatory Sentence</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+So far we have learned about the essential components that are present in
+English grammar. These components when sown together in a particular order
+helps us convey a spectrum of ideas. Some of the ideas are complete while
+others are partial. There are several forms of these ideas in which there is
+the definition of a <code>sentence</code>.
+</p>
+
+<p>
+This topic doesn't really require an analogy, nevertheless I will keep the
+ongoing pattern.
+</p>
+
+<p>
+Legos. Aren't they beautiful? When you buy a lego set, it's purpose is not
+just to built the item in the box, but to take the pieces and construct items
+from your imagination. Sure, the the pieces individually may not constuct
+something meaningful, but a bunch of them together can surely create a
+car and many other items.
+</p>
+
+<p>
+In this article we'll first present the different types of joined-words,
+compartmentalize them, and then build upon them to reach the unit of english
+grammar. 
+</p>
+
+<div id="outline-container-org0c285fe" class="outline-2">
+<h2 id="org0c285fe"><span class="section-number-2">1.</span> Phrase</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+A small set of words which behave like a part of speech, and it does not
+contain a verb.
+</p>
+
+<pre class="example" id="org71afc90">
+my best friend
+</pre>
+
+<p>
+This group of words does not have a <i>verb</i> while simulatenously it is as if
+it is trying to explain something in its context. In this case, we can
+infer that it is possibly going to be a noun.
+</p>
+
+<p>
+This is a noun phrase.
+</p>
+
+<pre class="example" id="org92562b2">
+for twenty days
+</pre>
+
+<p>
+Likewise, this group also does not have a <i>verb</i>. In this case it is also
+trying to explain something, and it is likely that is not a noun. Perhaps,
+it is an adjective or some verb. 
+</p>
+
+<p>
+This is an adverb phrase.
+</p>
+
+<pre class="example" id="org61796f9">
+with the blue shirt
+</pre>
+
+<p>
+Again, this set of words is trying to explain something. In this particular
+case, the thing being explained is the shirt. Notice that the group does
+not have a verb, however.
+</p>
+
+<p>
+This allows us to elucidate the POS property of Phrases; they can be
+classified as being nouns, adjectives, prepositions, and etc.
+</p>
+
+<p>
+The last example is both a prepositional and an adjective phrase. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org217805a" class="outline-2">
+<h2 id="org217805a"><span class="section-number-2">2.</span> Clause</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Clauses are sets of words which has both a subject and a verb.
+</p>
+
+<pre class="example" id="orgdbe2415">
+While my guitar gently weeps.
+</pre>
+
+<p>
+There is the subject word, the "guitar", and the verb, "weeps".
+</p>
+</div>
+
+<div id="outline-container-org8a27661" class="outline-3">
+<h3 id="org8a27661"><span class="section-number-3">2.1.</span> Dependent Clause</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Clauses which convey partial information. They are fragmented in style and
+yearns for complete information on its context. Formally, these clauses
+being with a subordinating conjuctions (explained in a later chapter).
+</p>
+
+<pre class="example" id="org2cc73a9">
+Unless I am mistaken.
+</pre>
+
+<p>
+The example begins with "unless", a subordinating conjunction.
+</p>
+
+<pre class="example" id="org24fa6a6">
+Because it was delicious.
+</pre>
+
+<p>
+Similary, the clause begins with "because", another subordinating
+conjunction.
+</p>
+
+<p>
+In both of these cases, the clauses need more information to convey a
+particular context.
+</p>
+</div>
+
+<div id="outline-container-org7deea59" class="outline-4">
+<h4 id="org7deea59"><span class="section-number-4">2.1.1.</span> Relative Clause</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<p>
+Dependent clauses which begins with a <i>relative</i> pronoun. 
+</p>
+
+<p>
+We have not formally detailed pronouns yet. Without explicating, words
+such as these are considered as relative pronouns:
+</p>
+
+<pre class="example" id="orgdff2d55">
+who, that, which, whose, and where.     
+</pre>
+
+<p>
+Let's use one in an example.
+</p>
+
+<pre class="example" id="org78fc62e">
+The boy who lived.
+</pre>
+
+<p>
+"who lived" here is the relative clause.
+</p>
+
+<pre class="example" id="org3293dcf">
+The woman who always wore a red hat came into the cafe.
+</pre>
+
+<p>
+The fragment "who always wore a red hat" is the relative clause. Just
+this phrase conveys a partial information about the entire sentence's
+context.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orged4b988" class="outline-2">
+<h2 id="orged4b988"><span class="section-number-2">3.</span> Independent Clause / Sentence</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Notice that i used the word "sentence" in my last paragraph. That is
+because we can finally describe the <i>unit</i> of formal english grammar.
+</p>
+
+<p>
+Clauses which always convey complete ideas and is not a fragment are called
+Independent Clauses. They are more commonly known as a
+<b><b>Sentence</b></b>. Sentences contains a subject, verb, and sometimes an object.
+</p>
+
+<pre class="example" id="orgc33f165">
+I ate the biscuits.
+</pre>
+
+<p>
+"I" is the subject, "ate" is the verb, and "the biscuits" is the object.
+</p>
+
+<pre class="example" id="org04ad722">
+I ate.
+</pre>
+
+<p>
+Likewise, this is also a sentence. Both of them convey a complete meaning.
+</p>
+
+<p>
+One of the interesting things about Independent Clause besides conveying a
+complete information is that it supports Dependent Clauses.
+</p>
+
+<p>
+Initial examples in the section "dependent clause" contained partial
+information. In the last example, the dependent clause which provided
+partial information only made sense surrounding the rest of words. It did
+two things:
+</p>
+
+<ol class="org-ol">
+<li>It improved / particularized the meaning for the rest of the sentence.</li>
+<li>It worked only with the rest of the sentence.</li>
+</ol>
+
+<p>
+If we look at the rest of the sentence from that example,
+</p>
+
+<pre class="example" id="org6010c42">
+The woman (who always wore a red hat) came into the cafe.
+</pre>
+
+<p>
+"The woman came into the cafe" is an Independent Clause which is an example
+of an Independent Clause supporting a Dependent Clause. And only
+Independent clause can support a Dependent clause. By themselves, Dependent
+Clauses are not particularly helpful, and uses of it are considered as
+sentence fragments.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf6ad99e" class="outline-2">
+<h2 id="orgf6ad99e"><span class="section-number-2">4.</span> Parts of Sentence</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+As we learned, a sentence also known as an independent clause contains a
+subject and a verb. But what is a subject?
+</p>
+
+<p>
+Formally, a <i>Subject</i> is the word, a noun or pronoun, that performs the
+action of the verb.
+</p>
+
+<pre class="example" id="org2d51e0c">
+I ate.
+</pre>
+
+<p>
+"I" is the subject that does the verb "ate".
+</p>
+
+<p>
+We also learned that a sentence will contain an object which is the case
+most of the time. Well, what is an object?
+</p>
+
+<p>
+The word onto which the verb does its action.
+</p>
+
+<pre class="example" id="orgfaa8379">
+Chris ate cereal.
+</pre>
+
+<p>
+"cereal" is the object. In particular, it is a <i>Direct Object</i>. And yes,
+there is an <i>Indirect Object</i>.
+</p>
+
+<p>
+Indirect objects are the recipient of the direct object after the verb acts
+upon the direct object.
+</p>
+
+<pre class="example" id="orgeaf2f23">
+Chris ate my cereal.
+</pre>
+
+<p>
+Here "my" is the Indirect Object which describes the recipient (the owner)
+of the cereal in this case.
+</p>
+
+<pre class="example" id="orgad9ac11">
+Wanda gave Louie a gift card.
+</pre>
+
+<p>
+In this case, "Louie" is the Indirect Object as he recieves the gift card.
+</p>
+
+<p>
+Now, there are many ways to write a sentence and you'll see various types
+of sentences in writing. For example, the above sentence could also be
+written as 
+</p>
+
+<pre class="example" id="org1d4b9c4">
+Wanda gave a gift card to Louie.
+</pre>
+
+<p>
+In this case, the sentence does not have an Indirect Object, but a
+adverbial preopositional phrase. And that brings us to a simpler
+deconstruction of a sentence. A sentence is always composed of a Subject
+and a Predicate. 
+</p>
+
+<p>
+A predicate is the part of a sentence apart from the Subject. In the
+example above, "gave a gift card to Louie" is a predicate.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org33a08c6" class="outline-2">
+<h2 id="org33a08c6"><span class="section-number-2">5.</span> Construction by Sentence</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+In formal English, there is many ways we can construct together Sentences
+to give an explicated information about one's context. And it all starts
+with <i>the unit</i> in English grammar.
+</p>
+</div>
+
+<div id="outline-container-org28e614e" class="outline-3">
+<h3 id="org28e614e"><span class="section-number-3">5.1.</span> Simple Sentence</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+The one's we have used so far as examples are what is defined as a Simple
+Sentence.
+</p>
+
+<pre class="example" id="orga5efe32">
+We have to make sure it's lemon.
+</pre>
+
+<p>
+The sentence has 1 subject "we" and 1 predicate "have to make sure it's a
+lemon".
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc42c7cb" class="outline-3">
+<h3 id="orgc42c7cb"><span class="section-number-3">5.2.</span> Compound Sentence</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+When there is multiple Simple Sentences, we have a <i>Compound
+Sentence</i>. There must be have <i>at least</i> 2 subject and <i>at least</i> 2
+predicate.
+</p>
+
+<pre class="example" id="orgd253d76">
+I visited the beach, and I got a really bad sunburn.
+</pre>
+
+<p>
+There's two subjects both of which is "I" and two predicates, "visited"
+the beach and "got a really bad sunburn".
+</p>
+
+<p>
+Note that the definition states that there has to be at least 2 of
+each. Let's say we have the following sentence
+</p>
+
+<pre class="example" id="orgdbdf954">
+I visited the beach and got a really bad sunburn
+</pre>
+
+<p>
+It is not a compound sentence. It has a compound predicate but it doesn't
+follow the definition of the Compound Sentence. It is lacking 1 more
+subject.
+</p>
+
+<p>
+Similary, there could be a compound subject but one predicate like the
+following sentence:
+</p>
+
+<pre class="example" id="orgfedbc51">
+Paige and I visited the beach.
+</pre>
+
+<p>
+It is still a Simple Sentence. An alternative way of thinking about
+Compound Sentences is that at least two Simple sentences must be joined
+together. They can't be shortened.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc14c2f9" class="outline-3">
+<h3 id="orgc14c2f9"><span class="section-number-3">5.3.</span> Complex Sentence</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+We have learned about Dependent Clause. When there is a 1 Independent
+Clause and at least 1 Dependent Clause, we have a Complex Sentence.
+</p>
+
+<pre class="example" id="org3426e65">
+When we buy his birthday cake, we have to make sure it's lemon
+because that's his favorite
+</pre>
+
+<p>
+In the example above, we have 2 Dependent Clauses, "When we buy his
+birthday cake" and "because that's his favorite". There's only 1
+Independent Clause, "we have to make sure it's lemon"
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5802d75" class="outline-3">
+<h3 id="org5802d75"><span class="section-number-3">5.4.</span> Compound-Complex Sentence</h3>
+<div class="outline-text-3" id="text-5-4">
+<p>
+It is simply the combination of the above. A Compound-Complex Sentence has
+at least 2 Independent Clause and at least 1 Dependent Clause.
+</p>
+
+<pre class="example" id="orgcae7709">
+After the storm passed, I went outside, and I picked flowers.
+</pre>
+
+<p>
+There is 2 Independent Clauses, "I went outside" and "I picked
+flowers". There is only 1 Dependent Clause, "After the storm passed".
+</p>
+
+<p>
+Let's have a longer sentence.
+</p>
+
+<pre class="example" id="orgc6fe48b">
+After the storm passed, I went outside, and I picked flowers because
+they are beautiful.
+</pre>
+
+<p>
+"because they are beautiful" is the second Dependent Clause.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org463c251" class="outline-2">
+<h2 id="org463c251"><span class="section-number-2">6.</span> Classification of Sentences</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+The type of sentences that we have been using so far is known as a
+Declarative Sentence. In English, there are 4 types of Sentences:
+</p>
+
+<ol class="org-ol">
+<li>Declarative Sentence</li>
+<li>Interrogative Sentence</li>
+<li>Imperative Sentence</li>
+<li>Exclamatory Sentence</li>
+</ol>
+</div>
+
+<div id="outline-container-org42e570f" class="outline-3">
+<h3 id="org42e570f"><span class="section-number-3">6.1.</span> Declarative Sentence</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+The sentences which makes a statement, a fact, or an opinion.
+</p>
+
+<pre class="example" id="org29a0acb">
+It is a beautiful day to play basketball, and I am going to arrange 
+a session with my friends.
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org2481126" class="outline-3">
+<h3 id="org2481126"><span class="section-number-3">6.2.</span> Interrogative Sentence</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+A more format term for sentences which are Questions.
+</p>
+
+<pre class="example" id="org63e6a95">
+Where did you go last night?
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgf87832a" class="outline-3">
+<h3 id="orgf87832a"><span class="section-number-3">6.3.</span> Imperative Sentence</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+Sentences which are instructional or which asserts a command.
+</p>
+
+<pre class="example" id="orgd4aa07f">
+Follow that bunny!
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org22abc97" class="outline-3">
+<h3 id="org22abc97"><span class="section-number-3">6.4.</span> Exclamatory Sentence</h3>
+<div class="outline-text-3" id="text-6-4">
+<p>
+This is strictly not a classification per se. A lot of the times it
+overlaps. But in all the cases, Exclamatory Sentence's express a strong
+conviction of emotion.
+</p>
+
+<pre class="example" id="org4626ee8">
+Ow!
+</pre>
+
+<pre class="example" id="orgb5ba7e3">
+Look out!
+</pre>
+
+<p>
+This is an overlap with Imperative Sentences.
+</p>
+
+<pre class="example" id="org56bf369">
+That ogre is about to attack the village!
+</pre>
+
+<p>
+This is an overlap with a Declarative Sentence.
+</p>
+
+<pre class="example" id="org5f9ded9">
+How did you do that?!
+</pre>
+
+<p>
+This is an overlap with an Interrogative Sentence.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2020-05-10 Sun 00:00</p>
+<p class="author">Author: ahnaf</p>
+<p class="date">Created: 2025-01-26 Sun 14:26</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

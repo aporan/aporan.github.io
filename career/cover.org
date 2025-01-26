@@ -1,0 +1,78 @@
+#+TITLE: Cover Letter
+#+AUTHOR: Ahnaf Siddiqi
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../static/css/cover.css" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+#+HTML_DOCTYPE: html5
+#+OPTIONS: title:nil toc:nil num:nil html-postamble:nil html-preamble:nil html-style:nil html-scripts:nil
+#+STARTUP: content
+#+macro: break @@html:<br/>@@
+#+macro: address @@html:<p>$1,<br/>$2, $3@@
+#+macro: header @@html:<p>$1,<br/>$2@@
+#+macro: company @@html:<span>Tower Research Capital</span>@@
+
+{{{time(%e %B %Y)}}}
+
+{{{break}}}
+
+{{{author}}}
+# {{{address(10C Bendemeer Road, Singapore, 333010.)}}}
+
+{{{break}}}
+
+{{{header(+65 97342978, ahnafsidd@gmail.com)}}}
+
+{{{break}}}
+{{{break}}}
+
+Dear Hiring Manager,
+
+{{{break}}}
+
+I have 5 years of holistic experience from working at a Enterpreneurship First
+funded, deep-tech startup. I had the privilege to build multiple aspects of
+the companies product, identifying and learning new to tools to fit the
+technical requirements. The fast, delivery focused nature of startups has
+shaped my work to become adapatable to changing product requirements and
+deliver results.
+
+{{{break}}}
+
+I am involved in multiple projects across two different teams holding the two
+key responsibilites: translating stakeholder requests to engineering product
+requirements, and supervising junior developers in building the security and
+an energy monitoring product. The tech domains I have worked on includes:
+network protocol development, core transport layer security [TLS]
+implementation for a properietary public key infra using standard cryptography
+libraries, standard and real time web microservices, continuous deployment of
+applications on aws using docker swarm, cloud and in-house servers.
+
+{{{break}}}
+
+I have sinced joined Bytedance where for the last 2 years, I'm delivering the
+companies Host IDS after they are prepared by the developers. As an SRE, my
+duty heavily involves ensure the uptime of a super critical product of the
+entire company. Since, joining I have also been able to work on an internal
+patent which has since been submitted, albeit only in China.
+
+{{{break}}}
+ 
+{{{company}}} is global and maintaining a high frequency infrastructure at a
+large scale is the next step in my career. Understanding the reliable
+components of extremely high throughput applications while bringing in my
+networking/security knowledge would be an added benefit.
+
+{{{break}}}
+
+I hope I will be good fit at {{{company}}}. I can share more of my experience
+and elaborate further my experiences that I have over a physical meeting.
+
+{{{break}}}
+
+Hoping to hear from you soon.
+
+
+{{{break}}}
+
+Sincererly, 
+
+{{{author}}}

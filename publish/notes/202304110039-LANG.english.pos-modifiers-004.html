@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-26 Sun 14:26 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Modifiers</title>
+<meta name="author" content="ahnaf" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">The Modifiers</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org1153b7f">1. Articles</a>
+<ul>
+<li><a href="#org6763497">1.1. Indefinite</a></li>
+<li><a href="#org8e0b1be">1.2. Definite</a></li>
+</ul>
+</li>
+<li><a href="#orga6c11b2">2. Adjectives</a>
+<ul>
+<li><a href="#org7bcff1a">2.1. Order of Adjectives and its realtion with Commas</a></li>
+</ul>
+</li>
+<li><a href="#org88ddef5">3. Adverbs</a>
+<ul>
+<li><a href="#org19820e1">3.1. Relative Adverbs</a></li>
+<li><a href="#orgfe20f8b">3.2. Adverbs of Degree</a></li>
+</ul>
+</li>
+<li><a href="#org45d1729">4. Comparatives and Superlatives</a></li>
+</ul>
+</div>
+</div>
+<p>
+We are almost on our way to the formation / structure of a sentence. The two
+most important components have been covered: Noun and Verb. And the
+fundamental rule of grammar is also covered - the subject and verb
+agreement. The next thing that we need to focus on is called modifiers.
+</p>
+
+<p>
+Time for an analogy.
+</p>
+
+<p>
+If the art of cooking was used as an example, so far what we have covered are
+the raw ingredients which are combined together to form a dish (together with
+salt and pepper). However, such a dish would generally be considered
+bland. For example, a basic ingredient such as rice or chicken could be cooked
+in many different ways. It will taste vastly different depending upon what
+additional seasonings are used. Modifiers are inherently seasonings; they are
+added in a sentence to enhance it in different ways. The modifers are
+classified into different sections. And they each have their own purpose.
+</p>
+
+<div id="outline-container-org1153b7f" class="outline-2">
+<h2 id="org1153b7f"><span class="section-number-2">1.</span> Articles</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+These are the modifiers which distinguishes between generic nouns and
+specific nouns. Primarily it focuses on Common Nouns. They are categorised
+as:
+</p>
+
+<ul class="org-ul">
+<li>Indefinite</li>
+<li>Definite</li>
+</ul>
+</div>
+
+<div id="outline-container-org6763497" class="outline-3">
+<h3 id="org6763497"><span class="section-number-3">1.1.</span> Indefinite</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+The words which tackles the generic form of a Common noun. It captures the
+possession of one item in the domain of Common nouns. And it is only used
+in the singular form. There are two words which forms the indefinite: "a"
+and "an".
+</p>
+
+<pre class="example" id="org92b4be5">
+A box.
+</pre>
+
+<p>
+<code>box</code> above is a Common Noun. The letter "A" focuses on one box which is
+used to, let's say, build a small paper house.
+</p>
+
+<pre class="example" id="orga2a0867">
+An orange.
+</pre>
+
+<p>
+Similar to the previous example, here "An" is used to refer to one
+orange. However, unlike "a", "an" is used for vowel <i>sounds</i> only. Note,
+that the word "sound" is emphasized, not the word "vowel".
+</p>
+
+<pre class="example" id="orgb25fc64">
+An underwater boat.
+
+vs.
+
+A union.
+</pre>
+
+<p>
+"underwater" above has an <i>uhh</i> sound which is how the vowel "u" is
+used. Whereas, "union" doesn't have an <i>uhh</i> sound; it has an "ooo" sound
+which is <b>not</b> how the vowel "u" is used.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8e0b1be" class="outline-3">
+<h3 id="org8e0b1be"><span class="section-number-3">1.2.</span> Definite</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+The word which tackes a specific item of a Common noun. The word "the" is
+used for the definite sense. When the word is used, the targeted noun is
+usually identifiable because it is unique in the context of the
+environment.
+</p>
+
+<pre class="example" id="org4f463de">
+The orange.
+</pre>
+
+<p>
+Although the common noun "orange" is used, "the" changes its focus to a
+particular "orange", let's say, within a stack of oranges. Perhaps, it has
+a particular mark or a person is holding that particular orange.
+</p>
+
+<p>
+"The" is used both in the singular and plural form. As an example, one
+could also use the term <code>the oranges</code> to refer to a unique box of oranges.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga6c11b2" class="outline-2">
+<h2 id="orga6c11b2"><span class="section-number-2">2.</span> Adjectives</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+A proper introduction of Adjectives can be done by looking at the origin of
+the word. It comes to english from the combination of the latin words: Ad +
+jacere.
+</p>
+
+<p>
+"Ad" implies <i>to</i>. And "jacere" implies <i>to throw</i>. Hence, Adjectives are
+words which are thrown towards other words, namely nouns, to modify the
+effect of the nouns.
+</p>
+
+<pre class="example" id="org4a62e44">
+Steven is Connie's best friend.
+</pre>
+
+<p>
+"best" is a word which explores the kind of friend Connie is with
+Steven. She's is her favorite or "best" friend.
+</p>
+
+<pre class="example" id="orgebdad28">
+The fat bear.
+</pre>
+
+<p>
+"fat" is used here to define how the bear looks like. He is more round and
+unhealthy.
+</p>
+</div>
+
+<div id="outline-container-org7bcff1a" class="outline-3">
+<h3 id="org7bcff1a"><span class="section-number-3">2.1.</span> Order of Adjectives and its realtion with Commas</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+If you're learning english for the first time this is one more rule that
+you are going to learn. However, if you are a native english speaker then
+you will probably be able to tell that there is something <i>sounds</i> wrong
+with the following sentence:
+</p>
+
+<pre class="example" id="orgd719e2e">
+The French Old White House.
+</pre>
+
+<p>
+It's grammatically corret (sort of) but something is definitely off. And
+that's because in standard english, there is an order in which adjectives
+are used. It's summarized or an acronym to reflect that is the word
+<b>DOSACOMP</b>.
+</p>
+
+<p>
+[D]eterminer, [O]pinion, [S]ize, [A]ge, [S]hape, [C]olor, [O]rigin,
+[M]aterial, and [P]urpose.
+</p>
+
+<p>
+When multiple adjectives are used, they have to be used in the above
+particular order. So, the above example in the correct order would be:
+</p>
+
+<pre class="example" id="org29b0928">
+The Old White French Wooden house.
+</pre>
+
+<p>
+Another example where all of the adjectives are used
+</p>
+
+<pre class="example" id="org7a42ab8">
+The cool big old square black Texan leather riding mower.
+</pre>
+
+<p>
+And that's how adjectives are ordered. But so far we only used one
+adjective of each kind. When multiple adjectives of a particular kind are
+used, "commas" come into the picture.
+</p>
+
+<p>
+The rule then is straightforward. Use a "comma" when multiple adjectives of
+the same kind are used. 
+</p>
+
+<pre class="example" id="org98c4638">
+The mushy, sticky apple.
+</pre>
+
+<p>
+Both "mushy" and "sticky" are opinions. You could also reverse their order
+too and it will still be correct.
+</p>
+
+<pre class="example" id="org6515286">
+The sticky, mushy apple.
+</pre>
+
+<p>
+Well, when adjectives are used this way they are called <i>coordinate</i>
+adjectives.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org88ddef5" class="outline-2">
+<h2 id="org88ddef5"><span class="section-number-2">3.</span> Adverbs</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+The cousins of Adjectives. These modifiers have a similar word
+origin. However, unlike adjective which only modifies a noun, adverbs
+modifies everything else - verbs and adjectives - except a noun.
+</p>
+
+<pre class="example" id="org212dd3f">
+Vanessa was slightly hungry.
+</pre>
+
+<p>
+"slightly" modifies the adjectives hungry (which originally modifies the
+linking verb "was".
+</p>
+
+<p>
+Other categories of Parts of Speech (POS) has distinct categories and
+subcategories. For example, the POS modifier has three different
+categories. The category "article" has two clearly defined
+subcategories. Adverbs do have a variation but they cannot strictly be
+called a subcategory. Other subcategories narrows the definition to provide
+a succinct case which can exhibit multiple properties; adverbs classifies
+those properties.
+</p>
+</div>
+
+<div id="outline-container-org19820e1" class="outline-3">
+<h3 id="org19820e1"><span class="section-number-3">3.1.</span> Relative Adverbs</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+The 3 common adverbs: where, when, and why. They perform exactly the same
+operation as the original definition of adverbs; it's just that these
+words which are generally used in questions can also be used in sentences.
+</p>
+
+<pre class="example" id="org0c8a711">
+That is the cave where I grew up.
+</pre>
+
+<p>
+"where" modifies the verb "grew". 
+</p>
+
+<pre class="example" id="org94c6598">
+I learned to breathe fire when I was ten years old
+</pre>
+
+<p>
+"when" modifies the verb "was".
+</p>
+
+<pre class="example" id="org7b1c9ef">
+I don't know why that is happening.
+</pre>
+
+<p>
+"why" modifies the verb "is".
+</p>
+
+<p>
+This classification has a common pattern. It generally ends up linking two
+clauses together as demonstrated in the above example.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfe20f8b" class="outline-3">
+<h3 id="orgfe20f8b"><span class="section-number-3">3.2.</span> Adverbs of Degree</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+The focus here is on the word itself as these words also perform the same
+operation as the original definition. They have varied impact on the rest
+of the sentence.
+</p>
+
+<pre class="example" id="org297c740">
+A really interesting topic.
+</pre>
+
+<p>
+"really" is from a set of generic adverbs which doubles down or amplifies
+the impact of the adjective "interesting" on the sentence.
+</p>
+
+
+<pre class="example" id="org3ee0980">
+The incredibly deadly viper.
+
+vs.
+
+The somewhat deadly viper.
+
+vs.
+
+The barely deadly viper.
+</pre>
+
+<p>
+"incredibly", "somewhat", and "barely" all modify the adjective "deadly",
+but the impact it has decreases as we move down the sentences. These
+adverbs generally imply that word it is modifying has a comparative
+property.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org45d1729" class="outline-2">
+<h2 id="org45d1729"><span class="section-number-2">4.</span> Comparatives and Superlatives</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Similar to adverbs of degree there are words which amplifies the remainder
+of a sentence where the impact either increases or decreases with the last
+one having the most or the least impact. These words strictly establishes a
+comparison. And generally they are adjectives.
+</p>
+
+<pre class="example" id="org34567c3">
+She is cute.
+
+vs
+
+She is cuter.
+
+vs.
+
+She is cutest.
+</pre>
+
+<p>
+In the above example, the degree of "cuteness" increases as one moves down
+the sentences. The first two kinds are called <b><b>comparatives</b></b>. The word in
+the final sentence which decidedly remarks that "she" is the <i>numero uno</i>
+(the best) in the cuteness category is called a <b><b>superlative</b></b>.
+</p>
+
+<p>
+To form a superlative or a comparative, english has a few different rules:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Word</th>
+<th scope="col" class="org-left">Description</th>
+<th scope="col" class="org-left">Comparative</th>
+<th scope="col" class="org-left">Superlative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">cute</td>
+<td class="org-left">1 syllable, ends in -e</td>
+<td class="org-left">+r; cuter</td>
+<td class="org-left">+st; cutest</td>
+</tr>
+
+<tr>
+<td class="org-left">big</td>
+<td class="org-left">1 syllable, 1 vowel, ends in 1 cons.</td>
+<td class="org-left">cons x 2, + er; bigger</td>
+<td class="org-left">cons x 2 + est; cutest</td>
+</tr>
+
+<tr>
+<td class="org-left">short</td>
+<td class="org-left">1 syllable, 2 vowel, ends in 2 cons.</td>
+<td class="org-left">+er; shorter</td>
+<td class="org-left">+est; shortest</td>
+</tr>
+
+<tr>
+<td class="org-left">shiny</td>
+<td class="org-left">2 syllable, ends in -y</td>
+<td class="org-left">y -&gt; i, +er; shinier</td>
+<td class="org-left">y -&gt; i, +est; shiniest</td>
+</tr>
+
+<tr>
+<td class="org-left">magnificent</td>
+<td class="org-left">2+ syllable, does not end in -y</td>
+<td class="org-left">more magnificient</td>
+<td class="org-left">most magnificent</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2020-04-04 Sat 00:00</p>
+<p class="author">Author: ahnaf</p>
+<p class="date">Created: 2025-01-26 Sun 14:26</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

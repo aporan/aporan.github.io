@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Cambria';
+  src: url('../fonts/Cambria.ttf');
+  font-weight: bold;
+}
+
+body {
+    padding: 1em;
+    padding-top: 0em;
+    font-family: Open Sans, sans-serif;
+    font-size: 12.5px;
+    /* comment the following two lines
+       to print to pdf via browser */
+    margin: 5em auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 65em;
+
+    /* background-color: #323232; */
+    /* color: #e5e5e5; */
+}
+
+p {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    text-align: justify;
+    text-justify: inter-character;
+    line-height: 1.55em;
+    word-wrap: break-word;
+}
+
+ul {
+    padding-left: 2.5em;
+}
+
+ul li {
+    padding: 2px;
+}

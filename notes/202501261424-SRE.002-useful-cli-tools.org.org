@@ -1,10 +1,15 @@
-#+TITLE: Useful Tools
+# 202501261424 SRE.002-useful-cli-tools.org
 #+DATE: <2022-01-09 Sun>
 #+GENRE: DevOps
 #+ESSENCE: Bash
 #+TAG: bash 
 #+MODIFIED: 
 #+STARTUP: showall
+
+
+===
+tags: #bash
+===
 
 * Named Pipes
 

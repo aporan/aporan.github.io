@@ -89,7 +89,7 @@ started into Lisp, Emacs Lisp to be exact.
 *** Assignment
 
     The are multiple ways to assign a variable. 3 functions will be discussed
-    here: =set=, =setq=, and =let=. See how functions are evaluated [[#evaluation][here]].
+    here: =set=, =setq=, and =let=. See how functions are evaluated here.
 
     #+BEGIN_SRC emacs-lisp
     (set ’flowers ’(rose violet daisy buttercup))

@@ -26,4 +26,3 @@
      * sslyze
      * zap proxy
      * nikto
-

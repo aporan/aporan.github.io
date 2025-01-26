@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-26 Sun 14:26 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Noun</title>
+<meta name="author" content="ahnaf" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">The Noun</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgcf4e83c">1. Broad Nouns</a>
+<ul>
+<li><a href="#org50633a6">1.1. People</a></li>
+<li><a href="#orge95a1c1">1.2. Places</a></li>
+<li><a href="#orgad89d8e">1.3. Things</a></li>
+<li><a href="#org702b545">1.4. Ideas</a></li>
+</ul>
+</li>
+<li><a href="#orgcd5f129">2. Narrow Nouns</a>
+<ul>
+<li><a href="#org477eef9">2.1. Concrete</a></li>
+<li><a href="#org164ffac">2.2. Abstract</a></li>
+<li><a href="#org5f58c27">2.3. Common</a></li>
+<li><a href="#orga4cc41c">2.4. Proper</a></li>
+</ul>
+</li>
+<li><a href="#org6e39f99">3. More than One</a>
+<ul>
+<li><a href="#org7b7ac48">3.1. Singular</a></li>
+<li><a href="#orgf050dec">3.2. Plural</a>
+<ul>
+<li><a href="#orge3c455d">3.2.1. Regular</a></li>
+<li><a href="#org79a61f0">3.2.2. Irregular</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+Let's start with the simplest or the part that always appears in a subject or
+object (you'll know what those are much later): The Noun. 
+</p>
+
+<p>
+When you're discussing about any topic, you need to label components of it
+inorder to identify them uniquely. It allows you to differentiate between each
+part and allows you to relate a part to another part. This label is a
+<i>Noun</i>. It identifies things.
+</p>
+
+<p>
+N.B. All information presented cannot be completely presented through the
+perspective of analogy. Well <span class="underline">it</span> could be, but it would be less useful than
+presenting them as raw. For example, how it would not be much useful to
+explain addition itself but show its application and understand it through its
+use cases.
+</p>
+
+<p>
+We begin by casting a net of the broadest category and then dig deeper into
+each section.
+</p>
+
+<div id="outline-container-orgcf4e83c" class="outline-2">
+<h2 id="orgcf4e83c"><span class="section-number-2">1.</span> Broad Nouns</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+There are 4 types of nouns:
+</p>
+
+<ul class="org-ul">
+<li>People</li>
+<li>Places</li>
+<li>Things</li>
+<li>Ideas</li>
+</ul>
+</div>
+
+<div id="outline-container-org50633a6" class="outline-3">
+<h3 id="org50633a6"><span class="section-number-3">1.1.</span> People</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+This kind of nouns usually refers to names of human being. It could be
+animals or any living things.
+</p>
+
+<pre class="example" id="org63dc8a9">
+This is _Astri_.
+</pre>
+
+<p>
+"Astri" is the name of a person.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge95a1c1" class="outline-3">
+<h3 id="orge95a1c1"><span class="section-number-3">1.2.</span> Places</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+These nouns refers to a location. It doesn't have to be with-in Earth or
+even this galaxy. The place could even be outside of this Universe (if you
+are the chosen one who has a special pass to travel between universes)
+</p>
+
+<pre class="example" id="orga8c3de7">
+Astri is originally from _Malang_.
+</pre>
+
+<p>
+"Malang" is the name of a place, a city in Indonesia.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgad89d8e" class="outline-3">
+<h3 id="orgad89d8e"><span class="section-number-3">1.3.</span> Things</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+This refers to in-animate items. They refer to something which is not a
+living thing, but can be found tangibly in nature.
+</p>
+
+<pre class="example" id="org4d6754d">
+She likes the _cat_.
+</pre>
+
+<p>
+"Cat" refers to the generic breed of ferocious little tigers who have
+domesticated us humans. It's considered a Noun, actually a specific
+category with-in it: a <span class="underline">Common</span> Noun.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org702b545" class="outline-3">
+<h3 id="org702b545"><span class="section-number-3">1.4.</span> Ideas</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+Last, these are nouns which refer to the intangible items which has a
+hidden meaning in it.
+</p>
+
+<pre class="example" id="orgfe89cbf">
+Luccan has big _dreams_.
+</pre>
+
+<p>
+"Dreams" is a word which exists. People 'have' them, long for it, are
+ unable to touch it, but some people manifest it. However, most people
+ can't remember it. Some also continously chase it.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcd5f129" class="outline-2">
+<h2 id="orgcd5f129"><span class="section-number-2">2.</span> Narrow Nouns</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Another way to categorize the nouns is by tangibility / physicality and
+generality / specificity. The first category is between a <i>Concrete Noun</i> vs
+<i>Abstract Noun</i>. The latter is between <i>Common Noun</i> vs <i>Proper Noun</i>.
+</p>
+</div>
+
+<div id="outline-container-org477eef9" class="outline-3">
+<h3 id="org477eef9"><span class="section-number-3">2.1.</span> Concrete</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+These are nouns which you interact with physically. 
+</p>
+
+<pre class="example" id="org901bd79">
+A dog chases a cat.    
+</pre>
+
+<p>
+A "dog" and "cat" are both concrete nouns. From the broader category of
+nouns, these nouns generally fall into: People, Places or Things.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org164ffac" class="outline-3">
+<h3 id="org164ffac"><span class="section-number-3">2.2.</span> Abstract</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Nouns which are not-physical; they exist as an Idea.
+</p>
+
+<pre class="example" id="orgda987be">
+Humans experience sadness.
+</pre>
+
+<p>
+"sadness" is not something you can touch. It implies a certain meaning but
+it only exists as an idea with in our human mind. It can't be measured
+(it's not quantitate yet).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5f58c27" class="outline-3">
+<h3 id="org5f58c27"><span class="section-number-3">2.3.</span> Common</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+A category of nouns which categorizes a group of things and gives them a
+common label to denote them.
+</p>
+
+<pre class="example" id="orgc2d94e3">
+A dog climbs a mountain.
+</pre>
+
+<p>
+Both "dog" and "mountain" are generic terms to denote a specific group.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga4cc41c" class="outline-3">
+<h3 id="orga4cc41c"><span class="section-number-3">2.4.</span> Proper</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+Proper nouns are particular about naming. They focus within the
+group for identification.
+</p>
+
+<pre class="example" id="org432f101">
+The dog, Harry, climbs mount Kilimanjaro.
+</pre>
+
+<p>
+"Harry" and "Kilimanjaro" are specific types of dog and mountain
+respectively. One thing about proper nouns is that they <b>must</b> be
+capitalized in a sentence.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6e39f99" class="outline-2">
+<h2 id="org6e39f99"><span class="section-number-2">3.</span> More than One</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+As with many other things, there are more than one item of a
+thing. Naturally, nouns adapt to name them as well. The <i>name</i> of this
+category is trivial: Singular and Plural Nouns.
+</p>
+
+<p>
+But be slightly warned though. The Plural form of Nouns are anything but
+trivial. It has its own several different subcategories. Anways, let's
+start with the Singular form:
+</p>
+</div>
+
+<div id="outline-container-org7b7ac48" class="outline-3">
+<h3 id="org7b7ac48"><span class="section-number-3">3.1.</span> Singular</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Singular nouns are simple: It's one of a thing. For example,
+</p>
+
+<pre class="example" id="org782ac56">
+_Astri_ is a singular being. 
+</pre>
+
+<p>
+"Astri" is a single person.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf050dec" class="outline-3">
+<h3 id="orgf050dec"><span class="section-number-3">3.2.</span> Plural</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+When nouns refer to multiple things, they take this form.
+</p>
+
+<pre class="example" id="orgc8f1c63">
+Astri is among many _girls_ i have met.
+</pre>
+
+<p>
+"girls" refer to many of the single entity: a girl.
+</p>
+
+<p>
+However, and there is going to be a lot of 'howevers', English grammar
+likes to explore new ways of doing things. Yes, there <b>is</b> a category
+with-in plural nouns itself: Regular and Irregular.
+</p>
+</div>
+
+<div id="outline-container-orge3c455d" class="outline-4">
+<h4 id="orge3c455d"><span class="section-number-4">3.2.1.</span> Regular</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<p>
+For regular nouns, pluralization is easy: <b>append</b> '<i>s</i>' at the end of the
+word. To rehash the previous example,
+</p>
+
+<pre class="example" id="org179e70d">
+Astri is among many _girls_ i have met.
+</pre>
+
+<p>
+"girls" is the <i>regular plural</i> of the singular form: girl.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org79a61f0" class="outline-4">
+<h4 id="org79a61f0"><span class="section-number-4">3.2.2.</span> Irregular</h4>
+<div class="outline-text-4" id="text-3-2-2">
+<p>
+Irregular nouns are so named because there are many of them with their
+unique origin and forms
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgd786bc6"></a>ending in <i>en</i><br />
+<div class="outline-text-5" id="text-3-2-2-1">
+<p>
+These are from old english and there aren't a lot of them.
+</p>
+
+<pre class="example" id="org8a9800f">
+|------------------+--------------------|
+| Singular         | Plural             |
+|------------------+--------------------|
+| Ox               | Oxen               |
+| Child            | Children           |
+| Brother / Sister | Brethren / Sistren |
+|------------------+--------------------|
+</pre>
+</div>
+</li>
+
+<li><a id="org9389190"></a>base plurals<br />
+<div class="outline-text-5" id="text-3-2-2-2">
+<p>
+Nouns which has the same form as its Singular. 
+</p>
+
+<pre class="example" id="orgce3060d">
+|----------+----------|
+| Singular | Plural   |
+|----------+----------|
+| fish     | fish     |
+| deer     | deer     |
+| aircraft | aircraft |
+| sheep    | sheep    |
+| rice     | rice     |
+|----------+----------|
+</pre>
+
+<p>
+That's the general rule. And the <i>possible</i> reason they are this way
+because they are seen as a collective group which are "uncountable" in
+nature. Why this interpretaion?
+</p>
+
+<p>
+For example, you can definitely count grains of rice, however, its
+tedious; it is far easier to think of it as a collective item
+instead. Same analogy goes for the other examples listed above. In a
+sentence, examples would be
+</p>
+
+<pre class="example" id="org099db99">
+bison migrate west # singular
+bison migrates west # plural
+</pre>
+
+<p>
+However, there are exceptions. Let's use the word 'fish' as an
+example. One uses the regular plural form when they denoting something
+<i>countable</i> instead of the "collective". For example,
+</p>
+
+<pre class="example" id="org813e132">
+martha studies 30 fishes
+</pre>
+
+<p>
+"fishes" denotes different <i>species</i> of fishes. And different species
+are countable where as,
+</p>
+
+<pre class="example" id="org4d5d09a">
+marty caught 30 fish.
+</pre>
+
+<p>
+"fish" denotes plural. Although it's counted, it can be taken as a
+collective in comparison to "fishes".
+</p>
+</div>
+</li>
+
+<li><a id="orgc348538"></a>the mutants<br />
+<div class="outline-text-5" id="text-3-2-2-3">
+<p>
+Yes, if the above were not confusing enough for you, here comes the
+mutants which were grouped together becuase of linguistic history. There
+are only 7 of them, however, which is good.
+</p>
+
+<pre class="example" id="orgea1b738">
+|----------+--------|
+| Singular | Plural |
+|----------+--------|
+| foot     | feet   |
+| woman    | women  |
+| man      | men    |
+| tooth    | teeth  |
+| goose    | geese  |
+| mouse    | mice   |
+| louse    | lice   |
+|----------+--------|
+</pre>
+
+<p>
+In linguistics, there is a term called <i>vowel harmony</i>. It means that
+the firrst vowel in a word prefers to sound like next ones. For example,
+the plural origin of the word 'foot' was <code>footi</code>.
+</p>
+
+<p>
+Because it hand a second vowel, it was pronounced as <code>feeti</code>, more
+commonly denoted using an umlaut: <code>föti</code>. The transformation of the word
+through time was something like follows:
+</p>
+
+<pre class="example" id="org62ba1ea">
+foot: footi -&gt; föti -&gt; föt -&gt; feet
+</pre>
+</div>
+</li>
+
+<li><a id="orge1521a8"></a>foreign plural<br />
+<div class="outline-text-5" id="text-3-2-2-4">
+<p>
+Finally, the plurals forms of words which are borrowed from other
+languages.
+</p>
+
+<pre class="example" id="org0d1c2e7">
+|-------+------------+-----------+-------------+--------------------------|
+| Lang  | Change     | Singular  | Irr. Plural | Reg. Plural (colloquial) |
+|-------+------------+-----------+-------------+--------------------------|
+| Latin | a -&gt; ae    | larva     | larvae      | larvas                   |
+| Latin | us -&gt; i    | fungus    | fungi       | funguses                 |
+| Latin | um -&gt; a    | datum     | data        | --                       |
+| Latin | ex -&gt; ices | index     | indices     | indexes                  |
+| Greek | is -&gt; es   | thesis    | theses      | thesises                 |
+| Greek | on -&gt; a    | criterion | criteria    | --                       |
+|-------+------------+-----------+-------------+--------------------------|
+</pre>
+
+<p>
+The Reg. Plural form is slowly being accepted into modern English. In
+written prose, the Irr. form is still preferred.
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2019-09-17 Tue 00:00</p>
+<p class="author">Author: ahnaf</p>
+<p class="date">Created: 2025-01-26 Sun 14:26</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+#+macro: company @@html:<span>Tower Research Capital</span>@@
+
+This file is used a small writeup to align companies and my requirement to the
+applied role.
+
+* Generic-1
+
+  It takes time to scale products in a startup. ...
+
+* Canonical
+
+  {{{company}}} develops software that is used distributed and used globally,
+  has large data traffic, and software security is a top priority. I am
+  earnestly looking to work with the scaled infrastructure and large scale
+  tech tools for the next in my career.
+
+* F-Secure
+  
+  Understanding threats on systems in the industry with established tools and
+  mitigating them is my next path. And this role at {{{company}}} would help me
+  learn and contribute to the challenges in security for product
+  infrastructure.
+
+* Lego/Cloudflare
+  
+  {{{company}}} is global and building infrastructure at a large scale is the
+  next step in my career. A globally distributed system where internet
+  security and scale is essential is a good fit. I am earnestly looking to
+  work with the scaled infrastructure and large scaleld tech tools for the
+  next in my career.

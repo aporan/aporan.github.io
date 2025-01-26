@@ -5,6 +5,7 @@
 #+OPTIONS: title:nil toc:nil num:nil html-postamble:nil html-preamble:nil html-style:nil html-scripts:nil
 #+STARTUP: content
 #+macro: span @@html:<span>$1</span>@@
+#+macro: indent @@html:<p id="indent">$1</p>@@
 #+macro: contact @@html:<span id="contact"><span>email: $1</span><span id="phone"><span>phone: $2</span>@@
 
 * AHNAF SIDDIQI | {{{contact(ahnafsidd@gmail.com, +65 97342978)}}}
@@ -23,180 +24,6 @@
 
    Familiar with: JS, HTML, CSS, GDB, Puppet, Redis, Grafana, CPP, MongoDB,
    DTLS, Ansible
-
-** {{{span(Work Experience)}}}
-*** Bytedance Pte. Ltd. ~ Site Reliability Engineer (Security) {{{span(Nov’22 - Now)}}}
-
-    SRE in charge of 2 direct security products in a team of 25. I also
-    manage/provision our internal Kubernetes cluster including standard
-    sysadmin responsibilities
-
-    * Designed and implemented application metrics which captured errors which
-      were eventually converted to P0 (alerts on symptomps), reducing the P0
-      stats by over 50%
-    * Metrics redesign helped to negotiate a clear SLA with our stakeholders
-      with a enforced, data backed agreement of 99.9% which also established a
-      Runbook
-    * Correlated cpu, memory information which was piped into metrics with
-      host data to provided yearly estimates of resources using a simple
-      linear regression model.
-    * Stabilized apache Kafka platform which consistenly produces 76 Million
-      messages/sec. Identified critical bottlenecks and proposed redesign of
-      the system architecture to handle congestion. The system recovered
-      without any data loss.
-    * Provisioned Hashicorp/vault in a high availability cluster backed by
-      Oracle KMS and a secondary vault to perform auto-unseal:
-      https://developer.hashicorp.com/vault/docs/configuration/seal/ocikms
-    * Introduced blue-green/canary deployment concepts to infrastructure team
-      with 0 downtime upgrade of applications.
-    * Reduced the runtime of Apache Flink job processing 20+Tb of data 10+
-      hours to 4.
-    * Managed, reviewed, provisioned host instances, provisinded kubernetes
-      deployment, configured Ingress, scraped cluster metrics using prometheus
-      agent, and collected logs using Loki.
-    * Configured Kibana Indexes which ingested msgs from high load Kafka broker.
-    * Conducted standard DevOps/Testing practices: Torture testing, regression
-      testing, integration testing.
-    * Collaborated with R&D to introduce database migration tool to ensure a
-      schema consistency
-    * Reduced Docker image file sizes by using Alpine Linux based images. 
-    * Introduced go-mmproxy which attaches client address infront of the TCP
-      packet header to preserve ip addresses in Layer 4 of the OSI model
-    * Automated several dry operations which installs, provisions, fix various
-      adhoc tasks using python, go, and bash.
-    * Regularly particpated in global-oncall with colleagues in 4 different
-      timezone, while managing internal customer requriements across two
-      different cultures.
-
-*** MicroSec Pte. Ltd. ~ {DevOps, Software,Operations} Engineer {{{span(Nov’17 - Oct’22)}}}
-    :PROPERTIES:
-    :ID:       8380bf80-39e4-4c02-bee0-8f94168a87d8
-    :END:
-
-    I crafted the product API requirements for device enrollments from
-    stakeholder requirements to application implementation, lifecycle and
-    deployment, while managing technical customer operations. I also
-    provisioned their DevOps pipeline.
-
-    /Role - DevOps Engineer/
-
-    - Led the deployment of 3 main products and designed the development
-      workflow to increase dev iterations using Gitlab Runner.
-    - Deployed and managed a production delivery of 16K devices using Docker
-      Swarm in AWS.
-    - Accelerated the development pipeline by mentoring the developers to
-      practice good DevOps practices including writing Docker images and
-      proper Unit Testing.
-    - Developed a local product deployment script using Bash for all
-      developers to experience the full product deployment. The script is also
-      used to demonstrate repeatable demos to internal stakeholders.
-    - Wrote lightweight Docker images using multi-stage build that uses alpine
-      to significantly reduce image size.
-    - Developed companies Software Release Management strategies working
-      within the Scrum methodology. 
-    - Manage and update self-hosted Gitlab instance to be always up-to-date.
-    - Managed AWS IAM roles following least privlege principle for users and
-      application system. 
-    - Deployed and maintained several microservices in Docker Swarm.
-
-    /Role - Software Engineer/
-
-    - Responsible for requirement gathering, analysis and translation into
-      well-defined work description for developers to design and implement.
-    - Developed MicroPKI: a performant multithreaded socket server, that
-      implements a proprietary TLS 1.3 for embedded devices in IoT strictly
-      uses ECC Keys, specifically Ed25519
-    - Proprietery certificates are fine-tuned for embedded devices, with its
-      custom inhouse implementatino of CRL and OCSP responder
-    - Implemented MicroPKI Core in C compiled for embedded clients that uses a
-      Python Wrapper for a Web Service.
-    - Maintained an Energy Monitoring product that uses Modbus to read
-      localized data that is transferred near real-time via MQTT that is
-      batched process and stored in InfluxDB.
-    - Led the design and implementation of RESTful microservices using python
-      that supports in-house implementations of ACMEv2, EST, and SCEP
-      following their respective RFCs: 8555, 7030, 8894.
-    - Introduced the automation of backend e2e testing with unit test at
-      microservices level and integration test at a separate product level.
-    - Implement simulation testbeds that replicates a CANBUS protocol scenario
-      using Docker.
-    - Identified a missing parser in Microsofts Library for SCEP protocol
-      after parsing the ASN.1 certificate data structure.
-
-    /Role - Operations Engineer/
-
-    - Led Scrum Master duties for two teams of 10+ individuals.
-    - Evangelize the Scrum philosophy with the development team to promote
-      code reviews and collaboration.
-    - Increased team delivery yield by a factor of 1.5, rotating or setting
-      expectations after various 1-1 meetings.
-    - Negotiated product deliverable timeline per sprint between different
-      internal stakeholders.
-    - Deployed products on customer premises cloud premises and off-line
-      systems.
-    - Mentored and supervised interns to full time employees following
-      companies guidelines. 
-
-*** iTrust Research Center for CyberSecurity ~ Research Assistant {{{span(Nov’16 - Oct’17)}}}
-
-    Implemented a concurrent Common Industrial Protocol (CIP), a realtime
-    network protocol at Secure Water Treatment (SWaT) testbed in SUTD, that
-    was used in simulation, mutliple research projects, and as proxies for
-    developing attack scenarios for competitions.
-
-    - Packet Sniffing and Reconstruction of high volume CIP packets for both
-      TCP and UDP.
-    - Designed CRUD HTTPS API to handle application requests using using TDD
-      and SOLID principles of OOP.
-    - Followed a design guideline to implement a CaptureTheFlag question that
-      was used in university competition.
-
-    *Publication*: A. Siddiqi, N. O. Tippenhauer, D. Mashima, and
-    B. Chen, “On practical threat scenario testing in an electric
-    power ics testbed,” in Proceedings of the cyber-physical system
-    security workshop (cpss), co-located with asiaccs, 2018.
-
-# *** Souschef ~ Web Developer {{{span(Oct’16 - Jan’17)}}}
-# 
-#     Prototype, developed, and participated in the initial deployment
-#     of a configuration panel across mutliple remote machines.
-# 
-#     - Learnt and developed JS based web service following TDD
-#       principles.
-#       
-# *** General Assembly ~ Teaching Assistant {{{span(Aug - Sep’16)}}}
-# 
-#     Assisted instructors to teach students the basics of programming,
-#     web development, and CLI magic.
-# 
-#     - Taught Git, HTML, CSS, Javascript, and Express.
-#     - Managed multiple tasks including grading programming
-#       tests and evaluating student projects.
-# 
-# *** Tinkerbox Studios ~ Web Developer {{{span(May - Aug’15)}}}
-# 
-#     Summer Internship where I developed business logic and implemented
-#     test cases of projects.
-# 
-#     - Practiced Test Driven Development using Ruby-on-Rails.
-#     - Worked on models, views, and controllers and wrote/refactored
-#       their new/old tests.
-#     - Implemented simple front-end interactive pages.
-# 
-# *** BetterWebPages ~ Web Developer {{{span(May - Aug’14)}}}
-# 
-#     First work experience as a summer intern in a startup in infancy.
-# 
-#     - Worked as a beginner full-stack developer and customized
-#       third-party packages to project requirements to deliver a fully
-#       operational website.
-#     - Learned the major sections of the framework in two weeks and
-#       implemented started doing customer projects.
-#     - Rewrote django packages to suit the functionality requirements
-#       of projects.
-#     - Implemented some user interface elements which included bar
-#       chart, and pie charts.
-
 ** {{{span(Education)}}}
 *** Singapore University of Technology and Design {{{span(Class of 2016)}}}
 
@@ -253,7 +80,194 @@
 
 # #     /Tech Stack/: Laravel, Artisan, PHP.
 
-** {{{span(Professional Certifications)}}}
+** {{{span(Work Experience)}}}
+*** Bytedance Pte. Ltd. ~ Site Reliability Engineer (Security) {{{span(Nov’22 - Now)}}}
+
+    SRE in charge of 2 direct security products in a team of 25. I also
+    manage/provision our internal Kubernetes cluster including standard
+    sysadmin responsibilities
+
+    * Designed and implemented application metrics which captured errors which
+      were eventually converted to P0 (user facing alerts), reducing the P0
+      stats by over 50%
+    * Metrics redesign helped to negotiate a clear SLA with our stakeholders
+      with a enforced, data backed agreement of 99.9% which established a
+      Runbook
+    * Correlated cpu, memory information which was piped into metrics with
+      host data to provided yearly estimates of resources using a simple
+      linear regression model.
+    * Identified an intermittent race condition by initially using a
+      flamegraph generated by using a go profiler.
+    * strace and gdb helped to identify a race condition due to futex_wait
+      which helped in reducing the resource application and help boost
+      application perforance.
+    * Stabilized apache Kafka platform which consistenly produces 76 Million
+      messages/sec. Identified critical bottlenecks and proposed redesign of
+      the system architecture to handle congestion. The system recovered
+      without any data loss.
+    * Provisioned Hashicorp/vault in a high availability cluster backed by
+      Oracle KMS and a secondary vault to perform auto-unseal:
+      https://developer.hashicorp.com/vault/docs/configuration/seal/ocikms
+    * Introduced blue-green/canary deployment concepts to infrastructure team
+      with 0 downtime upgrade of applications.
+    * Reduced the runtime of Apache Flink job processing 20+Tb of data 10+
+      from 12+ hours to 4.
+    * Managed, reviewed, provisioned host instances, deployed application as
+      K8s deployment/rollout/statefulset, scraped cluster metrics using
+      prometheus agent, and collected logs using Loki.
+    * Conducted standard DevOps/Testing practices including regression
+      testing and torture tests 
+    * Actively prompted R&D to use Alpine Linux based images by providing
+      example-led demonstration by reducing image size which saved in storage costs.
+    * Introduced go-mmproxy which attaches client address infront of the TCP
+      packet header to preserve ip addresses in Layer 4 of the OSI model
+    * Automated several dry operations which installs, provisions, fix various
+      adhoc tasks using python, go, and bash.
+    * Regularly particpated in global-oncall with colleagues in 4 different
+      timezone, while managing internal customer requriements across 4
+      cultures.
+
+*** MicroSec Pte. Ltd. ~ {DevOps, Software,Operations} Engineer {{{span(Nov’17 - Oct’22)}}}
+    :PROPERTIES:
+    :ID:       8380bf80-39e4-4c02-bee0-8f94168a87d8
+    :END:
+
+    I created product milestones from stakeholder requirements to application
+    implementation, lifecycle and deployment, while managing technical
+    customer operations. I also managed the their DevOps pipeline mainly in
+    AWS.
+
+    /Role - DevOps Engineer/
+
+    - Managed companies on-premise Gitlab, scheduling regular upgrades and
+      performing regular maintenance
+    - Led the deployment of 3 main products and designed the development
+      workflow using Gitlab's runner. 
+    - Developed a local product deployment script using bash which the
+      developers used to simulate a full product deployment. The script is
+      also used to demonstrate repeatable demos to internal stakeholders.
+    - Wrote lightweight Docker images using multi-stage build that uses alpine
+      to significantly reduce image size.
+    - Developed companies Software Release Management strategies working
+      within the Scrum methodology. 
+    - Configured AWS IAM roles following least privlege principle for users and
+      application system.
+    - Configured AWS VPC, Security Groups, Route53, ECR, EC2 and several
+      others which is required to provision an entire deployment suites.  
+    - Deployed and managed a production systems of 16K end-devices in a Docker
+      Swarm for AWS
+
+    /Role - Software Engineer/
+
+    - Responsible for requirement gathering, analysis and translation into
+      well-defined work description for developers to design and implement.
+    - Developed MicroPKI: a performant multithreaded socket server, that
+      implements a proprietary TLS 1.3 for embedded devices in IoT strictly
+      uses ECC Keys, specifically Ed25519
+    - Certificates are fine-tuned for embedded devices, with its inhouse
+      implementation of CRL and OCSP responder
+    - Wrote MicroPKI protocol in C, which loads as a static library in
+      frontend wrapper APIS including: HTTP and MQTT
+    - Maintained an Energy Monitoring product that uses Modbus to read
+      localized data that is transferred near real-time via MQTT that is
+      batched process and stored in InfluxDB.
+    - Led the design and implementation of RESTful microservices using python
+      that supports in-house implementations of ACMEv2, EST, and SCEP
+      following their respective RFCs: 8555, 7030, 8894.
+    - Introduced the automation of backend e2e testing with unit test at
+      microservices level and integration test at a separate product level.
+    - Implement simulation testbeds that replicates a CANBUS protocol scenario
+      using Docker.
+    - Identified a missing parser in Microsofts Library for SCEP protocol
+      after parsing the ASN.1 certificate data structure.
+
+    /Role - Operations/
+
+    - Led Scrum Master duties for two teams of 10+ individuals.
+    - Evangelize the Scrum philosophy with the development team to promote
+      code reviews and collaboration.
+    - Increased team delivery yield by a factor of 1.5, rotating or setting
+      expectations after various 1-1 meetings.
+    - Negotiated product deliverable timeline per sprint between different
+      internal stakeholders and external clients
+    - Mentored several interns to full time employees following companies
+      guidelines.
+
+# *** iTrust Research Center for CyberSecurity ~ Research Assistant {{{span(Nov’16 - Oct’17)}}}
+
+#     Implemented a concurrent Common Industrial Protocol (CIP), a realtime
+#     network protocol at Secure Water Treatment (SWaT) testbed in SUTD, that
+#     was used in simulation, mutliple research projects, and as proxies for
+#     developing attack scenarios for competitions.
+
+#     - Packet Sniffing and Reconstruction of high volume CIP packets for both
+#       TCP and UDP.
+#     - Designed CRUD HTTPS API to handle application requests using using TDD
+#       and SOLID principles of OOP.
+#     - Followed a design guideline to implement a CaptureTheFlag question that
+#       was used in university competition.
+
+
+# *** Souschef ~ Web Developer {{{span(Oct’16 - Jan’17)}}}
+# 
+#     Prototype, developed, and participated in the initial deployment
+#     of a configuration panel across mutliple remote machines.
+# 
+#     - Learnt and developed JS based web service following TDD
+#       principles.
+#       
+# *** General Assembly ~ Teaching Assistant {{{span(Aug - Sep’16)}}}
+# 
+#     Assisted instructors to teach students the basics of programming,
+#     web development, and CLI magic.
+# 
+#     - Taught Git, HTML, CSS, Javascript, and Express.
+#     - Managed multiple tasks including grading programming
+#       tests and evaluating student projects.
+# 
+# *** Tinkerbox Studios ~ Web Developer {{{span(May - Aug’15)}}}
+# 
+#     Summer Internship where I developed business logic and implemented
+#     test cases of projects.
+# 
+#     - Practiced Test Driven Development using Ruby-on-Rails.
+#     - Worked on models, views, and controllers and wrote/refactored
+#       their new/old tests.
+#     - Implemented simple front-end interactive pages.
+# 
+# *** BetterWebPages ~ Web Developer {{{span(May - Aug’14)}}}
+# 
+#     First work experience as a summer intern in a startup in infancy.
+# 
+#     - Worked as a beginner full-stack developer and customized
+#       third-party packages to project requirements to deliver a fully
+#       operational website.
+#     - Learned the major sections of the framework in two weeks and
+#       implemented started doing customer projects.
+#     - Rewrote django packages to suit the functionality requirements
+#       of projects.
+#     - Implemented some user interface elements which included bar
+#       chart, and pie charts.
+
+** {{{span(Publications)}}}
+
+    **Patent**: MicroSec's patent for securing communications in Embedded
+    Systems that uses a proprietary PKI based protocol
+
+    {{{indent(Vishram Mishra\, A. Siddiqi et al (2022). Method and Architecture for
+    Securing and Managing Networks of Embedded Systems with Optimised Public
+    Key Infrastructure (20220006652-A1). U.S. Patent and Trademark
+    Office. Pending)}}}
+
+    **Paper**: Detailed network segment, protocol, and service analysis of
+    EPIC Industrial testbed
+
+    {{{indent(A. Siddiqi\, N. O. Tippenhauer\, D. Mashima\, and B. Chen\, “On practical
+    threat scenario testing in an electric power ics testbed\,” in Proceedings
+    of the cyber-physical system security workshop (cpss)\, co-located with
+    asiaccs\, 2018. https://doi.org/10.1145/3198458.3198461)}}}
+
+** {{{span(Certifications)}}}
 
    # | Certified DevSecOps Professional (CDP) - May 2022 | Certified DevSecOps Professional (CDP) - May 2022 | Certified DevSecOps Professional (CDP) - May 2022                                |
    # | Issuer: Practical DevSecOps                       | Issuer: Practical DevSecOps                       | Issuer: Practical DevSecOps                                                      |

@@ -1,0 +1,233 @@
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../static/css/resume.css" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+#+HTML_DOCTYPE: html5
+#+OPTIONS: title:nil toc:nil num:nil html-postamble:nil html-preamble:nil html-style:nil html-scripts:nil
+#+STARTUP: content
+
+{{{time(%e %B %Y)}}}
+
+The questions in the list are geared towards a very specific set of answers. I
+have answered them below, but I would like to provide a bit of context. I am
+from a developing country who studied in a not-so preferable environment.
+
+I was grateful enough to visit Singapore for my Undergraduate where I started
+learning Computer Science. Since then, there has not been a single week where
+I have not learned something new. 
+
+** Education
+
+1. In high school, how did you fare in mathematics and physical sciences?
+   Which were your strongest subjects in the hard sciences, and how did you
+   rank in your class?
+
+   For both sciences and mathematics, I have achieved straight As in both my
+   GCE O and A Levels. I was fairly strong in both general and pure
+   mathemetics. For physical sciences, physics was my strongest subject, and
+   chemistry my weakest.
+
+2. In high school, what leadership roles did you take on?
+
+   I did not have the opportunity to participate in any additional curricular
+   activities in high school
+
+3. What courses and university did you choose, and why?
+
+   I chose to Study in Singapore. I was not initially keen on choosing
+   Computer Science but intro courses in the First semester motivated me to
+   choose. Finally, I ended up Majoring in Security.
+
+4. How did you rank competitively in university? Which were your strongest
+   courses, and which did you enjoy the most?
+
+   Singapore is competitive. I performed best on Security courses with Machine
+   Learning and Artificial Intelligence being my weakest. I did and still
+   enjoy learning about Security related materials.
+
+5. In high school and at university, describe your achievements that were
+   considered exceptional by colleagues and staff.
+
+   Other than the grades that I achieved, I have no significant achievements
+   from high school. I just did not have the opportunity to do so, primarily
+   because of financial and cultural reasons.
+
+   In University things were different. 
+
+   I have been involved in the following:
+
+   * Photographic Committee Member 
+   * Billiards Member
+   * Table Tennis Member
+
+   And, I have achieved the following:
+
+   * Apex Business Challenge 2016 Finalist
+   * City Security Award 
+   * Graduating while still funding my own living cost. 
+     * Although this is not a graded achievement, it instilled in me the
+       ability to schedule and prioritize task
+
+** Career development
+
+1. How would you describe your level of experience as a professional software
+   engineer?
+
+   I am a problem solver. I started as a Developer with only experience in
+   Python. I have learned new tech, language and skills as the situation in my
+   current company necessitated, that includes: C, CPP, Docker, Swarm, and
+   currently, Kubernetes.
+
+   I am responsible for Server Administration including both on Prem and Off
+   Prem Servers.
+
+2. Describe your skill in your preferred development language, and how you
+   attained it.
+
+   I don't quite have a language I love, however, i would use python as it is
+   fast for prototyping which gets things running. Although every language has
+   it's own advantages, I focus more on the more standard programming
+   toolkits: Testing, SOLID, DRY. 
+
+3. What are your strengths as a software engineer?
+
+   I am not the stronger code implementer. However, I have been designing,
+   architecting our companies technical product while doing Operations
+   work. My greatest strength would be to be flexible enough to work with
+   people from multiple countries, and be able to translate requirements and
+   still deliver work.
+
+4. What experience do you have with Linux system administration? What is the
+   largest group of servers you have been part of operating?
+
+   I am in charge of administrating both online and offline servers in my
+   current company, at MicroSec. This includes primarily Ubuntu, but also,
+   Centos. I have also worked with RHEL. 
+
+5. What experience do you have with site reliability engineering, keeping
+   production services online and available?
+
+   I am only maintaining a few live servers. I don't have experience on
+   managing hundreds of servers at scale, but that is what I want to move
+   towards as my next Career step. I know the toolkits that are generally
+   used, Terraform for example, but I have not practially done it, yet.
+
+** Experience
+
+1. Describe your level of experience in Python, and how you have attained it.
+
+   I have been professionaly using python for the last 5 years. I have never
+   extended python with custom C libraries, but that should be relatively easy
+   enough to learn.
+
+2. When did you start working on Linux? Describe your level of experience as a
+   user & developer on Linux.
+
+   I first started using a version of Linux in my 3rd year of University, my
+   first Internship. I did not before than that there were other operating
+   systems other than Windows and Mac. Since then, I have strictly used
+   Ubuntu. I only ever switch to Windows for either Photography or some Games.
+
+   All development, of multiple languages and build platforms are just much
+   easier on Linux, aside from Apple specific tech, for example Swift.
+
+3. Describe your experience with container technologies (Docker, LXD,
+   Kubernetes, etc)
+
+   I first used containers, LxCs during my time at University. I learned that
+   they were build upon the idea of changeroot. Afterwards, at my current
+   company, I learned docker and docker swarm. Docker is brilliant.
+
+   I only recently started learning Kubernetes. It's BIG. It's originally
+   based on Borg. I don't think it's quite suitable unless one has a large
+   infra.
+
+4. How do you prefer to drive documentation for your products?
+
+   A product is usless if no one is there to use it. If there are users, they
+   need to know how the produt works. The audience would demand the style of
+   documentation, but in general, some form of documentation is absolutely
+   critical
+
+5. How do you think about quality in your products?
+
+   Well as Steve jobs has said it. Quality should never be marketed. Users
+   will naturally use the product that has the most quality for it's use case
+
+6. Describe a case where it was very difficult to test code you were writing,
+   but you found a reliable way to do it.
+
+   Writing tests for Embedded platform is the most difficult of all, as it
+   interfaces with hardware. I cannot say I have found the most reliable way,
+   as interfacing with hardware can always go wrong. 
+
+   In this cases though, I assume external hardware has a certain function and
+   treat them like API calls to abstract the functionality in a pure software
+   based approach.
+
+7. If available, provide your public github/gitlab repository links
+
+   https://github.com/aporan
+
+8. What would you like to achieve in career development and skills
+   development?
+
+   I want to learn on how things are handled at scale, focusing on solving
+   DevOps and product pipeline delivery.
+
+** Context
+
+1. Are you involved in open source software?
+
+   Not as much as I would like.
+
+2. Describe any significant contributions to open source (with links where
+   possible), if any
+
+   NA
+
+3. What do you think are the key ingredients of a successful open source
+   project?
+
+   Product openness which leads to consumer trust
+
+4. Why do you most want to work for Canonical?
+
+   I am interested in OS, package security, networking and kernel. All of
+   which Canonical is strongly involved in and at scale.
+
+5. Which other companies are building the sort of products you would like to
+   work on?
+
+   Linux Kernel is something I definitely want to work on, but that's not a
+   company. 
+
+6. Which companies have the most interesting approach to devops and site
+   reliability engineering?
+
+   As always, it depends on the type of product. For Web based software
+   platforms, https://www.flow.io/ has the most interesting approach. Here is
+   a great youtube video that captures their flow:
+   https://www.youtube.com/watch?v=j6ow-UemzBc
+
+7. What do you think could raise the bar for site reliability engineering,
+   globally?
+
+   From a work point of view, reducing the number of steps in delivery which
+   generally means automating things that can be automated
+   
+8. What do you think Canonical needs to improve in its engineering and
+   products?
+
+   Ubuntu has come a long way, and it's great to see so many
+   integrations. From canonica's own consumer product, a smooth User
+   experience like Apple is a long way away. 
+
+   From system administration perspective, however, and ubuntu being the entry
+   point for most people, a more robust secured and tested package
+   provisioning mechanisms.
+
+9. Who do you think are key competitors to Canonical? How do you think
+   Canonical should plan to win that race?
+
+   I would very much like to see Games, personally. Gamers already like the
+   idea of customization, and Linux, in general, is about flexibility. It
+   would definitely provide an edge. 

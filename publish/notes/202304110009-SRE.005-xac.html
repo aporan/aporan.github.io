@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-26 Sun 14:26 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Things as Code</title>
+<meta name="author" content="ahnaf" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Things as Code</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org207a8f4">1. Infra as Code</a>
+<ul>
+<li><a href="#orge50397e">1.1. Ansible Overview</a></li>
+</ul>
+</li>
+<li><a href="#orge7b5213">2. Compliance as Code</a></li>
+<li><a href="#org29d6f69">3. Vulnerability Management Tools</a>
+<ul>
+<li><a href="#org5ea5ccd">3.1. Design Matrix</a>
+<ul>
+<li><a href="#org31613ed">3.1.1. Defect Dojo DevSecOps</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org207a8f4" class="outline-2">
+<h2 id="org207a8f4"><span class="section-number-2">1.</span> Infra as Code</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+The first lesson is about Ansible, and it is really about configuration
+management. The idea is to handle remote configurations. It does not,
+however, manage actual deployment of systems
+</p>
+
+<p>
+Resources:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=w8fOEEMqpOw">https://www.youtube.com/watch?v=w8fOEEMqpOw</a></li>
+<li><a href="https://serversforhackers.com/s/ansible">https://serversforhackers.com/s/ansible</a></li>
+<li><a href="https://github.com/dev-sec/ansible-collection-hardening">https://github.com/dev-sec/ansible-collection-hardening</a></li>
+</ul>
+</div>
+
+<div id="outline-container-orge50397e" class="outline-3">
+<h3 id="orge50397e"><span class="section-number-3">1.1.</span> Ansible Overview</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Playbooks are a collection of Tasks. One can run playbook locally to find
+test the set of tasks to be run; It's also possible to nest ansible
+playbooks and access them from a main.yml file.
+</p>
+
+<p>
+One of the interesting abilities of Ansible is that it can find variables
+about a system, using it's <code>setup</code> module. 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge7b5213" class="outline-2">
+<h2 id="orge7b5213"><span class="section-number-2">2.</span> Compliance as Code</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Internet Security Linux Benchmark can be audited using the linus-baseline
+Inspec profile. It runs compliance check against existing server; Although
+this is not as important for development purposes, it's actually very good
+for deployments and audits, especially multiple servers are being managed in
+a company.
+</p>
+
+<p>
+Inspec can be used to check if extra items can / are installed in the
+current platform. There are some global rules that everyone might need to
+follow. However, right now, we don't have tooling requirements.
+</p>
+
+<p>
+A combination of Ansible and Inspec can be used to maintain the hardened
+state of a distribution box
+</p>
+
+<p>
+Inspec is a ruby gem, with a default inspec.yml file, which does
+nothing. The actual code is established in .rb files, for compliance checks.
+</p>
+
+<p>
+Cardholder information security guidelines and documentation can be found
+here: <a href="https://www.pcisecuritystandards.org/document_library">https://www.pcisecuritystandards.org/document_library</a>
+</p>
+
+<p>
+Essentially, depending on information especially when a system is used to
+store cardholder information, many items could be checked. A summary is
+available here: 
+</p>
+
+<ul class="org-ul">
+<li><a href="https://linux-audit.com/linux-systems-guide-to-achieve-pci-dss-compliance-and-certification/">https://linux-audit.com/linux-systems-guide-to-achieve-pci-dss-compliance-and-certification/</a></li>
+</ul>
+
+<p>
+Running applications (containers) can also be checked against
+compliance. There are already open source items available online. Just using
+them is already a good start
+</p>
+
+<p>
+<a href="https://github.com/dev-sec/cis-docker-benchmark">https://github.com/dev-sec/cis-docker-benchmark</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org29d6f69" class="outline-2">
+<h2 id="org29d6f69"><span class="section-number-2">3.</span> Vulnerability Management Tools</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Helps in creating metrics for the business team, in terms of things to
+do. An approach to Vul Management would define the path of the DevOps route:
+</p>
+
+<ol class="org-ol">
+<li>Have a primary (simple) metric, and</li>
+<li>Have a secondary metric,</li>
+</ol>
+
+<p>
+Both of which defines a maturity level. The better criteria of building up a
+management configuration matrix (something which tells you exactly what to
+do when an incident appears), and the more readable it is, the better it is
+for the team.
+</p>
+
+<p>
+Get discussions started using simple items like linting, software package
+dependency testing.
+</p>
+
+<ol class="org-ol">
+<li>Find</li>
+<li>Aggregate,</li>
+<li>Manage,</li>
+<li>Fix,</li>
+<li>Improve</li>
+</ol>
+</div>
+
+<div id="outline-container-org5ea5ccd" class="outline-3">
+<h3 id="org5ea5ccd"><span class="section-number-3">3.1.</span> Design Matrix</h3>
+<div class="outline-text-3" id="text-3-1">
+<ol class="org-ol">
+<li>Don't file issues with false positive</li>
+<li>Use known tools to file issues.</li>
+<li>Prioritize projects, and other items</li>
+<li>Generate metrics for showing performance</li>
+<li>The risk management metrics should provide guideline for the maturity
+level of the product</li>
+<li>Matrics should not be a "catch all" thing. It should capture the
+organization's culture</li>
+</ol>
+
+<p>
+Example metrics:
+</p>
+
+<ol class="org-ol">
+<li>No. of High/Med/Low Severe Vulnerabilities,</li>
+<li>Top 5/10 vulnerabilities per business product</li>
+<li>No. of issues fixed in past month/quarter/year</li>
+<li>Percentage of project with automated scanning</li>
+</ol>
+</div>
+
+
+<div id="outline-container-org31613ed" class="outline-4">
+<h4 id="org31613ed"><span class="section-number-4">3.1.1.</span> Defect Dojo DevSecOps</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<p>
+The way DevSecOps box does the resolution, for most of it's toolkits:
+</p>
+
+<p>
+docker run &#x2013;user \((id -u):\)(id -g) -w /zap -v $(pwd):/zap/wrk:rw \
+        &#x2013;rm owasp/zap2docker-stable:2.10.0 zap-baseline.py \
+        -t <a href="https://prod-yq2yq8oq.lab.practical-devsecops.training">https://prod-yq2yq8oq.lab.practical-devsecops.training</a> \
+        -d -x zap-output.xml
+</p>
+
+<p>
+export API<sub>KEY</sub>=$(curl -s -XPOST -H 'content-type: application/json' <a href="https://dojo-yq2yq8oq.lab.practical-devsecops.training/api/v2/api-token-auth/">https://dojo-yq2yq8oq.lab.practical-devsecops.training/api/v2/api-token-auth/</a> -d '{"username": "root", "password": "pdso-training"}' | jq -r '.token' )
+</p>
+
+<p>
+python3 upload-results.py &#x2013;host dojo-YQ2yQ8oq.lab.practical-devsecops.training &#x2013;api<sub>key</sub> $API<sub>KEY</sub> &#x2013;engagement<sub>id</sub> 1 &#x2013;product<sub>id</sub> 1 &#x2013;lead<sub>id</sub> 1 &#x2013;environment "Production" &#x2013;result<sub>file</sub> zap-output.xml &#x2013;scanner "ZAP Scan"
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2022-02-16 Wed 00:00</p>
+<p class="author">Author: ahnaf</p>
+<p class="date">Created: 2025-01-26 Sun 14:26</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-26 Sun 14:26 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Verb</title>
+<meta name="author" content="ahnaf" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">The Verb</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org6460a08">1. The Subject Verb Agreement</a></li>
+<li><a href="#org696cb96">2. Types of Verbs</a>
+<ul>
+<li><a href="#org6f7c0a5">2.1. Action</a></li>
+<li><a href="#org9a4f866">2.2. Linking</a></li>
+<li><a href="#org064185e">2.3. Helping</a>
+<ul>
+<li><a href="#org4f8ff3b">2.3.1. Modals</a></li>
+</ul>
+</li>
+<li><a href="#org0bb2df4">2.4. Irregular</a></li>
+</ul>
+</li>
+<li><a href="#orge28c783">3. Place in Time</a>
+<ul>
+<li><a href="#orgb47d5de">3.1. Present Tense</a></li>
+<li><a href="#orgb872fe6">3.2. Past Tense</a></li>
+<li><a href="#org6c73bac">3.3. Future Tense</a></li>
+</ul>
+</li>
+<li><a href="#org0e6e01e">4. Verbs Third Law</a>
+<ul>
+<li><a href="#org49abba6">4.1. Simple Aspect</a></li>
+<li><a href="#orge1eded8">4.2. Progressive Aspect</a></li>
+<li><a href="#orgef1a003">4.3. Perfect Aspect</a></li>
+<li><a href="#org3e7520e">4.4. Perfect Progressive</a></li>
+</ul>
+</li>
+<li><a href="#org8002c84">5. Irregular Verbs</a>
+<ul>
+<li><a href="#org518ba99">5.1. Funk-ed</a></li>
+<li><a href="#orge3d55fc">5.2. Vowel Shift</a></li>
+<li><a href="#org1af64b2">5.3. Vowel Shift's which are Taken</a></li>
+<li><a href="#orga227469">5.4. The Proud Irregulars</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+So far, we have learnt how to identify items by their names, places, ideas or
+things and we call it a <code>Noun</code>. Now, we should be able to describe how they
+are involved in a discussion or what they are doing or how they are doing - an
+action that they are performing. The words which describes this and in doing
+so starts the basic formation of a sentence is <code>The Verb</code>.
+</p>
+
+<p>
+An analogy: A car consists of many parts: windows, tyres, seats. However, a
+car is not a car if it doesn't move or run. The engine makes it do something -
+move - and that's what a verb <i>does</i>. It takes all the items which has names,
+connects them together, and makes it move.
+</p>
+
+<p>
+And that example brings us to the fundamental law in verbs: The Subject Verb
+Agreement.
+</p>
+
+<div id="outline-container-org6460a08" class="outline-2">
+<h2 id="org6460a08"><span class="section-number-2">1.</span> The Subject Verb Agreement</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+A simple sentence which has a verb and a noun.
+</p>
+
+<pre class="example" id="org075c63b">
+I eat.
+</pre>
+
+<p>
+"I" is the noun, and "eat" describes what I am doing. And importantly, the
+singular verb agrees with the singular noun.
+</p>
+
+<p>
+The idea behind the agreement is like above - The verb should always
+express the what the noun is doing in the correct way. 
+</p>
+
+<p>
+Well what's the correct way? Well, it's English. Here are some examples:
+</p>
+
+<pre class="example" id="orga86ca62">
+Jake bakes a cake.
+We bake cakes.
+The dog barks.
+The dogs bark.
+</pre>
+
+<p>
+In all of the above, the subject is in agreement with the verb. There
+<i>might</i> be a general rule, but every sentence is different.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org696cb96" class="outline-2">
+<h2 id="org696cb96"><span class="section-number-2">2.</span> Types of Verbs</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+With the fundamental rules out of the way, let's dive into categories of
+verbs. And just like Nouns, there are several.
+</p>
+</div>
+
+<div id="outline-container-org6f7c0a5" class="outline-3">
+<h3 id="org6f7c0a5"><span class="section-number-3">2.1.</span> Action</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+The is the simple one. Most verbs are action verbs that is to say, they
+describe something that a noun is doing.
+</p>
+
+<pre class="example" id="orgd3f335c">
+Astri said no.
+</pre>
+
+<p>
+"said" is describing what "Astri" is doing.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9a4f866" class="outline-3">
+<h3 id="org9a4f866"><span class="section-number-3">2.2.</span> Linking</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+The verbs those help in connecting ideas (think Noun) together are,
+unsprisingly, called linking verbs.
+</p>
+
+<pre class="example" id="org7dad50c">
+The bear is hungry.
+</pre>
+
+<p>
+Here "is" links hungry to the bear.
+</p>
+
+<pre class="example" id="orgc1e7ca9">
+The bear looked lonely.
+</pre>
+
+<p>
+"looked" connects the idea of loneliness to the bear.
+</p>
+
+<p>
+That's it really. This is what a linking verb, also called, State of Being
+verbs are. There is the common list of them which are all derived from the
+master linking verb - "to be". They are: am, is, are, be, been, being, was
+and were.
+</p>
+
+<p>
+There are others as well, for example, "looked" in the example above. This
+is also an example of a verb which is <i>both</i> an action and a linking
+verb. For example, in its action form:
+</p>
+
+<pre class="example" id="org11d0526">
+The bear looked at me.
+</pre>
+
+<p>
+"looked" is an action the bear is performing.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org064185e" class="outline-3">
+<h3 id="org064185e"><span class="section-number-3">2.3.</span> Helping</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+This class of verb helps to connect <i>other verbs</i> thereby helping
+them. Hence, helping verbs. There is another name for this classification
+of verbs; it's also called "auxiliary" verbs.
+</p>
+
+<pre class="example" id="orgf129773">
+Brian is eating a pizza.
+Brian had been eating a pizza.
+I was bathing.
+</pre>
+
+<p>
+"is", "had been", "was" aids the verb "eating" here. 
+</p>
+
+<p>
+Most of the helping verbs are forms of the verb "to be". And most of the
+time, they place the verb being helped in a particular timeline.
+</p>
+
+<pre class="example" id="org8d3ed96">
+She doesn’t agree with me.
+</pre>
+
+<p>
+"doesn't" helps the verb "agree" and it occurs in the present time.
+</p>
+</div>
+
+<div id="outline-container-org4f8ff3b" class="outline-4">
+<h4 id="org4f8ff3b"><span class="section-number-4">2.3.1.</span> Modals</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<p>
+The auxiliary verbs themselves has a classification. These are helping
+verbs but they are grouped together because they have certain
+properties. They:
+</p>
+
+<ul class="org-ul">
+<li>Agree with all subjects</li>
+<li>They <i>don't</i> have a to form.</li>
+<li>And they express Modality.</li>
+</ul>
+
+<p>
+What's a Modality?
+</p>
+
+<p>
+Its "a particular mode in which something exists or is experienced or
+expressed". Basically, these verbs expresses different modes or
+conditions of the verb which is being helped.
+</p>
+
+<pre class="example" id="orgbc8616c">
+I can eat ten pounds of brocolli.
+</pre>
+
+<p>
+Here "can" express an ability of the verb "eat".
+</p>
+
+<pre class="example" id="orgf3fb726">
+It may rain.
+</pre>
+
+<p>
+"may" implies a condition of the action "rain".
+</p>
+
+<p>
+There is only a handful of these verbs. The are: <i>may</i>, <i>might</i>, <i>must</i>,
+<i>can</i>, <i>could</i>, <i>should</i>, <i>would</i>, <i>shall</i>, and <i>will</i>.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0bb2df4" class="outline-3">
+<h3 id="org0bb2df4"><span class="section-number-3">2.4.</span> Irregular</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+Nouns aren't the only thing which are irregular. It's English, there's
+irregularity in verbs too. But, before we can proceed with explaining the
+irregularities, we need to defer this topic. 
+</p>
+
+<p>
+If you have not noticed yet, verbs has a second property. And before we
+can explain the irregularities, we need to understand this second
+property.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge28c783" class="outline-2">
+<h2 id="orge28c783"><span class="section-number-2">3.</span> Place in Time</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Re-visiting the definition of verbs which describes an action that a noun
+performs, another structural question is posed: when does the action occur?
+</p>
+
+<p>
+And that leads to the property: Verbs place a particular action in a
+certain time - the past, the present, and the future. These are called
+Verb Tense.
+</p>
+</div>
+
+<div id="outline-container-orgb47d5de" class="outline-3">
+<h3 id="orgb47d5de"><span class="section-number-3">3.1.</span> Present Tense</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+These are the words which describes the action happening <i>right now</i>.
+</p>
+
+<pre class="example" id="org398efca">
+Bertie is singing in the shower.
+</pre>
+
+<p>
+"is singing", where "is" is a helping verb and "singing" is the main verb,
+denotes what Bertie is doing currently.
+</p>
+
+<pre class="example" id="org72f9469">
+The water is super cold.
+</pre>
+
+<p>
+"is", a linking verb, describes the current temperature of the water.
+</p>
+
+<pre class="example" id="org7b93b95">
+I eat donut.
+</pre>
+
+<p>
+"eat" describes my action that I undertake in the current period.
+</p>
+
+<p>
+Unlike the tenses to follow, the basic present tense sentence has many
+different formation as the examples above illustrated:
+</p>
+
+<ul class="org-ul">
+<li>adding -ing to the base verb after using a helping verb.</li>
+<li>using "is" as a linking verb.</li>
+<li>using the base verb directly.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb872fe6" class="outline-3">
+<h3 id="orgb872fe6"><span class="section-number-3">3.2.</span> Past Tense</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+Verbs which describes action that a noun has <i>already done</i>. The general
+rule to convert a verb to its past form is: add in '-ed' to the base verb.
+</p>
+
+<pre class="example" id="org36e22aa">
+I talked.
+</pre>
+
+<p>
+"talked" is something i did before.
+</p>
+
+<pre class="example" id="org2dd6592">
+I walked to the store.
+</pre>
+
+<p>
+"walked" is something i did to reach the store.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6c73bac" class="outline-3">
+<h3 id="org6c73bac"><span class="section-number-3">3.3.</span> Future Tense</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+The third tense describes any action that is going to happen at some point
+of time in the future. Now there are two ways to form a future tense:
+</p>
+
+<ol class="org-ol">
+<li>add a 'will / shall'</li>
+<li>use 'is going'</li>
+</ol>
+
+<p>
+Although, the first one is more common and used more frequently, the
+second one has its use cases.
+</p>
+
+<pre class="example" id="org6852387">
+I will eat donut.
+</pre>
+
+<p>
+The addition of "will" just changes the sentence from the present form to
+the future.
+</p>
+
+<pre class="example" id="org7e2d4a5">
+Lorraine is going to visit Canada.    
+</pre>
+
+<p>
+"is going" is used here, however, the implication of the sentence would be
+the same if it were "Lorraine will visit Canada". There is no change in
+its meaning.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0e6e01e" class="outline-2">
+<h2 id="org0e6e01e"><span class="section-number-2">4.</span> Verbs Third Law</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+So far we know that verbs describes action and places the action at a
+particular frame of time. However, there <i>is</i> a third aspect - the verb
+aspect.
+</p>
+
+<p>
+Verb aspect defines the <i>state of the action</i> being performed. Its either
+state in which the action is waiting to be performed or was already
+performed i.e. it's stationary. Or it is being performed i.e. it's
+moving. And yes, I just created the verbs third Law: A verb which is moving
+will always be moving unless otherwise altered by a stationary aspect.
+</p>
+
+<p>
+There are 4 kinds of verb aspect:
+</p>
+
+<ul class="org-ul">
+<li>Simple Aspect</li>
+<li>Progressive Aspect</li>
+<li>Perfect Aspect</li>
+<li>Perfect Progresssive Aspect</li>
+</ul>
+
+<p>
+Each of the aspects places the state of the verb in a specific moment with
+in the each tense (think time).
+</p>
+</div>
+
+<div id="outline-container-org49abba6" class="outline-3">
+<h3 id="org49abba6"><span class="section-number-3">4.1.</span> Simple Aspect</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+The base tense is the simple aspect. It describes some action which is
+done or can be done in any tense. (If it helps, think of it as the
+noun-ish form of the verb)
+</p>
+
+<pre class="example" id="org3279be6">
+| Past     | Present | Future      |
+|----------+---------+-------------|
+| I walked | I walk  | I will walk |
+</pre>
+
+<p>
+Here "walk" / "walked" is the <i>stationary</i> state of the verb placed in
+three different times: Past, Present, and Future. The verb form changes
+depending on which tense (time) it is in, but the state doesn't change. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge1eded8" class="outline-3">
+<h3 id="orge1eded8"><span class="section-number-3">4.2.</span> Progressive Aspect</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+The aspect which places verbs in the continous or ongoing state. 
+</p>
+
+<pre class="example" id="org482755a">
+| Past          | Present      | Future            |
+|---------------+--------------+-------------------|
+| I was walking | I am walking | I will be walking |
+</pre>
+
+<p>
+"walking" is an action which is happening or actively being
+done. Depending upon the tense, the conjugation will change to place the
+verb in the different times.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgef1a003" class="outline-3">
+<h3 id="orgef1a003"><span class="section-number-3">4.3.</span> Perfect Aspect</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+This aspect which defines the action of the verb being finished or
+completed. The Perfect aspect has a nuanced focus on the verb tense.
+</p>
+
+<pre class="example" id="org65a582c">
+I had washed the dishes.
+</pre>
+
+<p>
+This is the Past tense of the perfect form. The Past Perfect places the
+verb state - the completed action - <b><b>before</b></b> a time in the current
+past. In the example above, "had washed" implies that "dishes" were
+already cleaned at before a time in the past. 
+</p>
+
+<p>
+Let's say it's 1700 hrs. Then a past time would be 1500 hrs. Continuing
+with the example above, "the dishes were washed" at 1300 hrs right after
+lunch time.
+</p>
+
+<p>
+In other words, the past perfect talks about a verb which took place
+(completed in this case) before the normal past tense as described from
+the present time.
+</p>
+
+<pre class="example" id="orgd5864b5">
+I have washed the dishes.
+</pre>
+
+<p>
+This is the Present tense of the perfect form. The Present Perfect places
+the verb state before a time in the current present i.e. the past.
+</p>
+
+<p>
+"the dishes were washed" a few hours earlier.
+</p>
+
+<pre class="example" id="org4117d13">
+I will have washed the dishes.
+</pre>
+
+<p>
+This is the Future tense of the perfect form. The Future Perfect plcaes
+the verab state before a time in the future i.e. the past of the current
+time in the future.
+</p>
+
+<p>
+If you shift the frame of the Present Perfect to the Future, that's what
+the Future Perfect describes.
+</p>
+
+<p>
+"the dishes will be washed" at a particular time before 2300 hrs. Because
+that's sleeping time.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3e7520e" class="outline-3">
+<h3 id="org3e7520e"><span class="section-number-3">4.4.</span> Perfect Progressive</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+This is an interesting one. Perfect Progressive aspect describes an
+ongoing task that has been completed. It is exactly similar to the Past
+Perfect except that it describes the continous state of the verb.
+</p>
+
+<pre class="example" id="org1c00a54">
+| Past Perfect P.    | Present Perfect P.  | Future Perfect P.        |
+|--------------------+---------------------+--------------------------|
+| I had been walking | I have been walking | I will have been walking |
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8002c84" class="outline-2">
+<h2 id="org8002c84"><span class="section-number-2">5.</span> Irregular Verbs</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+After the mastery of time, we can finally re-visit the Irregularity of the
+Verbs. And there are many different ones. 
+</p>
+
+<p>
+The most common ones are the helping verbs: be, have. They are used in
+almost all sentences and as you might have already seen from the previous
+examples, they are used in all the tenses and all the aspects.
+</p>
+
+<pre class="example" id="orgabfd756">
+| Verb | 1st Person | 3rd Person | Plural Present | 1st Past | Plural Past |
+|------+------------+------------+----------------+----------+-------------|
+| be   | I am       | She is     | We are         | I was    | We were     |
+| have | I have     | She has    | We have        | I had    | We had      |
+</pre>
+</div>
+
+<div id="outline-container-org518ba99" class="outline-3">
+<h3 id="org518ba99"><span class="section-number-3">5.1.</span> Funk-ed</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+The verb which is <code>ed</code>'d  for its past form in both spelling and sound.
+</p>
+
+<pre class="example" id="org2aa5036">
+| Past   | Present |
+|--------+---------|
+| Walked | Walk    |
+| Slept  | Sleep   |
+| Kept   | Keep    |
+| Built  | Build   |
+| Spent  | Spend   |
+| Left   | Leave   |
+| Lept   | Leap    |
+| Lost   | Lose    |
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orge3d55fc" class="outline-3">
+<h3 id="orge3d55fc"><span class="section-number-3">5.2.</span> Vowel Shift</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+Verbs whose vowel changes as it moves between the tenses and aspects. The
+enunciation moves from the front of the mount to the back.
+</p>
+
+<pre class="example" id="org406052e">
+| Present | Past  | Past Perfect |
+|---------+-------+--------------|
+| Sing    | Sang  | Sung         |
+| Drink   | Drank | Drunk        |
+| Win     | Won   | Won          |
+| Find    | Found | Found        |
+| Sit     | Sat   | Sat          |
+| Sneak   | Snuck | Snuck        |
+| Run     | Ran   | Run          |
+</pre>
+
+<p>
+And as always, there will be exceptions. For example, "run" above.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1af64b2" class="outline-3">
+<h3 id="org1af64b2"><span class="section-number-3">5.3.</span> Vowel Shift's which are Taken</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+These are the bunch of vowel shift Verbs whose Past Perfect form has the
+'en' ending.
+</p>
+
+<pre class="example" id="orgdd041e0">
+| Present | Past       | Past Perfect |
+|---------+------------+--------------|
+| Tear    | Tore       | Torn         |
+| Show    | Showed     | Shown        |
+| Prove   | Proved     | Proven       |
+| Bite    | Bit        | Bitten       |
+| Ride    | Rode       | Ridden       |
+| Eat     | Ate        | Eaten        |
+| Speak   | Spoke      | Spoken       |
+| Be      | Was / Were | Been         |
+| Go      | Went       | Gone         |
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orga227469" class="outline-3">
+<h3 id="orga227469"><span class="section-number-3">5.4.</span> The Proud Irregulars</h3>
+<div class="outline-text-3" id="text-5-4">
+<p>
+The Verbs which has a unique set of rules in their past tenses.
+</p>
+
+<pre class="example" id="org2b31885">
+| Change         | Present               | Past                        |
+|----------------+-----------------------+-----------------------------|
+| -ught          | Teach, Bring, Catch   | Taught, Brought, Caught     |
+| -d + shift     | Flee, Say             | Fled, Said                  |
+| past = present | Bet, Set, Hurt        | Bet, Set, Hurt              |
+| modal helpers  | Can, May, Shall, Will | Could, Might, Should, Would |
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2020-03-03 Tue 00:00</p>
+<p class="author">Author: ahnaf</p>
+<p class="date">Created: 2025-01-26 Sun 14:26</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

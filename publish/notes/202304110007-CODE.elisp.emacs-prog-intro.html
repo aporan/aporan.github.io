@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-01-26 Sun 14:26 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Elisp Programming Intro</title>
+<meta name="author" content="ahnaf" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Elisp Programming Intro</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org451a74c">1. History</a></li>
+<li><a href="#org2312e9f">2. List</a>
+<ul>
+<li><a href="#orgbb54c7e">2.1. Atoms</a></li>
+</ul>
+</li>
+<li><a href="#orgc8f8e9b">3. Variables</a>
+<ul>
+<li><a href="#orgbf02960">3.1. Assignment</a></li>
+</ul>
+</li>
+<li><a href="#org8541f21">4. Functions</a>
+<ul>
+<li><a href="#org965eba7">4.1. Evaluation</a></li>
+<li><a href="#orgdccf1b3">4.2. Definition</a>
+<ul>
+<li><a href="#org0be08fb">4.2.1. Simple Example</a></li>
+<li><a href="#org7b4e6f4">4.2.2. Interactive Function</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org8e08502">5. If-Else</a>
+<ul>
+<li>
+<ul>
+<li><a href="#org482747a">5.0.1. Truth-Falsy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgf1cdead">6. Interesting Quirks</a></li>
+</ul>
+</div>
+</div>
+<p>
+Written below is a 'short' and simple introduction to Emacs Lisp
+Programming. The entirety of the content as of now is taken from the book 'An
+Introduction to Programming in Emacs Lisp' by Robert J. Chassel. The contents
+of the book can easily be found online and I recommend everyone who may read
+this to go through the book as it provides a much more immersive beginner
+intro to emacs. This book is great but it is not for programmers. As the
+author mentions it, programmers generally prefer documentation where they can
+dive in and dive out. Regardless, I found the book very useful to get me
+started into Lisp, Emacs Lisp to be exact.
+</p>
+
+<div id="outline-container-org451a74c" class="outline-2">
+<h2 id="org451a74c"><span class="section-number-2">1.</span> History</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+A bit of history:
+</p>
+
+<ul class="org-ul">
+<li>Lisp was first developed in the late 1950s at the Massachusetts</li>
+</ul>
+<p>
+Institute of Technology for research in artificial intelligence.
+</p>
+<ul class="org-ul">
+<li>Some people even claim that the name stands for ‘Lots of Isolated</li>
+</ul>
+<p>
+Silly Parentheses’ (because of all the parentheses).
+</p>
+<ul class="org-ul">
+<li>Lisp stands for LISt Processing.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2312e9f" class="outline-2">
+<h2 id="org2312e9f"><span class="section-number-2">2.</span> List</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Everything in <code>lisp</code> is a list with a few exceptions. Here is a simple
+good-for-nothing list:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(rose violet daisy buttercup)
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgbb54c7e" class="outline-3">
+<h3 id="orgbb54c7e"><span class="section-number-3">2.1.</span> Atoms</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+A list is surrounded by parentheses and it contains <code>atoms</code> or words
+separated by whitespace. Here is a list structure:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(atom atom atom)
+</pre>
+</div>
+
+<p>
+The atoms, as they are duly named, are indivisible that is they cannot be
+split and are taken as a whole word. In general, atoms are divided into
+two categories, <b>numbers</b> and <b>symbols</b>. Below are list examples with
+different types of atoms:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(this list includes "text between quotation marks.") ; Yeap, the string is an atom of its own.
+(this list has (a list inside of it))
+(+ 2 2)
+() ; an empty list
+</pre>
+</div>
+
+<p>
+Atoms are categorized into two categories (as seen from the example
+above): <b>Numbers</b> (any numerical number) and <b>Symbols</b> (<code>+</code>, <code>foo</code>,
+<code>forward-line</code>).
+</p>
+
+<p>
+Symbols are further categorized into two categories:
+</p>
+
+<ul class="org-ul">
+<li>Symbols which have have values attached to it and are called
+<code>variables</code>.</li>
+<li>Symbols have actions assigned to it and are called <code>functions</code>.</li>
+</ul>
+
+<p>
+The List interpreter evaluates list in three ways:
+</p>
+
+<ul class="org-ul">
+<li>It looks for a <i>quote</i> (') before the list; if there is, the interpreter
+just gives (echoes) the list.</li>
+<li>If there is no quote, the interpreter looks at the first element in the
+list and sees whether it has a function definition. If it does, the
+interpreter carries out the instructions in the function definition.</li>
+<li>Otherwise, the interpreter prints an error message.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc8f8e9b" class="outline-2">
+<h2 id="orgc8f8e9b"><span class="section-number-2">3.</span> Variables</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Variables are symbols which stores values. Like other programming
+languages, the value of a symbol can be anything, such as:
+</p>
+
+<ul class="org-ul">
+<li>Symbol</li>
+<li>Number</li>
+<li>List</li>
+<li>String</li>
+</ul>
+
+<p>
+Variables are generally evaluated by placing the <code>[symbol-name]</code>.
+</p>
+</div>
+
+<div id="outline-container-orgbf02960" class="outline-3">
+<h3 id="orgbf02960"><span class="section-number-3">3.1.</span> Assignment</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+The are multiple ways to assign a variable. 3 functions will be discussed
+here: <code>set</code>, <code>setq</code>, and <code>let</code>. See how functions are evaluated here.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(set ’flowers ’(rose violet daisy buttercup))
+</pre>
+</div>
+
+<p>
+When <code>set</code> is used, both arguments requires a quote <code>’</code>. Otherwise, the
+arguments will be evaluated.
+</p>
+
+<p>
+Addendum: When <code>set</code> is used without quoting its first argument, it is
+evaluated before anything else is done. In the example above, if <code>flowers</code>
+did not have a value, an error message (<code>Symbol’s value as variable is
+    void</code>) would be shown; If <code>flowers</code> did return a value after it was
+evaluated, <code>set</code> would attempt to set the value that was returned.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(setq trees ’(pine fir oak maple)
+      herbivores ’(gazelle antelope zebra))
+</pre>
+</div>
+
+<p>
+<code>setq</code> is a special form of <code>set</code>. It is exactly like <code>set</code> except that
+the first argument is <b>quoted</b> automatically. Additionally, as an added
+convenience, <code>setq</code> permits you to set <b>several</b> different variables to
+different values, all in one expression, as show above.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(let ((birch 3)
+      pine
+      fir
+      (oak ’some))
+  (message
+    "Here are %d variables with %s, %s, and %s value."
+    birch pine fir oak))
+</pre>
+</div>
+
+<p>
+The <code>let</code> expression is a special form in Lisp that is used in most
+function definitions. <code>let</code> is used to attach or bind a symbol to a value
+in such a way that the Lisp interpreter will not confuse the variable with
+a variable of the same name that is not part of the function. The sample
+template for a <code>let</code> expression is below.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(let varlist body...)
+</pre>
+</div>
+
+<p>
+<b>Important</b>: <code>let</code> is like a <code>setq</code> that is <i><b>temporary</b></i> and
+<i><b>local</b></i>. The values set by <code>let</code> are automatically undone when the let
+is finished. The setting only affects expressions that are <span class="underline">inside the
+bounds</span> of the let expression. In other words, the binding of a symbol is
+visible only in functions called in the <code>let</code> form; In Emacs Lisp, scoping
+is <b>dynamic</b>, not *lexical*/. Check out the difference <a href="http://stackoverflow.com/a/22395580">here</a>.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8541f21" class="outline-2">
+<h2 id="org8541f21"><span class="section-number-2">4.</span> Functions</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Functions are also a list. They are defined by lists and evaluated as a
+list. As with other languages, the name you use in an argument list is
+private to that particular function definition.
+</p>
+</div>
+
+<div id="outline-container-org965eba7" class="outline-3">
+<h3 id="org965eba7"><span class="section-number-3">4.1.</span> Evaluation</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Functions are evaluated by placing the symbol iniside the parenthesis like
+so: <code>(symbol-name)</code>. A function <i>name</i> is the first symbol after a
+parantheses and the <i>arguments</i> to a function are the atoms or list that
+follows the function. For example,
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(concat "abc" "def")
+</pre>
+</div>
+
+<p>
+<i>Example of Function Calls:</i>
+</p>
+
+<p>
+Below <code>message</code> function is called and <code>%s</code> is substitued with
+<code>buffer-name</code> after it itself is called.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(message "The name of this buffer is: %s." (buffer-name))
+</pre>
+</div>
+
+<p>
+As a comparison, it's very similar to python <code>print</code> function. Assuming
+<code>buffer_name</code> is a function,
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python">print "The name of this buffer is: %s." %(buffer_name())
+</pre>
+</div>
+
+<p>
+A more complex example.
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">; 'fill-column' is a variable.
+; '-', 'concat', and 'substring' is a function (or more precisely 
+; its a symbol which points to a function definition). 
+
+(message "He saw %d %s"
+         (- fill-column 32)
+         (concat "red "
+                 (substring "The quick brown foxes jumped." 16 21)
+                 " leaping."))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdccf1b3" class="outline-3">
+<h3 id="orgdccf1b3"><span class="section-number-3">4.2.</span> Definition</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+The first expression in a list points to a function definition. A function
+definition consists of 5 parts: a <i>symbol</i> for defining a function
+(<code>defun</code>), <i>function-name</i>, <i>arguments</i> written inside <code>()</code>,
+<i>documentation</i> (recommended), expression to make the function
+<i>interactive</i>, and the function body. The structure:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(defun function-name (arguments...)
+  "documentation..."                  ; optional
+  (interactive argument-passing-info) ; optional
+  body...)
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org0be08fb" class="outline-4">
+<h4 id="org0be08fb"><span class="section-number-4">4.2.1.</span> Simple Example</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<p>
+A function which multiplies any number by 7
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(defun multiply-by-seven (number)
+  "Multiply NUMBER by seven."
+  (* 7 number))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7b4e6f4" class="outline-4">
+<h4 id="org7b4e6f4"><span class="section-number-4">4.2.2.</span> Interactive Function</h4>
+<div class="outline-text-4" id="text-4-2-2">
+<p>
+Interactive functions allow one to call the function by pressing
+keybindings or by typing <code>M-x</code> and the <code>function-name</code>. There are
+countless interactive functions. The simple <code>C-n</code> is one which moves the
+cursor to the next line. You define an interactive function by using the
+keyword <code>interactive</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(defun multiply-by-seven (number)
+  "Multiply NUMBER by seven."
+  (interactive "p")
+  (message "The result is %d" (* 7 number)))
+</pre>
+</div>
+
+<p>
+The keyword <code>interactive</code> takes different and multiple arguments. The <code>p</code>
+as the argument to <code>interactive</code> Emacs to interpret typing either <code>C-u</code>
+followed by a <i>number</i> or <code>M</code> followed by a <i>number</i> as a command to pass
+that number to the function as its argument. More interactive arguments
+can be found in the The GNU Emacs Lisp Reference Manual.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8e08502" class="outline-2">
+<h2 id="org8e08502"><span class="section-number-2">5.</span> If-Else</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+The simple <code>if-else</code> control flow structure is below:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(if true-or-false-test
+    action-to-carry-out-if-the-test-returns-true
+  action-to-carry-out-if-the-test-returns-false)
+</pre>
+</div>
+
+<p>
+An simple example: 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(if (&gt; 4 5)
+    (message "4 falsely greater than 5!") 
+  (message "4 is not greater than 5!"))
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org482747a" class="outline-4">
+<h4 id="org482747a"><span class="section-number-4">5.0.1.</span> Truth-Falsy</h4>
+<div class="outline-text-4" id="text-5-0-1">
+<p>
+In emacs everything everything except <code>nil</code>, <code>()</code>, is <i>false</i>. Anything
+that does not evaluate to nil or empty-list is evaluated as <code>true</code>.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf1cdead" class="outline-2">
+<h2 id="orgf1cdead"><span class="section-number-2">6.</span> Interesting Quirks</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>A single quotation mark, <code>’</code> , tells the Lisp interpreter that it should
+return the following expression as written, and not evaluate it as it
+would if the quote were not there.</li>
+
+<li>A marker is a specific feature of Emacs Lisp. (In Emacs, locations in a
+buffer are recorded as markers. When the mark is set with the <code>C-@</code> or
+<code>C-SPC</code> command, its position is kept as a marker).</li>
+
+<li>In Lisp, <code>nil</code> is also used to mean <code>‘false’</code> and is a synonym for the
+empty list, <code>()</code>.</li>
+
+<li><p>
+In Emacs, if you want the value returned by an expression to appear in
+any <i>writeable</i> buffer itself rather than in the echo area, type <code>C-u C-x
+     C-e</code> instead of <code>C-x C-e</code>. This causes the value returned to appear after
+the expression. For example, if you are in <code>scratch</code> buffer, the buffer
+will look like this:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(buffer-name)"*scratch*"
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2019-06-16 Sun 00:00</p>
+<p class="author">Author: ahnaf</p>
+<p class="date">Created: 2025-01-26 Sun 14:26</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
