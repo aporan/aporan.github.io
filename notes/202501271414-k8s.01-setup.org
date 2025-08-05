@@ -1,0 +1,305 @@
+# 202501271414 k8s.01-setup
+===
+tags: #k8s
+===
+
+* Kubernetes The Hard Way
+
+This k8s tutorial, concept, troubleshooting is created by following
+[[https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/docs/01-prerequisites.md][Kubernetes The Hard Way]]. This tutorial mirrors the setup that's mentioned int
+the prerequisite of the course, but with customizations on the virtual
+machines.
+
+The particular configuration doesn't use any jumpbox, the local machine is
+considered as the jumpbox (the administration host). However, 3 remote servers
+are used in 3 different regions: China, Singapore, and US.
+
+
+The machines are quite beefy: 8 cores with 16GB of Memory; They are x86_64
+
+** Setup Jumpbox [My Laptop]
+
+My local machine is an M1 Mac, which also acts as my jumpbox (so that i don't
+actually have to jump everytime)
+
+#+begin_src bash
+git clone --depth 1 \
+  https://github.com/kelseyhightower/kubernetes-the-hard-way.git
+#+end_src
+
+The tutorial suggests to download binaries from =downloads.txt=. I'm in luck
+because my laptop is /an/ arm64 machine, so I can just invoke the download
+command, without changing any of the link to the binaries.
+
+#+begin_src bash
+wget -q --show-progress \
+  --https-only \
+  --timestamping \
+  -P downloads \
+  -i downloads.txt
+#+end_src
+
+The output also detailed the name of the binaries that were downloaded
+
+#+begin_example
+kubectl                               100%[=================>]  52.44M  9.71MB/s    in 5.1s
+kube-apiserver                        100%[=================>]  83.75M  10.6MB/s    in 7.5s
+kube-controller-manager               100%[=================>]  78.38M  11.4MB/s    in 6.6s
+kube-scheduler                        100%[=================>]  59.31M  13.1MB/s    in 4.6s
+crictl-v1.31.1-linux-arm64.tar.gz     100%[=================>]  16.36M  14.8MB/s    in 1.1s
+runc.arm64                            100%[=================>]  10.15M  13.8MB/s    in 0.7s
+cni-plugins-linux-arm64-v1.6.0.tgz    100%[=================>]  47.08M  10.3MB/s    in 4.4s
+containerd-2.0.0-linux-arm64.tar.gz   100%[=================>]  32.00M  10.9MB/s    in 2.9s
+kube-proxy                            100%[=================>]  60.00M  8.22MB/s    in 7.3s
+kubelet                               100%[=================>]  71.22M  17.6MB/s    in 4.0s
+etcd-v3.4.34-linux-arm64.tar.gz       100%[=================>]  15.05M  19.1MB/s    in 0.8s
+#+end_example
+
+In my local machine, I already had =kubectl= installed when I downloaded
+=minikube=. Hence, I skipped the copying over the binary to the specific
+location mentioned in the tutorial.
+
+/In the next sections of the tutorials, there is a step where the binaries are
+copied over to the servers. However, my servers were x86 machines, so the
+above binaries are not going to be useful. I will download the respective
+binaries when I need them, and I'll document the steps too./
+
+** Setup Remote Machines
+
+=ssh= is the default access policy, the tutorial mentions about enabling root
+ssh access. I should highlight that this should never be done in
+production. For my environment, this was enabled by default; this is because
+there was another authentication system in place: kerberos.
+
+*** Convenience in `hosts` file
+
+The future part of the tutorial probably requires or uses a simple alias to
+connect to each of the servers. The easiest way to do this from each of the
+machine itself is to add an entry to each machines =/etc/hosts= file. In your
+local machine, add the following entry:
+
+#+begin_src bash
+10.xxx.xxx.xxx server.kubernetes.local server
+10.xx.xxx.xx node-0.kubernetes.local node-0
+10.xx.xxx.xx node-1.kubernetes.local node-1
+#+end_src
+
+#+begin_src bash
+ssh username@server
+#+end_src
+
+/This did not work, because of Kerberos authentication that is present in the
+setup of the environment/
+
+#+begin_src bash
+W6XQRYXLDT [ko_output] ➜  klist
+Credentials cache: API:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+        Principal: xxxxxxxxx@xxxxxxxxx.xxx
+
+  Issued                Expires               Principal
+Jan 28 18:50:08 2025  Jan 29 18:49:43 2025  krbtgt/xxxxxxxxx.xxx@xxxxxxxxx.xxx
+Jan 28 18:52:35 2025  Jan 29 18:49:43 2025  host/10.xxx.xxx.xxx@xxxxxxxxx.xxx
+#+end_src
+
+Kerberos hosts are registered against a DNS with a specific name. Performing
+an aliased authentication which takes the name from the local =/etc/hosts=
+file does not match up against the server registry, which is used to actually
+perform the authentication.
+
+*** Setting up direct ssh'
+
+In order to attempt the alias based ssh access, let's try direct ssh
+authentication as mentioned in the tutorial.
+
+#+begin_src bash
+Jan 30 12:58:57 server sshd[2910250]: debug1: rekey after 134217728 blocks [preauth]
+Jan 30 12:58:57 server sshd[2910250]: debug1: KEX done [preauth]
+Jan 30 12:58:58 server sshd[2910250]: debug1: userauth-request for user xxxxxxx service ssh-connection method none [preauth]
+Jan 30 12:58:58 server sshd[2910250]: debug1: attempt 0 failures 0 [preauth]
+Jan 30 12:58:58 server sshd[2910250]: reprocess config line 32: Deprecated option RSAAuthentication
+Jan 30 12:58:58 server sshd[2910250]: reprocess config line 38: Deprecated option RhostsRSAAuthentication
+Jan 30 12:58:58 server sshd[2910250]: debug1: PAM: initializing for "xxxxxxx"
+#+end_src
+
+To retrieve the log from =sshd_config=, I had to enable =DEBUG= logs. The main
+thing to notice was that they sshd server never attempted to access the
+=authorized_keys= file, even though I disabled Kerberos Authentication.
+
+Enabling the following /while/ disabling Kerberos did the trick:
+
+#+begin_src bash
+  PubkeyAuthentication yes
+  AuthorizedKeysFile	%h/.ssh/authorized_keys
+
+  KerberosAuthentication no
+  GSSAPIAuthentication no
+#+end_src
+
+Remember to **restart** the sshd service!
+
+
+*** Setting Remote's hosts
+
+In each of your remote machines, add the same alias in their =/etc/hosts=
+file. Use this shorthand =sed= script:
+
+#+begin_src bash
+FQDN=server.kubernetes.local
+HOST=server
+sed -i 's/^127.0.1.1.*/127.0.1.1\t${FQDN} ${HOST}/' /etc/hosts
+#+end_src
+
+The tutorial also suggests to update the actual systems's hostname. Edit the
+hostname with
+
+#+begin_src bash
+hostnamectl set-hostname server
+#+end_src
+
+Check the FQDN! The invocation essentially looks up the resolver (which
+ineffect looks up =/etc/hosts/ ([[https://man7.org/linux/man-pages/man1/hostname.1.html#THE-FQDN][SEE: THE FQDN]]) which matches the hostname set
+above and returns the FQDN
+
+#+begin_src bash
+hostname --fqdn
+# output: server.kubernetes.local
+#+end_src
+
+With the host configured, you may now login:
+
+#+begin_src bash
+  ssh <username>@server
+#+end_src
+
+** Configure Certificate Authority
+
+Components in K8s communicate with each other via mutual TLS. Each of the
+components of the cluster need to communicate via a certificate and to issue
+certificates, we need to provision a certificate authority (ca).
+
+Each of the components in the kuberentes needs a certificate - a target is
+specified in the =ca.conf= file. Note that this certificate generation is only
+for this tutorial, in production certificate generation is handled
+differently.
+
+*** Generate CA key and certificate
+
+#+RESULTS: ca.crt ca.key
+#+begin_src bash
+  openssl genrsa -out ca.key 4096
+  openssl req -x509 -new -sha512 -noenc \
+    -key ca.key -days 3653 \
+    -config ca.conf \
+    -out ca.crt
+#+end_src
+
+*** Generate Components key and certificate
+
+#+begin_src
+certs=(
+  "admin" "node-0" "node-1"
+  "kube-proxy" "kube-scheduler"
+  "kube-controller-manager"
+  "kube-api-server"
+  "service-accounts"
+)
+#+end_src
+
+The generate bash script is in the tutorial. Create a bash file, copy over the
+instructions in the tutorial to generate the key and the certs. Each of the
+items in the above source block has an associated target in the ca.conf file.
+
+The components will be introduced in a later part of the tutorial. The scripts
+would print the following on to the console:
+
+#+begin_example bash
+# admin
+Certificate request self-signature ok
+subject=CN=admin, O=system:masters
+# node-0
+Certificate request self-signature ok
+subject=CN=system:node:node-0, O=system:nodes, C=US, ST=Washington, L=Seattle
+# node-1
+Certificate request self-signature ok
+subject=CN=system:node:node-1, O=system:nodes, C=US, ST=Washington, L=Seattle
+# kube-proxy
+Certificate request self-signature ok
+subject=CN=system:kube-proxy, O=system:node-proxier, C=US, ST=Washington, L=Seattle
+# kube-scheduler
+Certificate request self-signature ok
+subject=CN=system:kube-scheduler, O=system:system:kube-scheduler, C=US, ST=Washington, L=Seattle
+# kube-controller-manager
+Certificate request self-signature ok
+subject=CN=system:kube-controller-manager, O=system:kube-controller-manager, C=US, ST=Washington, L=Seattle
+# kube-api-server
+Certificate request self-signature ok
+subject=CN=kubernetes, C=US, ST=Washington, L=Seattle
+# kube-service-accounts
+Certificate request self-signature ok
+subject=CN=service-accounts
+#+end_example
+
+Note the value of the =CN=, the Common Name. It is the name that is matched
+against a certificate. Usually, it's the DNS.
+
+#+begin_src bash
+  openssl x509 -in ./certs/node-0.crt -subject -noout
+  # output:
+  subject=CN=system:node:node-0, O=system:nodes, C=US, ST=Washington, L=Seattle
+#+end_sr
+*** Distribute Certificates to Server and Nodes
+
+Let's start with the server which needs the following certs, and it's related
+key:
+
+- kube-api-server.crt,
+- service-accounts.crt, and
+- ca.crt
+
+#+begin_src bash
+scp \
+  certs/ca.key certs/ca.crt \
+  certs/kube-api-server.key certs/kube-api-server.crt \
+  certs/service-accounts.key certs/service-accounts.crt \
+  <username>@server:~/
+#+end_src
+
+#+begin_example
+ca.key                                                100% 3272   293.9KB/s   00:00
+ca.crt                                                100% 1899   227.4KB/s   00:00
+kube-api-server.key                                   100% 3272   264.8KB/s   00:00
+kube-api-server.crt                                   100% 2354   180.0KB/s   00:00
+service-accounts.key                                  100% 3272   321.8KB/s   00:00
+service-accounts.crt                                  100% 2004   142.2KB/s   00:00
+#+end_example
+
+And then the nodes. The files need to be copied to the following path:
+=/var/lib/kubelet/=
+
+/But before we can copy them over, we need to disable kerberos and enable ssh
+only access. Please follow the instructions for the =server= to allow direct
+ssh access/
+
+
+**Create** the =kublet= directory in the path:
+
+#+begin_src bash
+  for host in node-0 node-1; do ssh <username>@$host 'sudo mkdir -p /var/lib/kubelet'; done
+#+end_src
+
+**Copy** over the key and the crt file;
+
+#+begin_src bash
+  for host in node-0 node-1; do
+     scp $host.crt <username>@$host:/var/lib/kubelet/kubelet.crt
+     scp $host.key <username>@$host:/var/lib/kubelet/kubelet.key
+  done
+#+end_src
+
+Interestingly, the node-{0,1}.{crt,key} is copied over as
+kubelet.{crt,key}. It is understandable - these files are used to authenticate
+the node to the kubernets-api-server which is run on /our/ =server=; these are
+the files we copied over on the section in our main server containing the
+ca.{key,crt}.
+
+**Next**: k8s.02-kubeconfigs [[202502211705]]
